@@ -14,17 +14,17 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.infrastructure.persistence.dao;
+package com.epam.reportportal.serviceapi.infrastructure.persistence.dao;
 
-import static com.epam.reportportal.infrastructure.persistence.commons.querygen.constant.GeneralCriteriaConstant.CRITERIA_DESCRIPTION;
-import static com.epam.reportportal.infrastructure.persistence.commons.querygen.constant.GeneralCriteriaConstant.CRITERIA_ID;
-import static com.epam.reportportal.infrastructure.persistence.commons.querygen.constant.GeneralCriteriaConstant.CRITERIA_LAST_MODIFIED;
-import static com.epam.reportportal.infrastructure.persistence.commons.querygen.constant.GeneralCriteriaConstant.CRITERIA_PROJECT_ID;
-import static com.epam.reportportal.infrastructure.persistence.commons.querygen.constant.ItemAttributeConstant.CRITERIA_ITEM_ATTRIBUTE_KEY;
-import static com.epam.reportportal.infrastructure.persistence.commons.querygen.constant.ItemAttributeConstant.CRITERIA_ITEM_ATTRIBUTE_VALUE;
-import static com.epam.reportportal.infrastructure.persistence.commons.querygen.constant.LaunchCriteriaConstant.CRITERIA_LAUNCH_MODE;
-import static com.epam.reportportal.infrastructure.persistence.commons.querygen.constant.LaunchCriteriaConstant.CRITERIA_LAUNCH_UUID;
-import static com.epam.reportportal.infrastructure.persistence.commons.querygen.constant.UserCriteriaConstant.CRITERIA_USER;
+import static com.epam.reportportal.serviceapi.infrastructure.persistence.commons.querygen.constant.GeneralCriteriaConstant.CRITERIA_DESCRIPTION;
+import static com.epam.reportportal.serviceapi.infrastructure.persistence.commons.querygen.constant.GeneralCriteriaConstant.CRITERIA_ID;
+import static com.epam.reportportal.serviceapi.infrastructure.persistence.commons.querygen.constant.GeneralCriteriaConstant.CRITERIA_LAST_MODIFIED;
+import static com.epam.reportportal.serviceapi.infrastructure.persistence.commons.querygen.constant.GeneralCriteriaConstant.CRITERIA_PROJECT_ID;
+import static com.epam.reportportal.serviceapi.infrastructure.persistence.commons.querygen.constant.ItemAttributeConstant.CRITERIA_ITEM_ATTRIBUTE_KEY;
+import static com.epam.reportportal.serviceapi.infrastructure.persistence.commons.querygen.constant.ItemAttributeConstant.CRITERIA_ITEM_ATTRIBUTE_VALUE;
+import static com.epam.reportportal.serviceapi.infrastructure.persistence.commons.querygen.constant.LaunchCriteriaConstant.CRITERIA_LAUNCH_MODE;
+import static com.epam.reportportal.serviceapi.infrastructure.persistence.commons.querygen.constant.LaunchCriteriaConstant.CRITERIA_LAUNCH_UUID;
+import static com.epam.reportportal.serviceapi.infrastructure.persistence.commons.querygen.constant.UserCriteriaConstant.CRITERIA_USER;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
@@ -32,20 +32,21 @@ import static org.junit.jupiter.api.Assertions.assertNotEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-import com.epam.reportportal.infrastructure.model.analyzer.IndexLaunch;
+import com.epam.reportportal.serviceapi.infrastructure.model.analyzer.IndexLaunch;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.LaunchRepository;
 import com.epam.reportportal.ws.BaseMvcTest;
-import com.epam.reportportal.infrastructure.persistence.commons.querygen.CompositeFilter;
-import com.epam.reportportal.infrastructure.persistence.commons.querygen.Condition;
-import com.epam.reportportal.infrastructure.persistence.commons.querygen.ConvertibleCondition;
-import com.epam.reportportal.infrastructure.persistence.commons.querygen.Filter;
-import com.epam.reportportal.infrastructure.persistence.commons.querygen.FilterCondition;
-import com.epam.reportportal.infrastructure.persistence.entity.enums.LaunchModeEnum;
-import com.epam.reportportal.infrastructure.persistence.entity.enums.RetentionPolicyEnum;
-import com.epam.reportportal.infrastructure.persistence.entity.enums.StatusEnum;
-import com.epam.reportportal.infrastructure.persistence.entity.launch.Launch;
-import com.epam.reportportal.infrastructure.persistence.jooq.enums.JLaunchModeEnum;
-import com.epam.reportportal.infrastructure.persistence.jooq.enums.JStatusEnum;
-import com.epam.reportportal.infrastructure.persistence.jooq.enums.JTestItemTypeEnum;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.commons.querygen.CompositeFilter;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.commons.querygen.Condition;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.commons.querygen.ConvertibleCondition;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.commons.querygen.Filter;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.commons.querygen.FilterCondition;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.enums.LaunchModeEnum;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.enums.RetentionPolicyEnum;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.enums.StatusEnum;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.launch.Launch;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.jooq.enums.JLaunchModeEnum;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.jooq.enums.JStatusEnum;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.jooq.enums.JTestItemTypeEnum;
 import com.fasterxml.jackson.annotation.JsonCreator.Mode;
 import com.google.common.collect.Comparators;
 import java.time.Duration;

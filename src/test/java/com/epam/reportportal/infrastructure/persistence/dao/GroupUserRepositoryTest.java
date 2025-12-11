@@ -14,13 +14,15 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.infrastructure.persistence.dao;
+package com.epam.reportportal.serviceapi.infrastructure.persistence.dao;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.GroupRepository;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.GroupUserRepository;
 import com.epam.reportportal.ws.BaseMvcTest;
-import com.epam.reportportal.infrastructure.persistence.entity.group.Group;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.group.Group;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

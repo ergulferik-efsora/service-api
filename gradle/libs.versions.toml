@@ -43,6 +43,7 @@ openpdf = "2.4.0"
 pf4j = "3.13.0"
 rabbitmq-http = "5.4.0"
 slugify = "3.0.7"
+spring-modulith = "1.3.11" # compatible with Spring boot 3.4.x
 springdoc-openapi = "2.8.14"
 tika = "3.2.3"
 thumbnailator = "0.4.21"
@@ -58,6 +59,7 @@ apache-commons-csv = "1.10.0"
 # Platforms
 spring-boot-bom = { group = "org.springframework.boot", name = "spring-boot-dependencies", version.ref = "spring-boot" }
 zonky-postgres-bom = { group = "io.zonky.test.postgres", name = "embedded-postgres-binaries-bom", version.ref = "zonky-postgres-bom" }
+spring-modulith-bom = { group = "org.springframework.modulith", name = "spring-modulith-bom", version.ref = "spring-modulith" }
 
 # Spring Boot
 spring-boot-starter-aop = { group = "org.springframework.boot", name = "spring-boot-starter-aop" }
@@ -71,6 +73,7 @@ spring-boot-starter-batch = { group = "org.springframework.boot", name = "spring
 spring-boot-starter-security = { group = "org.springframework.boot", name = "spring-boot-starter-security" }
 spring-boot-starter-oauth2-client = { group = "org.springframework.boot", name = "spring-boot-starter-oauth2-client" }
 spring-boot-starter-test = { group = "org.springframework.boot", name = "spring-boot-starter-test" }
+spring-modulith-starter-test = { group = "org.springframework.modulith", name = "spring-modulith-starter-test" }
 
 # Spring Security
 spring-security-acl = { group = "org.springframework.security", name = "spring-security-acl" }
@@ -126,6 +129,13 @@ spring-data-commons = { group = "org.springframework.data", name = "spring-data-
 hibernate-core = { group = "org.hibernate.orm", name = "hibernate-core" }
 jakarta-validation = { group = "jakarta.validation", name = "jakarta.validation-api" }
 apache-commons-commonscsv = { group = "org.apache.commons", name = "commons-csv", version.ref = "apache-commons-csv" }
+# Spring Modulith
+spring-modulith-starter-core = { group = "org.springframework.modulith", name = "spring-modulith-starter-core", version.ref = "spring-modulith" }
+spring-modulith-starter-jpa = { group = "org.springframework.modulith", name = "spring-modulith-starter-jpa", version.ref = "spring-modulith" }
+spring-modulith-events-api = { group = "org.springframework.modulith", name = "spring-modulith-events-api", version.ref = "spring-modulith" }
+spring-modulith-actuator = { group = "org.springframework.modulith", name = "spring-modulith-actuator", version.ref = "spring-modulith" }
+spring-modulith-observability = { group = "org.springframework.modulith", name = "spring-modulith-observability", version.ref = "spring-modulith" }
+spring-modulith-docs = { group = "org.springframework.modulith", name = "spring-modulith-docs", version.ref = "spring-modulith"}
 
 # Lombok
 lombok = { group = "org.projectlombok", name = "lombok", version.ref = "lombok" }
@@ -161,6 +171,7 @@ spring-security = [
 
 test-libs = [
     "spring-boot-starter-test",
+    "spring-modulith-starter-test",
     "flyway-spring-test",
     "jjwt-impl",
     "jjwt-jackson"

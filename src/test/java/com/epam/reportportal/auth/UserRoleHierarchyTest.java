@@ -18,6 +18,7 @@ package com.epam.reportportal.auth;
 
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
+import com.epam.reportportal.serviceapi.auth.UserRoleHierarchy;
 import java.util.Collection;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;

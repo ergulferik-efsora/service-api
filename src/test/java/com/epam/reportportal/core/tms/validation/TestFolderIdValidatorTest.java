@@ -1,9 +1,9 @@
-package com.epam.reportportal.core.tms.validation;
+package com.epam.reportportal.serviceapi.core.tms.validation;
 
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-import com.epam.reportportal.infrastructure.rules.exception.ReportPortalException;
+import com.epam.reportportal.serviceapi.infrastructure.rules.exception.ReportPortalException;
 import org.junit.jupiter.api.Test;
 
 public class TestFolderIdValidatorTest {

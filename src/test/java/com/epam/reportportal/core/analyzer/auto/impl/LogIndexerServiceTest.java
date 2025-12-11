@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.core.analyzer.auto.impl;
+package com.epam.reportportal.serviceapi.core.analyzer.auto.impl;
 
-import static com.epam.reportportal.infrastructure.persistence.entity.AnalyzeMode.ALL_LAUNCHES;
+import static com.epam.reportportal.serviceapi.infrastructure.persistence.entity.AnalyzeMode.ALL_LAUNCHES;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.mockito.Mockito.any;
 import static org.mockito.Mockito.doNothing;
@@ -26,27 +26,27 @@ import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
-import com.epam.reportportal.core.analyzer.auto.client.IndexerServiceClient;
-import com.epam.reportportal.core.analyzer.auto.impl.preparer.LaunchPreparerService;
-import com.epam.reportportal.core.analyzer.auto.indexer.BatchLogIndexer;
-import com.epam.reportportal.core.analyzer.auto.indexer.IndexerStatusCache;
-import com.epam.reportportal.infrastructure.persistence.dao.LaunchRepository;
-import com.epam.reportportal.infrastructure.persistence.dao.LogRepository;
-import com.epam.reportportal.infrastructure.persistence.dao.TestItemRepository;
-import com.epam.reportportal.infrastructure.persistence.entity.enums.LaunchModeEnum;
-import com.epam.reportportal.infrastructure.persistence.entity.enums.LogLevel;
-import com.epam.reportportal.infrastructure.persistence.entity.enums.TestItemIssueGroup;
-import com.epam.reportportal.infrastructure.persistence.entity.item.TestItem;
-import com.epam.reportportal.infrastructure.persistence.entity.item.TestItemResults;
-import com.epam.reportportal.infrastructure.persistence.entity.item.issue.IssueEntity;
-import com.epam.reportportal.infrastructure.persistence.entity.item.issue.IssueType;
-import com.epam.reportportal.infrastructure.persistence.entity.launch.Launch;
-import com.epam.reportportal.infrastructure.persistence.entity.log.Log;
-import com.epam.reportportal.model.analyzer.IndexRs;
-import com.epam.reportportal.model.analyzer.IndexRsIndex;
-import com.epam.reportportal.model.analyzer.IndexRsItem;
-import com.epam.reportportal.infrastructure.model.analyzer.IndexLaunch;
-import com.epam.reportportal.infrastructure.model.project.AnalyzerConfig;
+import com.epam.reportportal.serviceapi.core.analyzer.auto.client.IndexerServiceClient;
+import com.epam.reportportal.serviceapi.core.analyzer.auto.impl.preparer.LaunchPreparerService;
+import com.epam.reportportal.serviceapi.core.analyzer.auto.indexer.BatchLogIndexer;
+import com.epam.reportportal.serviceapi.core.analyzer.auto.indexer.IndexerStatusCache;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.LaunchRepository;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.LogRepository;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.TestItemRepository;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.enums.LaunchModeEnum;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.enums.LogLevel;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.enums.TestItemIssueGroup;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.item.TestItem;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.item.TestItemResults;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.item.issue.IssueEntity;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.item.issue.IssueType;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.launch.Launch;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.log.Log;
+import com.epam.reportportal.serviceapi.model.analyzer.IndexRs;
+import com.epam.reportportal.serviceapi.model.analyzer.IndexRsIndex;
+import com.epam.reportportal.serviceapi.model.analyzer.IndexRsItem;
+import com.epam.reportportal.serviceapi.infrastructure.model.analyzer.IndexLaunch;
+import com.epam.reportportal.serviceapi.infrastructure.model.project.AnalyzerConfig;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;

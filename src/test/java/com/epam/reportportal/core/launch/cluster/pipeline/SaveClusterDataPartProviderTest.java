@@ -14,20 +14,20 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.core.launch.cluster.pipeline;
+package com.epam.reportportal.serviceapi.core.launch.cluster.pipeline;
 
-import static com.epam.reportportal.core.launch.cluster.utils.ConfigProvider.getConfig;
+import static com.epam.reportportal.serviceapi.core.launch.cluster.utils.ConfigProvider.getConfig;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
-import com.epam.reportportal.core.analyzer.auto.client.model.cluster.ClusterData;
-import com.epam.reportportal.core.launch.cluster.CreateClusterHandler;
-import com.epam.reportportal.core.launch.cluster.config.GenerateClustersConfig;
-import com.epam.reportportal.core.launch.cluster.pipeline.data.ClusterDataProvider;
-import com.epam.reportportal.core.launch.cluster.pipeline.data.resolver.ClusterDataProviderResolver;
-import com.epam.reportportal.pipeline.PipelinePart;
+import com.epam.reportportal.serviceapi.core.analyzer.auto.client.model.cluster.ClusterData;
+import com.epam.reportportal.serviceapi.core.launch.cluster.CreateClusterHandler;
+import com.epam.reportportal.serviceapi.core.launch.cluster.config.GenerateClustersConfig;
+import com.epam.reportportal.serviceapi.core.launch.cluster.pipeline.data.ClusterDataProvider;
+import com.epam.reportportal.serviceapi.core.launch.cluster.pipeline.data.resolver.ClusterDataProviderResolver;
+import com.epam.reportportal.serviceapi.pipeline.PipelinePart;
 import java.util.Optional;
 import org.junit.jupiter.api.Test;
 

@@ -1,4 +1,4 @@
-package com.epam.reportportal.core.events.handler.project;
+package com.epam.reportportal.serviceapi.core.events.handler.project;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
@@ -6,14 +6,14 @@ import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.verifyNoInteractions;
 import static org.mockito.Mockito.when;
 
-import com.epam.reportportal.core.logtype.DefaultLogTypeProvider;
-import com.epam.reportportal.infrastructure.persistence.dao.LogTypeRepository;
-import com.epam.reportportal.infrastructure.persistence.entity.activity.Activity;
-import com.epam.reportportal.infrastructure.persistence.entity.activity.EventAction;
-import com.epam.reportportal.infrastructure.persistence.entity.activity.EventObject;
-import com.epam.reportportal.infrastructure.persistence.entity.activity.EventPriority;
-import com.epam.reportportal.infrastructure.persistence.entity.activity.EventSubject;
-import com.epam.reportportal.infrastructure.persistence.entity.log.ProjectLogType;
+import com.epam.reportportal.serviceapi.core.logtype.DefaultLogTypeProvider;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.LogTypeRepository;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.activity.Activity;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.activity.EventAction;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.activity.EventObject;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.activity.EventPriority;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.activity.EventSubject;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.log.ProjectLogType;
 import java.time.Instant;
 import java.util.List;
 import org.junit.jupiter.api.Test;

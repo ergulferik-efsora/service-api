@@ -14,12 +14,13 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.infrastructure.persistence.filesystem;
+package com.epam.reportportal.serviceapi.infrastructure.persistence.filesystem;
 
 import static org.mockito.Mockito.when;
 
-import com.epam.reportportal.infrastructure.persistence.entity.attachment.AttachmentMetaInfo;
-import com.epam.reportportal.infrastructure.persistence.util.DateTimeProvider;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.attachment.AttachmentMetaInfo;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.filesystem.FilePathGenerator;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.util.DateTimeProvider;
 import java.io.File;
 import java.time.LocalDateTime;
 import org.assertj.core.api.Assertions;

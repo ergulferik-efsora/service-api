@@ -1,13 +1,14 @@
-package com.epam.reportportal.infrastructure.persistence.dao;
+package com.epam.reportportal.serviceapi.infrastructure.persistence.dao;
 
-import static com.epam.reportportal.infrastructure.persistence.commons.querygen.constant.ItemAttributeConstant.CRITERIA_COMPOSITE_ATTRIBUTE;
+import static com.epam.reportportal.serviceapi.infrastructure.persistence.commons.querygen.constant.ItemAttributeConstant.CRITERIA_COMPOSITE_ATTRIBUTE;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.LaunchRepository;
 import com.epam.reportportal.ws.BaseMvcTest;
-import com.epam.reportportal.infrastructure.persistence.commons.querygen.Condition;
-import com.epam.reportportal.infrastructure.persistence.commons.querygen.Filter;
-import com.epam.reportportal.infrastructure.persistence.commons.querygen.FilterCondition;
-import com.epam.reportportal.infrastructure.persistence.entity.launch.Launch;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.commons.querygen.Condition;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.commons.querygen.Filter;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.commons.querygen.FilterCondition;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.launch.Launch;
 import java.util.Arrays;
 import java.util.List;
 import org.junit.jupiter.api.Test;

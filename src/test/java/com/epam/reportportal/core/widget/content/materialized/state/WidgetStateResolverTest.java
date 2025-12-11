@@ -1,8 +1,8 @@
-package com.epam.reportportal.core.widget.content.materialized.state;
+package com.epam.reportportal.serviceapi.core.widget.content.materialized.state;
 
-import com.epam.reportportal.infrastructure.persistence.entity.widget.WidgetOptions;
-import com.epam.reportportal.infrastructure.persistence.entity.widget.WidgetState;
-import com.epam.reportportal.infrastructure.rules.exception.ReportPortalException;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.widget.WidgetOptions;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.widget.WidgetState;
+import com.epam.reportportal.serviceapi.infrastructure.rules.exception.ReportPortalException;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -13,7 +13,7 @@ import java.util.Arrays;
 import java.util.Map;
 import java.util.stream.Stream;
 
-import static com.epam.reportportal.core.widget.content.updater.MaterializedWidgetStateUpdater.STATE;
+import static com.epam.reportportal.serviceapi.core.widget.content.updater.MaterializedWidgetStateUpdater.STATE;
 
 /**
  * @author <a href="mailto:ivan_budayeu@epam.com">Ivan Budayeu</a>

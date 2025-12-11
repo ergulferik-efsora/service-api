@@ -14,25 +14,25 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.core.item.impl.provider.impl.mock;
+package com.epam.reportportal.serviceapi.core.item.impl.provider.impl.mock;
 
 import static java.util.stream.Collectors.groupingBy;
 
-import com.epam.reportportal.infrastructure.persistence.commons.ReportPortalUser;
-import com.epam.reportportal.infrastructure.persistence.commons.querygen.Queryable;
-import com.epam.reportportal.infrastructure.persistence.entity.ItemAttribute;
-import com.epam.reportportal.infrastructure.persistence.entity.enums.StatusEnum;
-import com.epam.reportportal.infrastructure.persistence.entity.enums.TestItemIssueGroup;
-import com.epam.reportportal.infrastructure.persistence.entity.enums.TestItemTypeEnum;
-import com.epam.reportportal.infrastructure.persistence.entity.item.Parameter;
-import com.epam.reportportal.infrastructure.persistence.entity.item.TestItem;
-import com.epam.reportportal.infrastructure.persistence.entity.item.TestItemResults;
-import com.epam.reportportal.infrastructure.persistence.entity.item.issue.IssueEntity;
-import com.epam.reportportal.infrastructure.persistence.entity.item.issue.IssueGroup;
-import com.epam.reportportal.infrastructure.persistence.entity.item.issue.IssueType;
-import com.epam.reportportal.infrastructure.persistence.entity.organization.MembershipDetails;
-import com.epam.reportportal.infrastructure.persistence.entity.statistics.Statistics;
-import com.epam.reportportal.infrastructure.persistence.entity.statistics.StatisticsField;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.commons.ReportPortalUser;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.commons.querygen.Queryable;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.ItemAttribute;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.enums.StatusEnum;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.enums.TestItemIssueGroup;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.enums.TestItemTypeEnum;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.item.Parameter;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.item.TestItem;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.item.TestItemResults;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.item.issue.IssueEntity;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.item.issue.IssueGroup;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.item.issue.IssueType;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.organization.MembershipDetails;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.statistics.Statistics;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.statistics.StatisticsField;
 import com.google.common.base.Suppliers;
 import java.time.Instant;
 import java.util.LinkedHashMap;

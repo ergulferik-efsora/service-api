@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.core.events.handler.item;
+package com.epam.reportportal.serviceapi.core.events.handler.item;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
@@ -23,10 +23,10 @@ import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 
-import com.epam.reportportal.core.events.activity.item.IssueResolvedEvent;
-import com.epam.reportportal.core.launch.cluster.ClusterGenerator;
-import com.epam.reportportal.core.launch.cluster.config.GenerateClustersConfig;
-import com.epam.reportportal.infrastructure.persistence.entity.enums.ProjectAttributeEnum;
+import com.epam.reportportal.serviceapi.core.events.activity.item.IssueResolvedEvent;
+import com.epam.reportportal.serviceapi.core.launch.cluster.ClusterGenerator;
+import com.epam.reportportal.serviceapi.core.launch.cluster.config.GenerateClustersConfig;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.enums.ProjectAttributeEnum;
 import com.google.common.collect.ImmutableMap;
 import java.util.Map;
 import org.junit.jupiter.api.Test;

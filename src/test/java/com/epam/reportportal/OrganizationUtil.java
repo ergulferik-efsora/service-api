@@ -16,8 +16,8 @@
 
 package com.epam.reportportal;
 
-import com.epam.reportportal.infrastructure.persistence.entity.enums.OrganizationType;
-import com.epam.reportportal.infrastructure.persistence.entity.organization.Organization;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.enums.OrganizationType;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.organization.Organization;
 import java.time.Instant;
 
 /**

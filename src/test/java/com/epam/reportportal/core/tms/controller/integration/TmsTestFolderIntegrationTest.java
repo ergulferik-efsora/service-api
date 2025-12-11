@@ -1,4 +1,4 @@
-package com.epam.reportportal.core.tms.controller.integration;
+package com.epam.reportportal.serviceapi.core.tms.controller.integration;
 
 import static org.hamcrest.Matchers.containsString;
 import static org.hamcrest.Matchers.greaterThanOrEqualTo;
@@ -18,14 +18,14 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
-import com.epam.reportportal.core.tms.dto.DuplicateTmsTestFolderRS;
-import com.epam.reportportal.core.tms.dto.NewTestFolderRQ;
-import com.epam.reportportal.core.tms.dto.TmsTestFolderExportFileType;
-import com.epam.reportportal.core.tms.dto.TmsTestFolderRQ;
-import com.epam.reportportal.core.tms.dto.TmsTestFolderRS;
-import com.epam.reportportal.infrastructure.persistence.dao.tms.TmsTestCaseRepository;
-import com.epam.reportportal.infrastructure.persistence.dao.tms.TmsTestFolderRepository;
-import com.epam.reportportal.infrastructure.persistence.entity.tms.TmsTestFolder;
+import com.epam.reportportal.serviceapi.core.tms.dto.DuplicateTmsTestFolderRS;
+import com.epam.reportportal.serviceapi.core.tms.dto.NewTestFolderRQ;
+import com.epam.reportportal.serviceapi.core.tms.dto.TmsTestFolderExportFileType;
+import com.epam.reportportal.serviceapi.core.tms.dto.TmsTestFolderRQ;
+import com.epam.reportportal.serviceapi.core.tms.dto.TmsTestFolderRS;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.tms.TmsTestCaseRepository;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.tms.TmsTestFolderRepository;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.tms.TmsTestFolder;
 import com.epam.reportportal.ws.BaseMvcTest;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import jakarta.persistence.EntityManager;

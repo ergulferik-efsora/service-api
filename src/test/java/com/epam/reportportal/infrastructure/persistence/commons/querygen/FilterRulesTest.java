@@ -14,12 +14,15 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.infrastructure.persistence.commons.querygen;
+package com.epam.reportportal.serviceapi.infrastructure.persistence.commons.querygen;
 
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-import com.epam.reportportal.infrastructure.persistence.entity.enums.LogLevel;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.commons.querygen.CriteriaHolder;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.commons.querygen.CriteriaHolderBuilder;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.commons.querygen.FilterRules;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.enums.LogLevel;
 import java.util.Date;
 import java.util.List;
 import org.junit.jupiter.api.Test;

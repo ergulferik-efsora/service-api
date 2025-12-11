@@ -1,9 +1,10 @@
-package com.epam.reportportal.infrastructure.persistence.dao.organization;
+package com.epam.reportportal.serviceapi.infrastructure.persistence.dao.organization;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.organization.OrganizationSettingsRepository;
 import com.epam.reportportal.ws.BaseMvcTest;
-import com.epam.reportportal.infrastructure.persistence.entity.organization.OrganizationSetting;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.organization.OrganizationSetting;
 import java.util.stream.Collectors;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;

@@ -1,4 +1,4 @@
-package com.epam.reportportal.core.project.validator.attribute;
+package com.epam.reportportal.serviceapi.core.project.validator.attribute;
 
 import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 import static org.junit.jupiter.api.Assertions.assertThrows;
@@ -7,9 +7,9 @@ import static org.mockito.ArgumentMatchers.anyMap;
 import static org.mockito.Mockito.lenient;
 import static org.mockito.Mockito.verify;
 
-import com.epam.reportportal.infrastructure.rules.exception.ReportPortalException;
-import com.epam.reportportal.infrastructure.persistence.entity.AnalyzeMode;
-import com.epam.reportportal.infrastructure.persistence.entity.enums.ProjectAttributeEnum;
+import com.epam.reportportal.serviceapi.infrastructure.rules.exception.ReportPortalException;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.AnalyzeMode;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.enums.ProjectAttributeEnum;
 import java.util.HashMap;
 import java.util.Map;
 import org.junit.jupiter.api.BeforeEach;

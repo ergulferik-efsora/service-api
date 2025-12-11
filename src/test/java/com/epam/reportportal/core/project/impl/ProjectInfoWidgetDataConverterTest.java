@@ -14,23 +14,23 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.core.project.impl;
+package com.epam.reportportal.serviceapi.core.project.impl;
 
-import static com.epam.reportportal.infrastructure.persistence.dao.constant.WidgetContentRepositoryConstants.DEFECTS_AUTOMATION_BUG_TOTAL;
-import static com.epam.reportportal.infrastructure.persistence.dao.constant.WidgetContentRepositoryConstants.DEFECTS_PRODUCT_BUG_TOTAL;
-import static com.epam.reportportal.infrastructure.persistence.dao.constant.WidgetContentRepositoryConstants.DEFECTS_SYSTEM_ISSUE_TOTAL;
-import static com.epam.reportportal.infrastructure.persistence.dao.constant.WidgetContentRepositoryConstants.DEFECTS_TO_INVESTIGATE_TOTAL;
-import static com.epam.reportportal.infrastructure.persistence.dao.constant.WidgetContentRepositoryConstants.EXECUTIONS_FAILED;
-import static com.epam.reportportal.infrastructure.persistence.dao.constant.WidgetContentRepositoryConstants.EXECUTIONS_PASSED;
-import static com.epam.reportportal.infrastructure.persistence.dao.constant.WidgetContentRepositoryConstants.EXECUTIONS_SKIPPED;
-import static com.epam.reportportal.infrastructure.persistence.dao.constant.WidgetContentRepositoryConstants.EXECUTIONS_TOTAL;
+import static com.epam.reportportal.serviceapi.infrastructure.persistence.dao.constant.WidgetContentRepositoryConstants.DEFECTS_AUTOMATION_BUG_TOTAL;
+import static com.epam.reportportal.serviceapi.infrastructure.persistence.dao.constant.WidgetContentRepositoryConstants.DEFECTS_PRODUCT_BUG_TOTAL;
+import static com.epam.reportportal.serviceapi.infrastructure.persistence.dao.constant.WidgetContentRepositoryConstants.DEFECTS_SYSTEM_ISSUE_TOTAL;
+import static com.epam.reportportal.serviceapi.infrastructure.persistence.dao.constant.WidgetContentRepositoryConstants.DEFECTS_TO_INVESTIGATE_TOTAL;
+import static com.epam.reportportal.serviceapi.infrastructure.persistence.dao.constant.WidgetContentRepositoryConstants.EXECUTIONS_FAILED;
+import static com.epam.reportportal.serviceapi.infrastructure.persistence.dao.constant.WidgetContentRepositoryConstants.EXECUTIONS_PASSED;
+import static com.epam.reportportal.serviceapi.infrastructure.persistence.dao.constant.WidgetContentRepositoryConstants.EXECUTIONS_SKIPPED;
+import static com.epam.reportportal.serviceapi.infrastructure.persistence.dao.constant.WidgetContentRepositoryConstants.EXECUTIONS_TOTAL;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import com.epam.reportportal.infrastructure.persistence.entity.enums.InfoInterval;
-import com.epam.reportportal.infrastructure.persistence.entity.launch.Launch;
-import com.epam.reportportal.infrastructure.persistence.entity.statistics.Statistics;
-import com.epam.reportportal.infrastructure.persistence.entity.statistics.StatisticsField;
-import com.epam.reportportal.model.widget.ChartObject;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.enums.InfoInterval;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.launch.Launch;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.statistics.Statistics;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.statistics.StatisticsField;
+import com.epam.reportportal.serviceapi.model.widget.ChartObject;
 import com.google.common.collect.ImmutableMap;
 import com.google.common.collect.Sets;
 import java.time.DayOfWeek;

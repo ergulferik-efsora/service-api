@@ -14,20 +14,20 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.core.events.activity;
+package com.epam.reportportal.serviceapi.core.events.activity;
 
 import static com.epam.reportportal.OrganizationUtil.TEST_PROJECT_KEY;
-import static com.epam.reportportal.core.events.activity.ActivityTestHelper.checkActivity;
-import static com.epam.reportportal.core.events.activity.util.ActivityDetailsUtil.NAME;
+import static com.epam.reportportal.serviceapi.core.events.activity.ActivityTestHelper.checkActivity;
+import static com.epam.reportportal.serviceapi.core.events.activity.util.ActivityDetailsUtil.NAME;
 
-import com.epam.reportportal.infrastructure.persistence.entity.activity.Activity;
-import com.epam.reportportal.infrastructure.persistence.entity.activity.ActivityDetails;
-import com.epam.reportportal.infrastructure.persistence.entity.activity.EventAction;
-import com.epam.reportportal.infrastructure.persistence.entity.activity.EventObject;
-import com.epam.reportportal.infrastructure.persistence.entity.activity.EventPriority;
-import com.epam.reportportal.infrastructure.persistence.entity.activity.EventSubject;
-import com.epam.reportportal.infrastructure.persistence.entity.activity.HistoryField;
-import com.epam.reportportal.model.activity.IntegrationActivityResource;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.activity.Activity;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.activity.ActivityDetails;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.activity.EventAction;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.activity.EventObject;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.activity.EventPriority;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.activity.EventSubject;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.activity.HistoryField;
+import com.epam.reportportal.serviceapi.model.activity.IntegrationActivityResource;
 import java.time.Instant;
 import org.junit.jupiter.api.Test;
 

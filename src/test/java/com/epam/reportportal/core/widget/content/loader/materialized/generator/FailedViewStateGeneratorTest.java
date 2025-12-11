@@ -14,21 +14,21 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.core.widget.content.loader.materialized.generator;
+package com.epam.reportportal.serviceapi.core.widget.content.loader.materialized.generator;
 
-import static com.epam.reportportal.core.widget.content.updater.MaterializedWidgetStateUpdater.STATE;
+import static com.epam.reportportal.serviceapi.core.widget.content.updater.MaterializedWidgetStateUpdater.STATE;
 import static org.mockito.Mockito.doThrow;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 
-import com.epam.reportportal.infrastructure.persistence.commons.querygen.Filter;
-import com.epam.reportportal.infrastructure.persistence.commons.querygen.FilterCondition;
-import com.epam.reportportal.core.widget.util.WidgetOptionUtil;
-import com.epam.reportportal.infrastructure.persistence.dao.WidgetRepository;
-import com.epam.reportportal.infrastructure.persistence.entity.widget.Widget;
-import com.epam.reportportal.infrastructure.persistence.entity.widget.WidgetState;
-import com.epam.reportportal.ws.converter.builders.WidgetBuilder;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.commons.querygen.Filter;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.commons.querygen.FilterCondition;
+import com.epam.reportportal.serviceapi.core.widget.util.WidgetOptionUtil;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.WidgetRepository;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.widget.Widget;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.widget.WidgetState;
+import com.epam.reportportal.serviceapi.ws.converter.builders.WidgetBuilder;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.mockito.ArgumentCaptor;

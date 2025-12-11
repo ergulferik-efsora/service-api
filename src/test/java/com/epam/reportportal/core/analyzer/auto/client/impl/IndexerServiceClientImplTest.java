@@ -1,22 +1,22 @@
-package com.epam.reportportal.core.analyzer.auto.client.impl;
+package com.epam.reportportal.serviceapi.core.analyzer.auto.client.impl;
 
-import static com.epam.reportportal.core.analyzer.auto.client.impl.AnalyzerUtils.ANALYZER_INDEX;
-import static com.epam.reportportal.core.analyzer.auto.client.impl.AnalyzerUtils.ANALYZER_PRIORITY;
-import static com.epam.reportportal.core.analyzer.auto.client.impl.IndexerServiceClientImpl.DEFECT_UPDATE_ROUTE;
-import static com.epam.reportportal.core.analyzer.auto.client.impl.IndexerServiceClientImpl.DELETE_ROUTE;
-import static com.epam.reportportal.core.analyzer.auto.client.impl.IndexerServiceClientImpl.ITEM_REMOVE_ROUTE;
-import static com.epam.reportportal.core.analyzer.auto.client.impl.IndexerServiceClientImpl.LAUNCH_REMOVE_ROUTE;
-import static com.epam.reportportal.core.analyzer.auto.impl.AnalyzerStatusCache.AUTO_ANALYZER_KEY;
+import static com.epam.reportportal.serviceapi.core.analyzer.auto.client.impl.AnalyzerUtils.ANALYZER_INDEX;
+import static com.epam.reportportal.serviceapi.core.analyzer.auto.client.impl.AnalyzerUtils.ANALYZER_PRIORITY;
+import static com.epam.reportportal.serviceapi.core.analyzer.auto.client.impl.IndexerServiceClientImpl.DEFECT_UPDATE_ROUTE;
+import static com.epam.reportportal.serviceapi.core.analyzer.auto.client.impl.IndexerServiceClientImpl.DELETE_ROUTE;
+import static com.epam.reportportal.serviceapi.core.analyzer.auto.client.impl.IndexerServiceClientImpl.ITEM_REMOVE_ROUTE;
+import static com.epam.reportportal.serviceapi.core.analyzer.auto.client.impl.IndexerServiceClientImpl.LAUNCH_REMOVE_ROUTE;
+import static com.epam.reportportal.serviceapi.core.analyzer.auto.impl.AnalyzerStatusCache.AUTO_ANALYZER_KEY;
 import static org.mockito.Mockito.doNothing;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 import static org.mockito.internal.verification.VerificationModeFactory.times;
 
-import com.epam.reportportal.core.analyzer.auto.client.RabbitMqManagementClient;
-import com.epam.reportportal.core.analyzer.auto.client.model.IndexDefectsUpdate;
-import com.epam.reportportal.core.analyzer.auto.client.model.IndexItemsRemove;
-import com.epam.reportportal.core.analyzer.auto.client.model.IndexLaunchRemove;
+import com.epam.reportportal.serviceapi.core.analyzer.auto.client.RabbitMqManagementClient;
+import com.epam.reportportal.serviceapi.core.analyzer.auto.client.model.IndexDefectsUpdate;
+import com.epam.reportportal.serviceapi.core.analyzer.auto.client.model.IndexItemsRemove;
+import com.epam.reportportal.serviceapi.core.analyzer.auto.client.model.IndexLaunchRemove;
 import com.rabbitmq.http.client.domain.ExchangeInfo;
 import java.util.HashMap;
 import java.util.List;

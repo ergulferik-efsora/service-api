@@ -18,8 +18,8 @@ package com.epam.reportportal.rules;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import com.epam.reportportal.infrastructure.rules.exception.ErrorRS;
-import com.epam.reportportal.infrastructure.rules.exception.ErrorType;
+import com.epam.reportportal.serviceapi.infrastructure.rules.exception.ErrorRS;
+import com.epam.reportportal.serviceapi.infrastructure.rules.exception.ErrorType;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;

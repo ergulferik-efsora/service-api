@@ -19,7 +19,8 @@ package com.epam.reportportal.util;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-import com.epam.reportportal.core.configs.JsonSchemaValidatorConfig;
+import com.epam.reportportal.serviceapi.core.configs.JsonSchemaValidatorConfig;
+import com.epam.reportportal.serviceapi.util.JsonSchemaValidator;
 import com.networknt.schema.ValidationMessage;
 import java.io.IOException;
 import java.util.Set;

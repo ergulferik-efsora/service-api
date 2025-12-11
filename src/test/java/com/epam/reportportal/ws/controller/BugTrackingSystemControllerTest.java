@@ -16,7 +16,7 @@
 
 package com.epam.reportportal.ws.controller;
 
-import static com.epam.reportportal.infrastructure.rules.exception.ErrorType.INCORRECT_REQUEST;
+import static com.epam.reportportal.serviceapi.infrastructure.rules.exception.ErrorType.INCORRECT_REQUEST;
 import static com.epam.reportportal.ws.controller.constants.ValidationTestsConstants.INCORRECT_REQUEST_MESSAGE;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.ArgumentMatchers.any;
@@ -26,15 +26,15 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.put;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
-import com.epam.reportportal.extension.bugtracking.BtsExtension;
-import com.epam.reportportal.infrastructure.model.externalsystem.AllowedValue;
-import com.epam.reportportal.infrastructure.model.externalsystem.PostFormField;
-import com.epam.reportportal.infrastructure.model.externalsystem.PostTicketRQ;
-import com.epam.reportportal.infrastructure.model.externalsystem.Ticket;
-import com.epam.reportportal.infrastructure.persistence.entity.integration.Integration;
-import com.epam.reportportal.infrastructure.rules.exception.ErrorRS;
-import com.epam.reportportal.model.externalsystem.BtsConnectionTestRQ;
-import com.epam.reportportal.model.integration.IntegrationRQ;
+import com.epam.reportportal.serviceapi.extension.bugtracking.BtsExtension;
+import com.epam.reportportal.serviceapi.infrastructure.model.externalsystem.AllowedValue;
+import com.epam.reportportal.serviceapi.infrastructure.model.externalsystem.PostFormField;
+import com.epam.reportportal.serviceapi.infrastructure.model.externalsystem.PostTicketRQ;
+import com.epam.reportportal.serviceapi.infrastructure.model.externalsystem.Ticket;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.integration.Integration;
+import com.epam.reportportal.serviceapi.infrastructure.rules.exception.ErrorRS;
+import com.epam.reportportal.serviceapi.model.externalsystem.BtsConnectionTestRQ;
+import com.epam.reportportal.serviceapi.model.integration.IntegrationRQ;
 import com.epam.reportportal.ws.BaseMvcTest;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.common.collect.Lists;

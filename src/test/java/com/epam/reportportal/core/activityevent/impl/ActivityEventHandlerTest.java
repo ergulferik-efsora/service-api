@@ -14,22 +14,20 @@
  *  limitations under the License.
  */
 
-package com.epam.reportportal.core.activityevent.impl;
+package com.epam.reportportal.serviceapi.core.activityevent.impl;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
-import com.epam.reportportal.infrastructure.persistence.commons.querygen.Queryable;
-import com.epam.reportportal.infrastructure.persistence.dao.ActivityRepository;
-import com.epam.reportportal.infrastructure.persistence.entity.activity.Activity;
-import com.epam.reportportal.infrastructure.persistence.entity.activity.ActivityDetails;
-import com.epam.reportportal.infrastructure.persistence.entity.activity.EventAction;
-import com.epam.reportportal.infrastructure.persistence.entity.activity.EventObject;
-import com.epam.reportportal.infrastructure.persistence.entity.activity.EventPriority;
-import com.epam.reportportal.infrastructure.persistence.entity.activity.EventSubject;
-import com.epam.reportportal.model.ActivityEventResource;
-import com.epam.reportportal.model.PagedResponse;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.commons.querygen.Queryable;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.ActivityRepository;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.activity.Activity;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.activity.ActivityDetails;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.activity.EventAction;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.activity.EventObject;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.activity.EventPriority;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.activity.EventSubject;
 import java.time.LocalDateTime;
 import java.time.ZoneOffset;
 import java.util.List;

@@ -21,7 +21,7 @@
 
 package com.epam.reportportal.commons;
 
-import static com.epam.reportportal.infrastructure.commons.Safe.safe;
+import static com.epam.reportportal.serviceapi.infrastructure.commons.Safe.safe;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.junit.jupiter.api.Assertions.fail;

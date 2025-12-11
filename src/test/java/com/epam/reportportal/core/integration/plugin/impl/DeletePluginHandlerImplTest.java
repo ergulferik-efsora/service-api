@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.core.integration.plugin.impl;
+package com.epam.reportportal.serviceapi.core.integration.plugin.impl;
 
-import com.epam.reportportal.infrastructure.persistence.commons.ReportPortalUser;
-import com.epam.reportportal.infrastructure.persistence.dao.IntegrationTypeRepository;
-import com.epam.reportportal.infrastructure.persistence.entity.enums.ReservedIntegrationTypeEnum;
-import com.epam.reportportal.infrastructure.persistence.entity.integration.IntegrationType;
-import com.epam.reportportal.infrastructure.rules.exception.ReportPortalException;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.commons.ReportPortalUser;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.IntegrationTypeRepository;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.enums.ReservedIntegrationTypeEnum;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.integration.IntegrationType;
+import com.epam.reportportal.serviceapi.infrastructure.rules.exception.ReportPortalException;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;

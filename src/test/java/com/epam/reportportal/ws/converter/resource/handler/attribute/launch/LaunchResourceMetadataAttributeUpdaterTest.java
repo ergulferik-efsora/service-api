@@ -16,10 +16,11 @@
 
 package com.epam.reportportal.ws.converter.resource.handler.attribute.launch;
 
-import static com.epam.reportportal.core.launch.cluster.pipeline.SaveLastRunAttributePartProvider.RP_CLUSTER_LAST_RUN_KEY;
+import static com.epam.reportportal.serviceapi.core.launch.cluster.pipeline.SaveLastRunAttributePartProvider.RP_CLUSTER_LAST_RUN_KEY;
 
-import com.epam.reportportal.infrastructure.persistence.entity.ItemAttribute;
-import com.epam.reportportal.reporting.LaunchResource;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.ItemAttribute;
+import com.epam.reportportal.serviceapi.reporting.LaunchResource;
+import com.epam.reportportal.serviceapi.ws.converter.resource.handler.attribute.launch.LaunchResourceMetadataAttributeUpdater;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;

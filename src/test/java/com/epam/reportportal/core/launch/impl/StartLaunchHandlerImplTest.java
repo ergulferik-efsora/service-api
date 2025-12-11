@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.core.launch.impl;
+package com.epam.reportportal.serviceapi.core.launch.impl;
 
 import static com.epam.reportportal.ReportPortalUserUtil.getRpUser;
-import static com.epam.reportportal.infrastructure.persistence.util.MembershipUtils.rpUserToMembership;
+import static com.epam.reportportal.serviceapi.infrastructure.persistence.util.MembershipUtils.rpUserToMembership;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertThrows;
@@ -26,21 +26,21 @@ import static org.mockito.Mockito.doAnswer;
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 
-import com.epam.reportportal.infrastructure.rules.exception.ReportPortalException;
-import com.epam.reportportal.infrastructure.persistence.commons.ReportPortalUser;
-import com.epam.reportportal.core.events.MessageBus;
-import com.epam.reportportal.core.launch.attribute.LaunchAttributeHandlerService;
-import com.epam.reportportal.core.launch.rerun.RerunHandler;
-import com.epam.reportportal.infrastructure.persistence.dao.LaunchRepository;
-import com.epam.reportportal.infrastructure.persistence.dao.UserRepository;
-import com.epam.reportportal.infrastructure.persistence.entity.launch.Launch;
-import com.epam.reportportal.infrastructure.persistence.entity.organization.OrganizationRole;
-import com.epam.reportportal.infrastructure.persistence.entity.project.ProjectRole;
-import com.epam.reportportal.infrastructure.persistence.entity.user.UserRole;
-import com.epam.reportportal.ws.converter.builders.LaunchBuilder;
-import com.epam.reportportal.reporting.Mode;
-import com.epam.reportportal.reporting.StartLaunchRQ;
-import com.epam.reportportal.reporting.StartLaunchRS;
+import com.epam.reportportal.serviceapi.infrastructure.rules.exception.ReportPortalException;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.commons.ReportPortalUser;
+import com.epam.reportportal.serviceapi.core.events.MessageBus;
+import com.epam.reportportal.serviceapi.core.launch.attribute.LaunchAttributeHandlerService;
+import com.epam.reportportal.serviceapi.core.launch.rerun.RerunHandler;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.LaunchRepository;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.UserRepository;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.launch.Launch;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.organization.OrganizationRole;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.project.ProjectRole;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.user.UserRole;
+import com.epam.reportportal.serviceapi.ws.converter.builders.LaunchBuilder;
+import com.epam.reportportal.serviceapi.reporting.Mode;
+import com.epam.reportportal.serviceapi.reporting.StartLaunchRQ;
+import com.epam.reportportal.serviceapi.reporting.StartLaunchRS;
 import java.time.Instant;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;

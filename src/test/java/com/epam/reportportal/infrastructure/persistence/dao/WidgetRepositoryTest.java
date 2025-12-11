@@ -14,20 +14,21 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.infrastructure.persistence.dao;
+package com.epam.reportportal.serviceapi.infrastructure.persistence.dao;
 
-import static com.epam.reportportal.infrastructure.persistence.commons.querygen.constant.GeneralCriteriaConstant.CRITERIA_ID;
+import static com.epam.reportportal.serviceapi.infrastructure.persistence.commons.querygen.constant.GeneralCriteriaConstant.CRITERIA_ID;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.WidgetRepository;
 import com.epam.reportportal.ws.BaseMvcTest;
-import com.epam.reportportal.infrastructure.persistence.commons.querygen.Condition;
-import com.epam.reportportal.infrastructure.persistence.commons.querygen.Filter;
-import com.epam.reportportal.infrastructure.persistence.commons.querygen.FilterCondition;
-import com.epam.reportportal.infrastructure.persistence.entity.widget.Widget;
-import com.epam.reportportal.infrastructure.persistence.entity.widget.WidgetType;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.commons.querygen.Condition;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.commons.querygen.Filter;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.commons.querygen.FilterCondition;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.widget.Widget;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.widget.WidgetType;
 import com.google.common.collect.Lists;
 import java.util.Collections;
 import java.util.List;

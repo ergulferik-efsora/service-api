@@ -23,11 +23,11 @@ import static org.mockito.ArgumentMatchers.argThat;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
-import com.epam.reportportal.infrastructure.rules.exception.ReportPortalException;
-import com.epam.reportportal.core.integration.plugin.strategy.JsonPluginUploader;
-import com.epam.reportportal.infrastructure.persistence.dao.IntegrationTypeRepository;
-import com.epam.reportportal.infrastructure.persistence.entity.integration.IntegrationType;
-import com.epam.reportportal.util.JsonSchemaValidator;
+import com.epam.reportportal.serviceapi.infrastructure.rules.exception.ReportPortalException;
+import com.epam.reportportal.serviceapi.core.integration.plugin.strategy.JsonPluginUploader;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.IntegrationTypeRepository;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.integration.IntegrationType;
+import com.epam.reportportal.serviceapi.util.JsonSchemaValidator;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import java.io.ByteArrayInputStream;

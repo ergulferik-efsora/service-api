@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.reporting.deserializers;
+package com.epam.reportportal.serviceapi.reporting.deserializers;
 
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
-import com.epam.reportportal.reporting.databind.MultiFormatDateDeserializer;
+import com.epam.reportportal.serviceapi.reporting.databind.MultiFormatDateDeserializer;
 import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.databind.DeserializationContext;
 import java.io.IOException;

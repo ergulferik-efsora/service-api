@@ -20,7 +20,7 @@ import static org.apache.commons.lang3.StringUtils.EMPTY;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.Is.is;
 
-import com.epam.reportportal.infrastructure.annotations.NotBlankWithSize;
+import com.epam.reportportal.serviceapi.infrastructure.annotations.NotBlankWithSize;
 import jakarta.validation.ConstraintViolation;
 import jakarta.validation.Validation;
 import jakarta.validation.Validator;

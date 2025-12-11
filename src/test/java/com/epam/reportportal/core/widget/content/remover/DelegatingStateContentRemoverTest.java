@@ -14,19 +14,19 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.core.widget.content.remover;
+package com.epam.reportportal.serviceapi.core.widget.content.remover;
 
-import static com.epam.reportportal.infrastructure.persistence.entity.widget.WidgetType.COMPONENT_HEALTH_CHECK;
+import static com.epam.reportportal.serviceapi.infrastructure.persistence.entity.widget.WidgetType.COMPONENT_HEALTH_CHECK;
 import static org.mockito.Mockito.any;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
-import com.epam.reportportal.core.widget.content.materialized.state.WidgetStateResolver;
-import com.epam.reportportal.infrastructure.persistence.entity.widget.Widget;
-import com.epam.reportportal.infrastructure.persistence.entity.widget.WidgetOptions;
-import com.epam.reportportal.infrastructure.persistence.entity.widget.WidgetState;
+import com.epam.reportportal.serviceapi.core.widget.content.materialized.state.WidgetStateResolver;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.widget.Widget;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.widget.WidgetOptions;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.widget.WidgetState;
 import java.util.Map;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;

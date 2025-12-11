@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.infrastructure.rules.validation;
+package com.epam.reportportal.serviceapi.infrastructure.rules.validation;
 
-import static com.epam.reportportal.infrastructure.rules.commons.validation.Suppliers.trimMessage;
+import static com.epam.reportportal.serviceapi.infrastructure.rules.commons.validation.Suppliers.trimMessage;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import com.epam.reportportal.infrastructure.rules.commons.validation.Suppliers;
+import com.epam.reportportal.serviceapi.infrastructure.rules.commons.validation.Suppliers;
 import org.hamcrest.Matchers;
 import org.junit.jupiter.api.Test;
 

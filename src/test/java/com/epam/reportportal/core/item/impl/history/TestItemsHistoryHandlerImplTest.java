@@ -14,23 +14,23 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.core.item.impl.history;
+package com.epam.reportportal.serviceapi.core.item.impl.history;
 
-import static com.epam.reportportal.infrastructure.persistence.commons.querygen.constant.GeneralCriteriaConstant.CRITERIA_ID;
-import static com.epam.reportportal.infrastructure.persistence.util.MembershipUtils.rpUserToMembership;
+import static com.epam.reportportal.serviceapi.infrastructure.persistence.commons.querygen.constant.GeneralCriteriaConstant.CRITERIA_ID;
+import static com.epam.reportportal.serviceapi.infrastructure.persistence.util.MembershipUtils.rpUserToMembership;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import com.epam.reportportal.ReportPortalUserUtil;
-import com.epam.reportportal.infrastructure.persistence.commons.ReportPortalUser;
-import com.epam.reportportal.infrastructure.persistence.commons.querygen.Filter;
-import com.epam.reportportal.infrastructure.persistence.commons.querygen.FilterCondition;
-import com.epam.reportportal.core.item.impl.history.param.HistoryRequestParams;
-import com.epam.reportportal.infrastructure.persistence.dao.TestItemRepository;
-import com.epam.reportportal.infrastructure.persistence.entity.item.TestItem;
-import com.epam.reportportal.infrastructure.persistence.entity.organization.OrganizationRole;
-import com.epam.reportportal.infrastructure.persistence.entity.project.ProjectRole;
-import com.epam.reportportal.infrastructure.persistence.entity.user.UserRole;
-import com.epam.reportportal.infrastructure.rules.exception.ReportPortalException;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.commons.ReportPortalUser;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.commons.querygen.Filter;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.commons.querygen.FilterCondition;
+import com.epam.reportportal.serviceapi.core.item.impl.history.param.HistoryRequestParams;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.TestItemRepository;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.item.TestItem;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.organization.OrganizationRole;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.project.ProjectRole;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.user.UserRole;
+import com.epam.reportportal.serviceapi.infrastructure.rules.exception.ReportPortalException;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;

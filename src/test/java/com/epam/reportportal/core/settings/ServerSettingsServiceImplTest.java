@@ -1,21 +1,21 @@
-package com.epam.reportportal.core.settings;
+package com.epam.reportportal.serviceapi.core.settings;
 
-import static com.epam.reportportal.infrastructure.persistence.entity.ServerSettingsConstants.ANALYTICS_CONFIG_PREFIX;
+import static com.epam.reportportal.serviceapi.infrastructure.persistence.entity.ServerSettingsConstants.ANALYTICS_CONFIG_PREFIX;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
-import com.epam.reportportal.infrastructure.persistence.commons.ReportPortalUser;
-import com.epam.reportportal.core.events.MessageBus;
-import com.epam.reportportal.core.events.activity.SettingsUpdatedEvent;
-import com.epam.reportportal.infrastructure.persistence.dao.ServerSettingsRepository;
-import com.epam.reportportal.infrastructure.persistence.entity.ServerSettings;
-import com.epam.reportportal.infrastructure.persistence.entity.user.UserRole;
-import com.epam.reportportal.model.settings.AnalyticsResource;
-import com.epam.reportportal.model.settings.ServerSettingsResource;
-import com.epam.reportportal.reporting.OperationCompletionRS;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.commons.ReportPortalUser;
+import com.epam.reportportal.serviceapi.core.events.MessageBus;
+import com.epam.reportportal.serviceapi.core.events.activity.SettingsUpdatedEvent;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.ServerSettingsRepository;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.ServerSettings;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.user.UserRole;
+import com.epam.reportportal.serviceapi.model.settings.AnalyticsResource;
+import com.epam.reportportal.serviceapi.model.settings.ServerSettingsResource;
+import com.epam.reportportal.serviceapi.reporting.OperationCompletionRS;
 import com.google.common.collect.Sets;
 import java.util.Arrays;
 import java.util.List;

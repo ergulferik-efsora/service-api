@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.core.events.handler.launch;
+package com.epam.reportportal.serviceapi.core.events.handler.launch;
 
 import static com.epam.reportportal.ReportPortalUserUtil.getRpUser;
 import static org.mockito.ArgumentMatchers.any;
@@ -22,16 +22,16 @@ import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 
-import com.epam.reportportal.infrastructure.persistence.commons.ReportPortalUser;
-import com.epam.reportportal.core.events.activity.LaunchFinishedEvent;
-import com.epam.reportportal.core.launch.impl.LaunchTestUtil;
-import com.epam.reportportal.infrastructure.persistence.entity.enums.LaunchModeEnum;
-import com.epam.reportportal.infrastructure.persistence.entity.enums.ProjectAttributeEnum;
-import com.epam.reportportal.infrastructure.persistence.entity.enums.StatusEnum;
-import com.epam.reportportal.infrastructure.persistence.entity.launch.Launch;
-import com.epam.reportportal.infrastructure.persistence.entity.organization.OrganizationRole;
-import com.epam.reportportal.infrastructure.persistence.entity.project.ProjectRole;
-import com.epam.reportportal.infrastructure.persistence.entity.user.UserRole;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.commons.ReportPortalUser;
+import com.epam.reportportal.serviceapi.core.events.activity.LaunchFinishedEvent;
+import com.epam.reportportal.serviceapi.core.launch.impl.LaunchTestUtil;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.enums.LaunchModeEnum;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.enums.ProjectAttributeEnum;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.enums.StatusEnum;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.launch.Launch;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.organization.OrganizationRole;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.project.ProjectRole;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.user.UserRole;
 import com.google.common.collect.ImmutableMap;
 import java.util.Map;
 import org.junit.jupiter.api.Test;

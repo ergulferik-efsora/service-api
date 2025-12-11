@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.core.integration.util;
+package com.epam.reportportal.serviceapi.core.integration.util;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
@@ -22,13 +22,13 @@ import static org.mockito.Mockito.doThrow;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
-import com.epam.reportportal.core.plugin.PluginBox;
-import com.epam.reportportal.infrastructure.persistence.dao.IntegrationRepository;
-import com.epam.reportportal.infrastructure.persistence.entity.integration.Integration;
-import com.epam.reportportal.infrastructure.persistence.entity.integration.IntegrationType;
-import com.epam.reportportal.infrastructure.rules.exception.ReportPortalException;
-import com.epam.reportportal.util.email.EmailService;
-import com.epam.reportportal.util.email.MailServiceFactory;
+import com.epam.reportportal.serviceapi.core.plugin.PluginBox;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.IntegrationRepository;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.integration.Integration;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.integration.IntegrationType;
+import com.epam.reportportal.serviceapi.infrastructure.rules.exception.ReportPortalException;
+import com.epam.reportportal.serviceapi.util.email.EmailService;
+import com.epam.reportportal.serviceapi.util.email.MailServiceFactory;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 import java.util.HashMap;

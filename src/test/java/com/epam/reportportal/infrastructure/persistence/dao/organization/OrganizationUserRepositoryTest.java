@@ -14,12 +14,13 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.infrastructure.persistence.dao.organization;
+package com.epam.reportportal.serviceapi.infrastructure.persistence.dao.organization;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.organization.OrganizationUserRepository;
 import com.epam.reportportal.ws.BaseMvcTest;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;

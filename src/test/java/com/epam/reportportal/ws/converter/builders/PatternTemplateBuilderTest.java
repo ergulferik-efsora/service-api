@@ -18,8 +18,9 @@ package com.epam.reportportal.ws.converter.builders;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import com.epam.reportportal.infrastructure.persistence.entity.pattern.PatternTemplate;
-import com.epam.reportportal.model.project.config.pattern.CreatePatternTemplateRQ;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.pattern.PatternTemplate;
+import com.epam.reportportal.serviceapi.model.project.config.pattern.CreatePatternTemplateRQ;
+import com.epam.reportportal.serviceapi.ws.converter.builders.PatternTemplateBuilder;
 import org.junit.jupiter.api.Test;
 
 /**

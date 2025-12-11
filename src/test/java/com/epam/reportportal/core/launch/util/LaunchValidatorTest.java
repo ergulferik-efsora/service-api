@@ -14,17 +14,17 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.core.launch.util;
+package com.epam.reportportal.serviceapi.core.launch.util;
 
-import static com.epam.reportportal.infrastructure.rules.exception.ErrorType.FINISH_TIME_EARLIER_THAN_START_TIME;
+import static com.epam.reportportal.serviceapi.infrastructure.rules.exception.ErrorType.FINISH_TIME_EARLIER_THAN_START_TIME;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
-import com.epam.reportportal.infrastructure.rules.commons.validation.Suppliers;
-import com.epam.reportportal.infrastructure.persistence.entity.enums.StatusEnum;
-import com.epam.reportportal.infrastructure.persistence.entity.launch.Launch;
-import com.epam.reportportal.infrastructure.rules.exception.ReportPortalException;
-import com.epam.reportportal.reporting.FinishExecutionRQ;
+import com.epam.reportportal.serviceapi.infrastructure.rules.commons.validation.Suppliers;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.enums.StatusEnum;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.launch.Launch;
+import com.epam.reportportal.serviceapi.infrastructure.rules.exception.ReportPortalException;
+import com.epam.reportportal.serviceapi.reporting.FinishExecutionRQ;
 import java.time.Instant;
 import org.junit.jupiter.api.Test;
 

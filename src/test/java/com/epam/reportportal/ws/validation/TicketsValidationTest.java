@@ -3,9 +3,9 @@ package com.epam.reportportal.ws.validation;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-import com.epam.reportportal.model.item.LinkExternalIssueRQ;
-import com.epam.reportportal.reporting.FinishTestItemRQ;
-import com.epam.reportportal.reporting.Issue;
+import com.epam.reportportal.serviceapi.model.item.LinkExternalIssueRQ;
+import com.epam.reportportal.serviceapi.reporting.FinishTestItemRQ;
+import com.epam.reportportal.serviceapi.reporting.Issue;
 import com.google.common.collect.Lists;
 import java.time.Instant;
 import java.util.ArrayList;

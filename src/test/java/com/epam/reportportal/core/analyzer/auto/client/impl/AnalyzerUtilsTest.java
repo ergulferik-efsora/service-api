@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.core.analyzer.auto.client.impl;
+package com.epam.reportportal.serviceapi.core.analyzer.auto.client.impl;
 
-import static com.epam.reportportal.core.analyzer.auto.client.impl.AnalyzerUtils.ANALYZER_INDEX;
-import static com.epam.reportportal.core.analyzer.auto.client.impl.AnalyzerUtils.ANALYZER_LOG_SEARCH;
-import static com.epam.reportportal.core.analyzer.auto.client.impl.AnalyzerUtils.ANALYZER_PRIORITY;
-import static com.epam.reportportal.core.analyzer.auto.client.impl.AnalyzerUtils.DOES_SUPPORT_SEARCH;
+import static com.epam.reportportal.serviceapi.core.analyzer.auto.client.impl.AnalyzerUtils.ANALYZER_INDEX;
+import static com.epam.reportportal.serviceapi.core.analyzer.auto.client.impl.AnalyzerUtils.ANALYZER_LOG_SEARCH;
+import static com.epam.reportportal.serviceapi.core.analyzer.auto.client.impl.AnalyzerUtils.ANALYZER_PRIORITY;
+import static com.epam.reportportal.serviceapi.core.analyzer.auto.client.impl.AnalyzerUtils.DOES_SUPPORT_SEARCH;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;

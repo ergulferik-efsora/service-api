@@ -19,9 +19,10 @@ package com.epam.reportportal.ws.converter.builders;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import com.epam.reportportal.infrastructure.persistence.entity.item.TestItem;
-import com.epam.reportportal.infrastructure.persistence.entity.log.LogFull;
-import com.epam.reportportal.reporting.SaveLogRQ;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.item.TestItem;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.log.LogFull;
+import com.epam.reportportal.serviceapi.reporting.SaveLogRQ;
+import com.epam.reportportal.serviceapi.ws.converter.builders.LogFullBuilder;
 import java.time.Instant;
 import java.time.temporal.ChronoUnit;
 import org.junit.jupiter.api.Test;

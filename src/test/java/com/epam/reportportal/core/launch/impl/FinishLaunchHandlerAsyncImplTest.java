@@ -14,26 +14,26 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.core.launch.impl;
+package com.epam.reportportal.serviceapi.core.launch.impl;
 
 import static com.epam.reportportal.ReportPortalUserUtil.getRpUser;
-import static com.epam.reportportal.infrastructure.persistence.util.MembershipUtils.rpUserToMembership;
+import static com.epam.reportportal.serviceapi.infrastructure.persistence.util.MembershipUtils.rpUserToMembership;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.verify;
 
-import com.epam.reportportal.infrastructure.persistence.commons.ReportPortalUser;
-import com.epam.reportportal.infrastructure.persistence.entity.organization.OrganizationRole;
-import com.epam.reportportal.infrastructure.persistence.entity.project.ProjectRole;
-import com.epam.reportportal.infrastructure.persistence.entity.user.UserRole;
-import com.epam.reportportal.reporting.async.producer.LaunchFinishProducer;
-import com.epam.reportportal.reporting.FinishExecutionRQ;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.commons.ReportPortalUser;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.organization.OrganizationRole;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.project.ProjectRole;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.user.UserRole;
+import com.epam.reportportal.serviceapi.reporting.async.producer.LaunchFinishProducer;
+import com.epam.reportportal.serviceapi.reporting.FinishExecutionRQ;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.amqp.core.AmqpTemplate;
-import com.epam.reportportal.core.launch.util.LinkGenerator;
+import com.epam.reportportal.serviceapi.core.launch.util.LinkGenerator;
 
 /**
  * @author Konstantin Antipin

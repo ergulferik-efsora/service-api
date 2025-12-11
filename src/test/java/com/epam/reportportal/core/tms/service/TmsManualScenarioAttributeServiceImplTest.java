@@ -1,4 +1,4 @@
-package com.epam.reportportal.core.tms.service;
+package com.epam.reportportal.serviceapi.core.tms.service;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.ArgumentMatchers.any;
@@ -7,12 +7,12 @@ import static org.mockito.Mockito.never;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
-import com.epam.reportportal.infrastructure.persistence.entity.tms.TmsManualScenario;
-import com.epam.reportportal.infrastructure.persistence.entity.tms.TmsManualScenarioAttribute;
-import com.epam.reportportal.infrastructure.persistence.entity.tms.TmsManualScenarioAttributeId;
-import com.epam.reportportal.infrastructure.persistence.dao.tms.TmsManualScenarioAttributeRepository;
-import com.epam.reportportal.core.tms.dto.TmsManualScenarioAttributeRQ;
-import com.epam.reportportal.core.tms.mapper.TmsManualScenarioAttributeMapper;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.tms.TmsManualScenario;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.tms.TmsManualScenarioAttribute;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.tms.TmsManualScenarioAttributeId;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.tms.TmsManualScenarioAttributeRepository;
+import com.epam.reportportal.serviceapi.core.tms.dto.TmsManualScenarioAttributeRQ;
+import com.epam.reportportal.serviceapi.core.tms.mapper.TmsManualScenarioAttributeMapper;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashSet;

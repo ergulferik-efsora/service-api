@@ -1,7 +1,9 @@
-package com.epam.reportportal.infrastructure.persistence.commons.querygen;
+package com.epam.reportportal.serviceapi.infrastructure.persistence.commons.querygen;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+import com.epam.reportportal.serviceapi.infrastructure.persistence.commons.querygen.Condition;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.commons.querygen.FilterCondition;
 import com.google.common.collect.Lists;
 import org.junit.jupiter.api.Test;
 

@@ -1,6 +1,6 @@
-package com.epam.reportportal.core.launch.util;
+package com.epam.reportportal.serviceapi.core.launch.util;
 
-import static com.epam.reportportal.core.settings.ImportantLaunchSettingHandler.IMPORTANT_SETTINGS_KEY;
+import static com.epam.reportportal.serviceapi.core.settings.ImportantLaunchSettingHandler.IMPORTANT_SETTINGS_KEY;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.mockito.ArgumentMatchers.any;
@@ -10,17 +10,17 @@ import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.verifyNoInteractions;
 import static org.mockito.Mockito.when;
 
-import com.epam.reportportal.infrastructure.persistence.commons.ReportPortalUser;
-import com.epam.reportportal.core.events.MessageBus;
-import com.epam.reportportal.core.events.activity.MarkLaunchAsImportantEvent;
-import com.epam.reportportal.core.events.activity.UnmarkLaunchAsImportantEvent;
-import com.epam.reportportal.core.launch.attribute.impl.RetentionPolicyAttributeHandler;
-import com.epam.reportportal.core.project.ProjectService;
-import com.epam.reportportal.core.settings.ServerSettingsService;
-import com.epam.reportportal.infrastructure.persistence.entity.ItemAttribute;
-import com.epam.reportportal.infrastructure.persistence.entity.enums.RetentionPolicyEnum;
-import com.epam.reportportal.infrastructure.persistence.entity.launch.Launch;
-import com.epam.reportportal.infrastructure.persistence.entity.project.Project;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.commons.ReportPortalUser;
+import com.epam.reportportal.serviceapi.core.events.MessageBus;
+import com.epam.reportportal.serviceapi.core.events.activity.MarkLaunchAsImportantEvent;
+import com.epam.reportportal.serviceapi.core.events.activity.UnmarkLaunchAsImportantEvent;
+import com.epam.reportportal.serviceapi.core.launch.attribute.impl.RetentionPolicyAttributeHandler;
+import com.epam.reportportal.serviceapi.core.project.ProjectService;
+import com.epam.reportportal.serviceapi.core.settings.ServerSettingsService;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.ItemAttribute;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.enums.RetentionPolicyEnum;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.launch.Launch;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.project.Project;
 import java.util.HashSet;
 import java.util.Set;
 import org.junit.jupiter.api.BeforeEach;

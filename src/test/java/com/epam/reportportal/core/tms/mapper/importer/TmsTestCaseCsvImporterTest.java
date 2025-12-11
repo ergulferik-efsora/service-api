@@ -1,9 +1,9 @@
-package com.epam.reportportal.core.tms.mapper.importer;
+package com.epam.reportportal.serviceapi.core.tms.mapper.importer;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
-import com.epam.reportportal.core.tms.dto.TmsTestCaseImportFormat;
+import com.epam.reportportal.serviceapi.core.tms.dto.TmsTestCaseImportFormat;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.mock.web.MockMultipartFile;

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.infrastructure.persistence.binary;
+package com.epam.reportportal.serviceapi.infrastructure.persistence.binary;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
@@ -22,12 +22,13 @@ import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
-import com.epam.reportportal.infrastructure.persistence.dao.LogRepository;
-import com.epam.reportportal.infrastructure.persistence.entity.attachment.Attachment;
-import com.epam.reportportal.infrastructure.persistence.entity.item.TestItem;
-import com.epam.reportportal.infrastructure.persistence.entity.launch.Launch;
-import com.epam.reportportal.infrastructure.persistence.entity.log.Log;
-import com.epam.reportportal.infrastructure.rules.exception.ReportPortalException;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.binary.CreateLogAttachmentService;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.LogRepository;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.attachment.Attachment;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.item.TestItem;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.launch.Launch;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.log.Log;
+import com.epam.reportportal.serviceapi.infrastructure.rules.exception.ReportPortalException;
 import java.time.Instant;
 import java.util.Optional;
 import org.junit.jupiter.api.Test;

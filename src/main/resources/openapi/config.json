@@ -1,6 +1,6 @@
 {
-  "apiPackage": "com.epam.reportportal.api",
-  "modelPackage": "com.epam.reportportal.api.model",
+  "apiPackage": "com.epam.reportportal.serviceapi.api",
+  "modelPackage": "com.epam.reportportal.serviceapi.api.model",
   "dateLibrary": "java8",
   "generateBuilders": true,
   "generateConstructorWithAllArgs": true,
@@ -23,6 +23,6 @@
   },
   "importMappings": {
     "java.time.OffsetDateTime": "java.time.Instant",
-    "com.epam.reportportal.api.model.Order": "org.springframework.data.domain.Sort"
+    "com.epam.reportportal.serviceapi.api.model.Order": "org.springframework.data.domain.Sort"
   }
 }

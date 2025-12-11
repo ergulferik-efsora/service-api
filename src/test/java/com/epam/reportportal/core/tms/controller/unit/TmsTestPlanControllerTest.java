@@ -1,4 +1,4 @@
-package com.epam.reportportal.core.tms.controller.unit;
+package com.epam.reportportal.serviceapi.core.tms.controller.unit;
 
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.anyString;
@@ -14,24 +14,24 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 import static org.springframework.test.web.servlet.setup.MockMvcBuilders.standaloneSetup;
 
-import com.epam.reportportal.core.tms.controller.TmsTestPlanController;
-import com.epam.reportportal.core.tms.dto.DuplicateTmsTestPlanRS;
-import com.epam.reportportal.core.tms.dto.TmsTestCaseInTestPlanRS;
-import com.epam.reportportal.core.tms.dto.TmsTestFolderRS;
-import com.epam.reportportal.core.tms.dto.TmsTestPlanRQ;
-import com.epam.reportportal.core.tms.dto.TmsTestPlanRS;
-import com.epam.reportportal.core.tms.dto.batch.BatchAddTestCasesToPlanRQ;
-import com.epam.reportportal.core.tms.dto.batch.BatchRemoveTestCasesFromPlanRQ;
-import com.epam.reportportal.core.tms.dto.batch.BatchTestCaseOperationResultRS;
-import com.epam.reportportal.core.tms.service.TmsTestPlanService;
-import com.epam.reportportal.infrastructure.persistence.commons.ReportPortalUser;
-import com.epam.reportportal.infrastructure.persistence.commons.querygen.Filter;
-import com.epam.reportportal.infrastructure.persistence.entity.organization.MembershipDetails;
-import com.epam.reportportal.model.Page;
-import com.epam.reportportal.util.OffsetRequest;
-import com.epam.reportportal.util.ProjectExtractor;
-import com.epam.reportportal.ws.resolver.FilterCriteriaResolver;
-import com.epam.reportportal.ws.resolver.OffsetArgumentResolver;
+import com.epam.reportportal.serviceapi.core.tms.controller.TmsTestPlanController;
+import com.epam.reportportal.serviceapi.core.tms.dto.DuplicateTmsTestPlanRS;
+import com.epam.reportportal.serviceapi.core.tms.dto.TmsTestCaseInTestPlanRS;
+import com.epam.reportportal.serviceapi.core.tms.dto.TmsTestFolderRS;
+import com.epam.reportportal.serviceapi.core.tms.dto.TmsTestPlanRQ;
+import com.epam.reportportal.serviceapi.core.tms.dto.TmsTestPlanRS;
+import com.epam.reportportal.serviceapi.core.tms.dto.batch.BatchAddTestCasesToPlanRQ;
+import com.epam.reportportal.serviceapi.core.tms.dto.batch.BatchRemoveTestCasesFromPlanRQ;
+import com.epam.reportportal.serviceapi.core.tms.dto.batch.BatchTestCaseOperationResultRS;
+import com.epam.reportportal.serviceapi.core.tms.service.TmsTestPlanService;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.commons.ReportPortalUser;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.commons.querygen.Filter;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.organization.MembershipDetails;
+import com.epam.reportportal.serviceapi.model.Page;
+import com.epam.reportportal.serviceapi.util.OffsetRequest;
+import com.epam.reportportal.serviceapi.util.ProjectExtractor;
+import com.epam.reportportal.serviceapi.ws.resolver.FilterCriteriaResolver;
+import com.epam.reportportal.serviceapi.ws.resolver.OffsetArgumentResolver;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import java.util.Arrays;
 import java.util.Collections;

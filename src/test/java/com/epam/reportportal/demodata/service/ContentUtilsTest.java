@@ -1,6 +1,7 @@
 package com.epam.reportportal.demodata.service;
 
-import com.epam.reportportal.infrastructure.persistence.entity.enums.TestItemTypeEnum;
+import com.epam.reportportal.serviceapi.demodata.service.ContentUtils;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.enums.TestItemTypeEnum;
 import java.util.ArrayList;
 import java.util.List;
 import org.assertj.core.api.Assertions;

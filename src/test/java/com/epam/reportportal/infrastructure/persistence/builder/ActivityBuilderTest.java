@@ -14,17 +14,18 @@
  *  limitations under the License.
  */
 
-package com.epam.reportportal.infrastructure.persistence.builder;
+package com.epam.reportportal.serviceapi.infrastructure.persistence.builder;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
-import com.epam.reportportal.infrastructure.persistence.entity.activity.Activity;
-import com.epam.reportportal.infrastructure.persistence.entity.activity.ActivityDetails;
-import com.epam.reportportal.infrastructure.persistence.entity.activity.EventAction;
-import com.epam.reportportal.infrastructure.persistence.entity.activity.EventObject;
-import com.epam.reportportal.infrastructure.persistence.entity.activity.EventSubject;
-import com.epam.reportportal.infrastructure.persistence.entity.activity.HistoryField;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.builder.ActivityBuilder;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.activity.Activity;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.activity.ActivityDetails;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.activity.EventAction;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.activity.EventObject;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.activity.EventSubject;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.activity.HistoryField;
 import java.time.Instant;
 import java.time.LocalDateTime;
 import java.time.ZoneOffset;

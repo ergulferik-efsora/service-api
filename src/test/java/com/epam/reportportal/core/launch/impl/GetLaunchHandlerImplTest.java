@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.core.launch.impl;
+package com.epam.reportportal.serviceapi.core.launch.impl;
 
 
-import static com.epam.reportportal.core.launch.impl.LaunchTestUtil.getLaunch;
-import static com.epam.reportportal.infrastructure.persistence.commons.querygen.constant.LaunchCriteriaConstant.CRITERIA_LAUNCH_STATUS;
-import static com.epam.reportportal.infrastructure.persistence.util.MembershipUtils.rpUserToMembership;
-import static com.epam.reportportal.util.TestProjectExtractor.extractProjectDetails;
+import static com.epam.reportportal.serviceapi.core.launch.impl.LaunchTestUtil.getLaunch;
+import static com.epam.reportportal.serviceapi.infrastructure.persistence.commons.querygen.constant.LaunchCriteriaConstant.CRITERIA_LAUNCH_STATUS;
+import static com.epam.reportportal.serviceapi.infrastructure.persistence.util.MembershipUtils.rpUserToMembership;
+import static com.epam.reportportal.serviceapi.util.TestProjectExtractor.extractProjectDetails;
 import static com.epam.reportportal.OrganizationUtil.TEST_PROJECT_KEY;
 import static com.epam.reportportal.ReportPortalUserUtil.getRpUser;
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -28,30 +28,30 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.when;
 
-import com.epam.reportportal.core.jasper.GetJasperReportHandler;
-import com.epam.reportportal.core.launch.cluster.GetClusterHandler;
-import com.epam.reportportal.core.launch.export.JasperDataProvider;
-import com.epam.reportportal.infrastructure.model.launch.cluster.ClusterInfoResource;
-import com.epam.reportportal.infrastructure.persistence.commons.ReportPortalUser;
-import com.epam.reportportal.infrastructure.persistence.commons.querygen.Filter;
-import com.epam.reportportal.infrastructure.persistence.commons.querygen.FilterCondition;
-import com.epam.reportportal.infrastructure.persistence.dao.ItemAttributeRepository;
-import com.epam.reportportal.infrastructure.persistence.dao.LaunchRepository;
-import com.epam.reportportal.infrastructure.persistence.dao.ProjectRepository;
-import com.epam.reportportal.infrastructure.persistence.dao.UserRepository;
-import com.epam.reportportal.infrastructure.persistence.dao.WidgetContentRepository;
-import com.epam.reportportal.infrastructure.persistence.entity.enums.LaunchModeEnum;
-import com.epam.reportportal.infrastructure.persistence.entity.enums.StatusEnum;
-import com.epam.reportportal.infrastructure.persistence.entity.launch.Launch;
-import com.epam.reportportal.infrastructure.persistence.entity.organization.MembershipDetails;
-import com.epam.reportportal.infrastructure.persistence.entity.organization.OrganizationRole;
-import com.epam.reportportal.infrastructure.persistence.entity.project.Project;
-import com.epam.reportportal.infrastructure.persistence.entity.project.ProjectRole;
-import com.epam.reportportal.infrastructure.persistence.entity.user.UserRole;
-import com.epam.reportportal.infrastructure.rules.exception.ReportPortalException;
-import com.epam.reportportal.model.Page;
-import com.epam.reportportal.reporting.LaunchResource;
-import com.epam.reportportal.ws.converter.converters.LaunchConverter;
+import com.epam.reportportal.serviceapi.core.jasper.GetJasperReportHandler;
+import com.epam.reportportal.serviceapi.core.launch.cluster.GetClusterHandler;
+import com.epam.reportportal.serviceapi.core.launch.export.JasperDataProvider;
+import com.epam.reportportal.serviceapi.infrastructure.model.launch.cluster.ClusterInfoResource;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.commons.ReportPortalUser;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.commons.querygen.Filter;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.commons.querygen.FilterCondition;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.ItemAttributeRepository;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.LaunchRepository;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.ProjectRepository;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.UserRepository;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.WidgetContentRepository;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.enums.LaunchModeEnum;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.enums.StatusEnum;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.launch.Launch;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.organization.MembershipDetails;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.organization.OrganizationRole;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.project.Project;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.project.ProjectRole;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.user.UserRole;
+import com.epam.reportportal.serviceapi.infrastructure.rules.exception.ReportPortalException;
+import com.epam.reportportal.serviceapi.model.Page;
+import com.epam.reportportal.serviceapi.reporting.LaunchResource;
+import com.epam.reportportal.serviceapi.ws.converter.converters.LaunchConverter;
 import java.lang.reflect.Field;
 import java.util.List;
 import java.util.Optional;

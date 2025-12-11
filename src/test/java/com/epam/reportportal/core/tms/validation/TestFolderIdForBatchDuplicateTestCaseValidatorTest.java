@@ -1,11 +1,11 @@
-package com.epam.reportportal.core.tms.validation;
+package com.epam.reportportal.serviceapi.core.tms.validation;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-import com.epam.reportportal.core.tms.dto.NewTestFolderRQ;
-import com.epam.reportportal.core.tms.dto.batch.BatchDuplicateTestCasesRQ;
+import com.epam.reportportal.serviceapi.core.tms.dto.NewTestFolderRQ;
+import com.epam.reportportal.serviceapi.core.tms.dto.batch.BatchDuplicateTestCasesRQ;
 import jakarta.validation.Validation;
 import jakarta.validation.Validator;
 import java.util.List;

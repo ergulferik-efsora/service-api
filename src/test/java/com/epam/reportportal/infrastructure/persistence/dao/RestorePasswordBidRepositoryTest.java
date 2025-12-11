@@ -14,13 +14,14 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.infrastructure.persistence.dao;
+package com.epam.reportportal.serviceapi.infrastructure.persistence.dao;
 
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.RestorePasswordBidRepository;
 import com.epam.reportportal.ws.BaseMvcTest;
-import com.epam.reportportal.infrastructure.persistence.entity.user.RestorePasswordBid;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.user.RestorePasswordBid;
 import java.time.Instant;
 import java.util.Optional;
 import org.junit.jupiter.api.Test;

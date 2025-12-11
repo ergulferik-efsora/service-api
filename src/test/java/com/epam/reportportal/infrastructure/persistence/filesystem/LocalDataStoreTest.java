@@ -14,15 +14,16 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.infrastructure.persistence.filesystem;
+package com.epam.reportportal.serviceapi.infrastructure.persistence.filesystem;
 
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
-import com.epam.reportportal.infrastructure.persistence.entity.enums.FeatureFlag;
-import com.epam.reportportal.infrastructure.persistence.util.FeatureFlagHandler;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.enums.FeatureFlag;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.filesystem.LocalDataStore;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.util.FeatureFlagHandler;
 import java.io.InputStream;
 import org.jclouds.blobstore.BlobStore;
 import org.jclouds.blobstore.domain.Blob;

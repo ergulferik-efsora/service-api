@@ -1,4 +1,4 @@
-package com.epam.reportportal.core.configs;
+package com.epam.reportportal.serviceapi.core.configs;
 
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;

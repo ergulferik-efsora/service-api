@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.core.remover.user;
+package com.epam.reportportal.serviceapi.core.remover.user;
 
 import static org.mockito.Mockito.any;
 import static org.mockito.Mockito.argThat;
@@ -26,9 +26,9 @@ import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.verifyNoInteractions;
 import static org.mockito.Mockito.when;
 
-import com.epam.reportportal.infrastructure.persistence.dao.AttachmentRepository;
-import com.epam.reportportal.infrastructure.persistence.entity.attachment.Attachment;
-import com.epam.reportportal.infrastructure.persistence.entity.user.User;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.AttachmentRepository;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.attachment.Attachment;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.user.User;
 import java.util.List;
 import org.junit.jupiter.api.Test;
 

@@ -26,7 +26,7 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
-import com.epam.reportportal.infrastructure.persistence.entity.attachment.BinaryData;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.attachment.BinaryData;
 import com.epam.reportportal.ws.BaseMvcTest;
 import java.io.ByteArrayInputStream;
 import java.util.Collections;

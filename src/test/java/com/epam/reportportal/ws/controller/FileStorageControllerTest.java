@@ -16,18 +16,18 @@
 
 package com.epam.reportportal.ws.controller;
 
-import static com.epam.reportportal.util.MultipartFileUtils.getMultipartFile;
+import static com.epam.reportportal.serviceapi.util.MultipartFileUtils.getMultipartFile;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.delete;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
-import com.epam.reportportal.infrastructure.persistence.binary.AttachmentBinaryDataService;
-import com.epam.reportportal.infrastructure.persistence.commons.BinaryDataMetaInfo;
-import com.epam.reportportal.infrastructure.persistence.dao.AttachmentRepository;
-import com.epam.reportportal.infrastructure.persistence.entity.attachment.Attachment;
-import com.epam.reportportal.infrastructure.persistence.entity.attachment.AttachmentMetaInfo;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.binary.AttachmentBinaryDataService;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.commons.BinaryDataMetaInfo;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.AttachmentRepository;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.attachment.Attachment;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.attachment.AttachmentMetaInfo;
 import com.epam.reportportal.ws.BaseMvcTest;
 import java.nio.charset.StandardCharsets;
 import java.time.Instant;

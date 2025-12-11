@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.core.analyzer.auto.impl;
+package com.epam.reportportal.serviceapi.core.analyzer.auto.impl;
 
-import static com.epam.reportportal.infrastructure.persistence.entity.AnalyzeMode.ALL_LAUNCHES;
-import static com.epam.reportportal.infrastructure.persistence.entity.enums.TestItemIssueGroup.PRODUCT_BUG;
+import static com.epam.reportportal.serviceapi.infrastructure.persistence.entity.AnalyzeMode.ALL_LAUNCHES;
+import static com.epam.reportportal.serviceapi.infrastructure.persistence.entity.enums.TestItemIssueGroup.PRODUCT_BUG;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.mockito.Mockito.any;
 import static org.mockito.Mockito.anyList;
@@ -28,27 +28,27 @@ import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 import static org.mockito.internal.verification.VerificationModeFactory.times;
 
-import com.epam.reportportal.core.analytics.DefectUpdateStatisticsService;
-import com.epam.reportportal.core.analyzer.auto.client.AnalyzerServiceClient;
-import com.epam.reportportal.core.analyzer.auto.impl.preparer.LaunchPreparerService;
-import com.epam.reportportal.core.events.MessageBus;
-import com.epam.reportportal.core.item.impl.IssueTypeHandler;
-import com.epam.reportportal.core.project.ProjectService;
-import com.epam.reportportal.infrastructure.model.analyzer.IndexLaunch;
-import com.epam.reportportal.infrastructure.model.analyzer.IndexLog;
-import com.epam.reportportal.infrastructure.model.analyzer.IndexTestItem;
-import com.epam.reportportal.infrastructure.model.project.AnalyzerConfig;
-import com.epam.reportportal.infrastructure.persistence.dao.LaunchRepository;
-import com.epam.reportportal.infrastructure.persistence.dao.TestItemRepository;
-import com.epam.reportportal.infrastructure.persistence.entity.enums.LogLevel;
-import com.epam.reportportal.infrastructure.persistence.entity.enums.StatusEnum;
-import com.epam.reportportal.infrastructure.persistence.entity.item.TestItem;
-import com.epam.reportportal.infrastructure.persistence.entity.item.TestItemResults;
-import com.epam.reportportal.infrastructure.persistence.entity.item.issue.IssueEntity;
-import com.epam.reportportal.infrastructure.persistence.entity.item.issue.IssueType;
-import com.epam.reportportal.infrastructure.persistence.entity.launch.Launch;
-import com.epam.reportportal.infrastructure.persistence.entity.project.Project;
-import com.epam.reportportal.model.analyzer.AnalyzedItemRs;
+import com.epam.reportportal.serviceapi.core.analytics.DefectUpdateStatisticsService;
+import com.epam.reportportal.serviceapi.core.analyzer.auto.client.AnalyzerServiceClient;
+import com.epam.reportportal.serviceapi.core.analyzer.auto.impl.preparer.LaunchPreparerService;
+import com.epam.reportportal.serviceapi.core.events.MessageBus;
+import com.epam.reportportal.serviceapi.core.item.impl.IssueTypeHandler;
+import com.epam.reportportal.serviceapi.core.project.ProjectService;
+import com.epam.reportportal.serviceapi.infrastructure.model.analyzer.IndexLaunch;
+import com.epam.reportportal.serviceapi.infrastructure.model.analyzer.IndexLog;
+import com.epam.reportportal.serviceapi.infrastructure.model.analyzer.IndexTestItem;
+import com.epam.reportportal.serviceapi.infrastructure.model.project.AnalyzerConfig;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.LaunchRepository;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.TestItemRepository;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.enums.LogLevel;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.enums.StatusEnum;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.item.TestItem;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.item.TestItemResults;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.item.issue.IssueEntity;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.item.issue.IssueType;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.launch.Launch;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.project.Project;
+import com.epam.reportportal.serviceapi.model.analyzer.AnalyzedItemRs;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;

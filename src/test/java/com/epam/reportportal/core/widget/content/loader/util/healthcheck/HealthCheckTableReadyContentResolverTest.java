@@ -1,22 +1,22 @@
-package com.epam.reportportal.core.widget.content.loader.util.healthcheck;
+package com.epam.reportportal.serviceapi.core.widget.content.loader.util.healthcheck;
 
-import static com.epam.reportportal.core.widget.content.constant.ContentLoaderConstants.ATTRIBUTES;
-import static com.epam.reportportal.core.widget.content.constant.ContentLoaderConstants.ATTRIBUTE_KEYS;
-import static com.epam.reportportal.infrastructure.persistence.dao.constant.WidgetContentRepositoryConstants.EXECUTIONS_PASSED;
-import static com.epam.reportportal.infrastructure.persistence.dao.constant.WidgetContentRepositoryConstants.EXECUTIONS_TOTAL;
+import static com.epam.reportportal.serviceapi.core.widget.content.constant.ContentLoaderConstants.ATTRIBUTES;
+import static com.epam.reportportal.serviceapi.core.widget.content.constant.ContentLoaderConstants.ATTRIBUTE_KEYS;
+import static com.epam.reportportal.serviceapi.infrastructure.persistence.dao.constant.WidgetContentRepositoryConstants.EXECUTIONS_PASSED;
+import static com.epam.reportportal.serviceapi.infrastructure.persistence.dao.constant.WidgetContentRepositoryConstants.EXECUTIONS_TOTAL;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
-import com.epam.reportportal.core.widget.content.loader.materialized.HealthCheckTableReadyContentLoader;
-import com.epam.reportportal.infrastructure.persistence.dao.WidgetContentRepository;
-import com.epam.reportportal.infrastructure.persistence.entity.widget.Widget;
-import com.epam.reportportal.infrastructure.persistence.entity.widget.content.healthcheck.HealthCheckTableContent;
-import com.epam.reportportal.model.widget.ContentParameters;
-import com.epam.reportportal.model.widget.SortEntry;
-import com.epam.reportportal.model.widget.WidgetRQ;
-import com.epam.reportportal.ws.converter.builders.WidgetBuilder;
+import com.epam.reportportal.serviceapi.core.widget.content.loader.materialized.HealthCheckTableReadyContentLoader;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.WidgetContentRepository;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.widget.Widget;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.widget.content.healthcheck.HealthCheckTableContent;
+import com.epam.reportportal.serviceapi.model.widget.ContentParameters;
+import com.epam.reportportal.serviceapi.model.widget.SortEntry;
+import com.epam.reportportal.serviceapi.model.widget.WidgetRQ;
+import com.epam.reportportal.serviceapi.ws.converter.builders.WidgetBuilder;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.common.collect.Lists;
 import java.util.ArrayList;

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.core.integration.util;
+package com.epam.reportportal.serviceapi.core.integration.util;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
@@ -22,8 +22,8 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.mockito.Mockito.when;
 
-import com.epam.reportportal.core.integration.util.property.SauceLabsProperties;
-import com.epam.reportportal.infrastructure.rules.exception.ReportPortalException;
+import com.epam.reportportal.serviceapi.core.integration.util.property.SauceLabsProperties;
+import com.epam.reportportal.serviceapi.infrastructure.rules.exception.ReportPortalException;
 import com.google.common.collect.Maps;
 import java.util.Collections;
 import java.util.HashMap;

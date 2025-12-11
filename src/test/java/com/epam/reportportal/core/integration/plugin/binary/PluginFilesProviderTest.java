@@ -1,14 +1,14 @@
-package com.epam.reportportal.core.integration.plugin.binary;
+package com.epam.reportportal.serviceapi.core.integration.plugin.binary;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.mockito.Mockito.when;
 
-import com.epam.reportportal.infrastructure.persistence.dao.IntegrationTypeRepository;
-import com.epam.reportportal.infrastructure.persistence.entity.integration.IntegrationType;
-import com.epam.reportportal.infrastructure.rules.exception.ErrorType;
-import com.epam.reportportal.infrastructure.rules.exception.ReportPortalException;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.IntegrationTypeRepository;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.integration.IntegrationType;
+import com.epam.reportportal.serviceapi.infrastructure.rules.exception.ErrorType;
+import com.epam.reportportal.serviceapi.infrastructure.rules.exception.ReportPortalException;
 import jakarta.activation.FileTypeMap;
 import java.util.Optional;
 import org.junit.jupiter.api.BeforeEach;

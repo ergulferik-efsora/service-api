@@ -1,10 +1,10 @@
-package com.epam.reportportal.core.tms.mapper.importer;
+package com.epam.reportportal.serviceapi.core.tms.mapper.importer;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-import com.epam.reportportal.core.tms.dto.NewTestFolderRQ;
-import com.epam.reportportal.core.tms.dto.TmsTestCaseImportFormat;
-import com.epam.reportportal.core.tms.dto.TmsTestCaseRQ;
+import com.epam.reportportal.serviceapi.core.tms.dto.NewTestFolderRQ;
+import com.epam.reportportal.serviceapi.core.tms.dto.TmsTestCaseImportFormat;
+import com.epam.reportportal.serviceapi.core.tms.dto.TmsTestCaseRQ;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import java.util.Arrays;
 import java.util.Collections;

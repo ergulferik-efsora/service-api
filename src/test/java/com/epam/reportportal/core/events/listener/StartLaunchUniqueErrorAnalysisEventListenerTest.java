@@ -1,4 +1,4 @@
-package com.epam.reportportal.core.events.listener;
+package com.epam.reportportal.serviceapi.core.events.listener;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.ArgumentMatchers.anyLong;
@@ -8,10 +8,10 @@ import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
-import com.epam.reportportal.extension.event.LaunchStartUniqueErrorAnalysisEvent;
-import com.epam.reportportal.core.launch.cluster.UniqueErrorAnalysisStarter;
-import com.epam.reportportal.core.launch.cluster.config.ClusterEntityContext;
-import com.epam.reportportal.core.project.config.ProjectConfigProvider;
+import com.epam.reportportal.serviceapi.extension.event.LaunchStartUniqueErrorAnalysisEvent;
+import com.epam.reportportal.serviceapi.core.launch.cluster.UniqueErrorAnalysisStarter;
+import com.epam.reportportal.serviceapi.core.launch.cluster.config.ClusterEntityContext;
+import com.epam.reportportal.serviceapi.core.project.config.ProjectConfigProvider;
 import java.util.Collections;
 import java.util.Map;
 import org.junit.jupiter.api.Test;

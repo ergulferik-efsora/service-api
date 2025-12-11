@@ -1,4 +1,4 @@
-package com.epam.reportportal.core.tms.service;
+package com.epam.reportportal.serviceapi.core.tms.service;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
@@ -8,9 +8,9 @@ import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.verifyNoInteractions;
 import static org.mockito.Mockito.when;
 
-import com.epam.reportportal.infrastructure.persistence.dao.tms.TmsTestCaseExecutionRepository;
-import com.epam.reportportal.infrastructure.persistence.entity.item.TestItem;
-import com.epam.reportportal.infrastructure.persistence.entity.tms.TmsTestCaseExecution;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.tms.TmsTestCaseExecutionRepository;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.item.TestItem;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.tms.TmsTestCaseExecution;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;

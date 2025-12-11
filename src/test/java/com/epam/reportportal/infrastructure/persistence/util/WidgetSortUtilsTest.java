@@ -14,16 +14,17 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.infrastructure.persistence.util;
+package com.epam.reportportal.serviceapi.infrastructure.persistence.util;
 
-import static com.epam.reportportal.infrastructure.persistence.dao.constant.WidgetContentRepositoryConstants.SF_NAME;
-import static com.epam.reportportal.infrastructure.persistence.dao.constant.WidgetContentRepositoryConstants.STATISTICS_COUNTER;
-import static com.epam.reportportal.infrastructure.persistence.dao.constant.WidgetContentRepositoryConstants.STATISTICS_TABLE;
-import static com.epam.reportportal.infrastructure.persistence.dao.util.JooqFieldNameTransformer.fieldName;
-import static com.epam.reportportal.infrastructure.persistence.jooq.tables.JLaunch.LAUNCH;
+import static com.epam.reportportal.serviceapi.infrastructure.persistence.dao.constant.WidgetContentRepositoryConstants.SF_NAME;
+import static com.epam.reportportal.serviceapi.infrastructure.persistence.dao.constant.WidgetContentRepositoryConstants.STATISTICS_COUNTER;
+import static com.epam.reportportal.serviceapi.infrastructure.persistence.dao.constant.WidgetContentRepositoryConstants.STATISTICS_TABLE;
+import static com.epam.reportportal.serviceapi.infrastructure.persistence.dao.util.JooqFieldNameTransformer.fieldName;
+import static com.epam.reportportal.serviceapi.infrastructure.persistence.jooq.tables.JLaunch.LAUNCH;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import com.epam.reportportal.infrastructure.persistence.commons.querygen.FilterTarget;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.commons.querygen.FilterTarget;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.util.WidgetSortUtils;
 import java.util.List;
 import org.jooq.SortField;
 import org.jooq.impl.DSL;

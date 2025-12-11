@@ -1,4 +1,4 @@
-package com.epam.reportportal.core.tms.service;
+package com.epam.reportportal.serviceapi.core.tms.service;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
@@ -7,13 +7,13 @@ import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.verifyNoInteractions;
 import static org.mockito.Mockito.when;
 
-import com.epam.reportportal.infrastructure.persistence.entity.tms.TmsAttribute;
-import com.epam.reportportal.infrastructure.persistence.entity.tms.TmsTestCase;
-import com.epam.reportportal.infrastructure.persistence.entity.tms.TmsTestCaseAttribute;
-import com.epam.reportportal.infrastructure.persistence.entity.tms.TmsTestCaseAttributeId;
-import com.epam.reportportal.infrastructure.persistence.dao.tms.TmsTestCaseAttributeRepository;
-import com.epam.reportportal.core.tms.dto.TmsTestCaseAttributeRQ;
-import com.epam.reportportal.core.tms.mapper.TmsTestCaseAttributeMapper;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.tms.TmsAttribute;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.tms.TmsTestCase;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.tms.TmsTestCaseAttribute;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.tms.TmsTestCaseAttributeId;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.tms.TmsTestCaseAttributeRepository;
+import com.epam.reportportal.serviceapi.core.tms.dto.TmsTestCaseAttributeRQ;
+import com.epam.reportportal.serviceapi.core.tms.mapper.TmsTestCaseAttributeMapper;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;

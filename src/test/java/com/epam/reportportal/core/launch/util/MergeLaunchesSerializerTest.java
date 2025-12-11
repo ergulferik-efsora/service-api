@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.core.launch.util;
+package com.epam.reportportal.serviceapi.core.launch.util;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import com.epam.reportportal.ws.BaseMvcTest;
-import com.epam.reportportal.reporting.ItemAttributeResource;
-import com.epam.reportportal.reporting.MergeLaunchesRQ;
-import com.epam.reportportal.reporting.Mode;
+import com.epam.reportportal.serviceapi.reporting.ItemAttributeResource;
+import com.epam.reportportal.serviceapi.reporting.MergeLaunchesRQ;
+import com.epam.reportportal.serviceapi.reporting.Mode;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import java.io.IOException;

@@ -18,14 +18,15 @@ package com.epam.reportportal.ws.converter.builders;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import com.epam.reportportal.infrastructure.persistence.entity.dashboard.Dashboard;
-import com.epam.reportportal.infrastructure.persistence.entity.dashboard.DashboardWidget;
-import com.epam.reportportal.infrastructure.persistence.entity.dashboard.DashboardWidgetId;
-import com.epam.reportportal.model.Position;
-import com.epam.reportportal.model.Size;
-import com.epam.reportportal.model.dashboard.CreateDashboardRQ;
-import com.epam.reportportal.model.dashboard.DashboardResource;
-import com.epam.reportportal.model.dashboard.UpdateDashboardRQ;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.dashboard.Dashboard;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.dashboard.DashboardWidget;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.dashboard.DashboardWidgetId;
+import com.epam.reportportal.serviceapi.model.Position;
+import com.epam.reportportal.serviceapi.model.Size;
+import com.epam.reportportal.serviceapi.model.dashboard.CreateDashboardRQ;
+import com.epam.reportportal.serviceapi.model.dashboard.DashboardResource;
+import com.epam.reportportal.serviceapi.model.dashboard.UpdateDashboardRQ;
+import com.epam.reportportal.serviceapi.ws.converter.builders.DashboardBuilder;
 import java.util.Collections;
 import org.junit.jupiter.api.Test;
 

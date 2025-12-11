@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.core.integration.impl;
+package com.epam.reportportal.serviceapi.core.integration.impl;
 
 import static com.epam.reportportal.OrganizationUtil.TEST_PROJECT_KEY;
 import static com.epam.reportportal.OrganizationUtil.TEST_PROJECT_NAME;
@@ -24,15 +24,15 @@ import static org.junit.jupiter.api.Assertions.assertNull;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
-import com.epam.reportportal.core.bts.handler.GetBugTrackingSystemHandler;
-import com.epam.reportportal.core.integration.GetIntegrationHandler;
-import com.epam.reportportal.core.integration.impl.util.IntegrationTestUtil;
-import com.epam.reportportal.core.integration.util.IntegrationService;
-import com.epam.reportportal.infrastructure.persistence.dao.IntegrationRepository;
-import com.epam.reportportal.infrastructure.persistence.dao.IntegrationTypeRepository;
-import com.epam.reportportal.infrastructure.persistence.dao.ProjectRepository;
-import com.epam.reportportal.infrastructure.persistence.entity.project.Project;
-import com.epam.reportportal.model.integration.IntegrationResource;
+import com.epam.reportportal.serviceapi.core.bts.handler.GetBugTrackingSystemHandler;
+import com.epam.reportportal.serviceapi.core.integration.GetIntegrationHandler;
+import com.epam.reportportal.serviceapi.core.integration.impl.util.IntegrationTestUtil;
+import com.epam.reportportal.serviceapi.core.integration.util.IntegrationService;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.IntegrationRepository;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.IntegrationTypeRepository;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.ProjectRepository;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.project.Project;
+import com.epam.reportportal.serviceapi.model.integration.IntegrationResource;
 import java.util.Map;
 import java.util.Optional;
 import org.junit.jupiter.api.Test;

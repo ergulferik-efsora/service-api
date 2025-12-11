@@ -19,8 +19,9 @@ package com.epam.reportportal.ws.converter.converters;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
-import com.epam.reportportal.infrastructure.persistence.entity.user.RestorePasswordBid;
-import com.epam.reportportal.model.user.RestorePasswordRQ;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.user.RestorePasswordBid;
+import com.epam.reportportal.serviceapi.model.user.RestorePasswordRQ;
+import com.epam.reportportal.serviceapi.ws.converter.converters.RestorePasswordBidConverter;
 import org.junit.jupiter.api.Test;
 
 /**

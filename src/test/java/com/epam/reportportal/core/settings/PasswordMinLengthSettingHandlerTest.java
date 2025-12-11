@@ -1,9 +1,9 @@
-package com.epam.reportportal.core.settings;
+package com.epam.reportportal.serviceapi.core.settings;
 
 import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
-import com.epam.reportportal.infrastructure.rules.exception.ReportPortalException;
+import com.epam.reportportal.serviceapi.infrastructure.rules.exception.ReportPortalException;
 import org.junit.jupiter.api.Test;
 
 class PasswordMinLengthSettingHandlerTest {

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.infrastructure.persistence.dao.constant;
+package com.epam.reportportal.serviceapi.infrastructure.persistence.dao.constant;
 
 /**
  * @author <a href="mailto:ivan_budayeu@epam.com">Ivan Budayeu</a>

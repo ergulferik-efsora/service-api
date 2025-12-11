@@ -14,18 +14,18 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.core.integration.plugin.impl.strategy;
+package com.epam.reportportal.serviceapi.core.integration.plugin.impl.strategy;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.mockito.Mockito.mock;
 
-import com.epam.reportportal.infrastructure.rules.exception.ErrorType;
-import com.epam.reportportal.infrastructure.rules.exception.ReportPortalException;
-import com.epam.reportportal.core.integration.plugin.PluginUploader;
-import com.epam.reportportal.core.integration.plugin.strategy.JarPluginUploader;
-import com.epam.reportportal.core.integration.plugin.strategy.JsonPluginUploader;
-import com.epam.reportportal.core.integration.plugin.strategy.PluginUploaderFactory;
+import com.epam.reportportal.serviceapi.infrastructure.rules.exception.ErrorType;
+import com.epam.reportportal.serviceapi.infrastructure.rules.exception.ReportPortalException;
+import com.epam.reportportal.serviceapi.core.integration.plugin.PluginUploader;
+import com.epam.reportportal.serviceapi.core.integration.plugin.strategy.JarPluginUploader;
+import com.epam.reportportal.serviceapi.core.integration.plugin.strategy.JsonPluginUploader;
+import com.epam.reportportal.serviceapi.core.integration.plugin.strategy.PluginUploaderFactory;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

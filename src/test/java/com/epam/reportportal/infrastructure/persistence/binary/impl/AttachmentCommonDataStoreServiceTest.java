@@ -14,16 +14,16 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.infrastructure.persistence.binary.impl;
+package com.epam.reportportal.serviceapi.infrastructure.persistence.binary.impl;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-import com.epam.reportportal.infrastructure.persistence.binary.AttachmentBinaryDataService;
-import com.epam.reportportal.infrastructure.persistence.commons.BinaryDataMetaInfo;
-import com.epam.reportportal.infrastructure.persistence.dao.AttachmentRepository;
-import com.epam.reportportal.infrastructure.persistence.entity.attachment.Attachment;
-import com.epam.reportportal.infrastructure.persistence.entity.attachment.AttachmentMetaInfo;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.binary.AttachmentBinaryDataService;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.commons.BinaryDataMetaInfo;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.AttachmentRepository;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.attachment.Attachment;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.attachment.AttachmentMetaInfo;
 import com.epam.reportportal.ws.BaseMvcTest;
 import java.time.Instant;
 import java.time.LocalDateTime;

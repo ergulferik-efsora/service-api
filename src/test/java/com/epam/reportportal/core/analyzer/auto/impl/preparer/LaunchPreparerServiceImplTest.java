@@ -14,17 +14,17 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.core.analyzer.auto.impl.preparer;
+package com.epam.reportportal.serviceapi.core.analyzer.auto.impl.preparer;
 
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
-import com.epam.reportportal.infrastructure.persistence.dao.ClusterRepository;
-import com.epam.reportportal.infrastructure.persistence.dao.LaunchRepository;
-import com.epam.reportportal.infrastructure.persistence.entity.cluster.Cluster;
-import com.epam.reportportal.infrastructure.model.analyzer.IndexLaunch;
-import com.epam.reportportal.infrastructure.model.analyzer.IndexTestItem;
-import com.epam.reportportal.infrastructure.model.project.AnalyzerConfig;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.ClusterRepository;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.LaunchRepository;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.cluster.Cluster;
+import com.epam.reportportal.serviceapi.infrastructure.model.analyzer.IndexLaunch;
+import com.epam.reportportal.serviceapi.infrastructure.model.analyzer.IndexTestItem;
+import com.epam.reportportal.serviceapi.infrastructure.model.project.AnalyzerConfig;
 import java.util.List;
 import org.junit.jupiter.api.Test;
 

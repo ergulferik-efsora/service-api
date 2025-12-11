@@ -19,13 +19,14 @@ package com.epam.reportportal.ws.converter.converters;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
-import com.epam.reportportal.infrastructure.persistence.entity.dashboard.Dashboard;
-import com.epam.reportportal.infrastructure.persistence.entity.dashboard.DashboardWidget;
-import com.epam.reportportal.infrastructure.persistence.entity.dashboard.DashboardWidgetId;
-import com.epam.reportportal.infrastructure.persistence.entity.project.Project;
-import com.epam.reportportal.infrastructure.persistence.entity.widget.Widget;
-import com.epam.reportportal.model.activity.DashboardActivityResource;
-import com.epam.reportportal.model.dashboard.DashboardResource;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.dashboard.Dashboard;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.dashboard.DashboardWidget;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.dashboard.DashboardWidgetId;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.project.Project;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.widget.Widget;
+import com.epam.reportportal.serviceapi.model.activity.DashboardActivityResource;
+import com.epam.reportportal.serviceapi.model.dashboard.DashboardResource;
+import com.epam.reportportal.serviceapi.ws.converter.converters.DashboardConverter;
 import java.time.Instant;
 import org.junit.jupiter.api.Test;
 

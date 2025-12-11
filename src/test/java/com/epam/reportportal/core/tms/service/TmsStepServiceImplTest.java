@@ -1,4 +1,4 @@
-package com.epam.reportportal.core.tms.service;
+package com.epam.reportportal.serviceapi.core.tms.service;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.ArgumentMatchers.any;
@@ -7,13 +7,13 @@ import static org.mockito.Mockito.never;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
-import com.epam.reportportal.infrastructure.persistence.entity.tms.TmsAttachment;
-import com.epam.reportportal.infrastructure.persistence.entity.tms.TmsStep;
-import com.epam.reportportal.infrastructure.persistence.entity.tms.TmsStepsManualScenario;
-import com.epam.reportportal.infrastructure.persistence.dao.tms.TmsStepRepository;
-import com.epam.reportportal.core.tms.dto.TmsStepRQ;
-import com.epam.reportportal.core.tms.dto.TmsStepsManualScenarioRQ;
-import com.epam.reportportal.core.tms.mapper.TmsStepMapper;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.tms.TmsAttachment;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.tms.TmsStep;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.tms.TmsStepsManualScenario;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.tms.TmsStepRepository;
+import com.epam.reportportal.serviceapi.core.tms.dto.TmsStepRQ;
+import com.epam.reportportal.serviceapi.core.tms.dto.TmsStepsManualScenarioRQ;
+import com.epam.reportportal.serviceapi.core.tms.mapper.TmsStepMapper;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;

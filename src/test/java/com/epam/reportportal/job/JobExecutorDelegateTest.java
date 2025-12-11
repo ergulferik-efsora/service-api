@@ -19,6 +19,8 @@ package com.epam.reportportal.job;
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 
+import com.epam.reportportal.serviceapi.job.JobExecutorDelegate;
+import com.epam.reportportal.serviceapi.job.SelfCancelableJob;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;

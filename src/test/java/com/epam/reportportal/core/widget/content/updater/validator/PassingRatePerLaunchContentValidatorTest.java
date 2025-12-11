@@ -1,14 +1,14 @@
-package com.epam.reportportal.core.widget.content.updater.validator;
+package com.epam.reportportal.serviceapi.core.widget.content.updater.validator;
 
-import static com.epam.reportportal.core.widget.content.constant.ContentLoaderConstants.LAUNCH_NAME_FIELD;
+import static com.epam.reportportal.serviceapi.core.widget.content.constant.ContentLoaderConstants.LAUNCH_NAME_FIELD;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-import com.epam.reportportal.infrastructure.persistence.commons.querygen.Filter;
-import com.epam.reportportal.infrastructure.persistence.commons.querygen.FilterCondition;
-import com.epam.reportportal.infrastructure.persistence.entity.launch.Launch;
-import com.epam.reportportal.infrastructure.persistence.entity.widget.WidgetOptions;
-import com.epam.reportportal.infrastructure.rules.exception.ReportPortalException;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.commons.querygen.Filter;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.commons.querygen.FilterCondition;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.launch.Launch;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.widget.WidgetOptions;
+import com.epam.reportportal.serviceapi.infrastructure.rules.exception.ReportPortalException;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;

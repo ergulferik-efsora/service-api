@@ -14,9 +14,15 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.infrastructure.persistence.commons.querygen;
+package com.epam.reportportal.serviceapi.infrastructure.persistence.commons.querygen;
 
-import com.epam.reportportal.infrastructure.persistence.entity.launch.Launch;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.commons.querygen.CompositeFilterCondition;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.commons.querygen.Condition;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.commons.querygen.ConvertibleCondition;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.commons.querygen.Filter;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.commons.querygen.FilterCondition;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.commons.querygen.QueryBuilder;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.launch.Launch;
 import com.google.common.collect.Lists;
 import java.util.List;
 import org.jooq.Operator;

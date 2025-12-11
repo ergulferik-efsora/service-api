@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.core.launch.cluster.pipeline.data;
+package com.epam.reportportal.serviceapi.core.launch.cluster.pipeline.data;
 
-import static com.epam.reportportal.core.launch.cluster.utils.ConfigProvider.getConfig;
+import static com.epam.reportportal.serviceapi.core.launch.cluster.utils.ConfigProvider.getConfig;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
@@ -28,19 +28,19 @@ import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
-import com.epam.reportportal.core.analyzer.auto.client.AnalyzerServiceClient;
-import com.epam.reportportal.core.analyzer.auto.client.model.cluster.ClusterData;
-import com.epam.reportportal.core.analyzer.auto.client.model.cluster.GenerateClustersRq;
-import com.epam.reportportal.core.analyzer.auto.impl.preparer.LaunchPreparerService;
-import com.epam.reportportal.core.launch.GetLaunchHandler;
-import com.epam.reportportal.core.launch.cluster.config.ClusterEntityContext;
-import com.epam.reportportal.core.launch.cluster.config.GenerateClustersConfig;
-import com.epam.reportportal.infrastructure.persistence.dao.TestItemRepository;
-import com.epam.reportportal.infrastructure.persistence.entity.item.TestItem;
-import com.epam.reportportal.infrastructure.persistence.entity.launch.Launch;
-import com.epam.reportportal.infrastructure.rules.exception.ReportPortalException;
-import com.epam.reportportal.infrastructure.model.analyzer.IndexLaunch;
-import com.epam.reportportal.infrastructure.model.project.AnalyzerConfig;
+import com.epam.reportportal.serviceapi.core.analyzer.auto.client.AnalyzerServiceClient;
+import com.epam.reportportal.serviceapi.core.analyzer.auto.client.model.cluster.ClusterData;
+import com.epam.reportportal.serviceapi.core.analyzer.auto.client.model.cluster.GenerateClustersRq;
+import com.epam.reportportal.serviceapi.core.analyzer.auto.impl.preparer.LaunchPreparerService;
+import com.epam.reportportal.serviceapi.core.launch.GetLaunchHandler;
+import com.epam.reportportal.serviceapi.core.launch.cluster.config.ClusterEntityContext;
+import com.epam.reportportal.serviceapi.core.launch.cluster.config.GenerateClustersConfig;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.TestItemRepository;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.item.TestItem;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.launch.Launch;
+import com.epam.reportportal.serviceapi.infrastructure.rules.exception.ReportPortalException;
+import com.epam.reportportal.serviceapi.infrastructure.model.analyzer.IndexLaunch;
+import com.epam.reportportal.serviceapi.infrastructure.model.project.AnalyzerConfig;
 import java.util.List;
 import java.util.Optional;
 import org.junit.jupiter.api.Test;

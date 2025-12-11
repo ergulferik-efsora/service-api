@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.core.item.impl;
+package com.epam.reportportal.serviceapi.core.item.impl;
 
 import static com.epam.reportportal.OrganizationUtil.TEST_PROJECT_KEY;
 import static com.epam.reportportal.ReportPortalUserUtil.getRpUser;
-import static com.epam.reportportal.infrastructure.persistence.commons.querygen.constant.LogCriteriaConstant.CRITERIA_TEST_ITEM_ID;
-import static com.epam.reportportal.infrastructure.persistence.util.MembershipUtils.rpUserToMembership;
-import static com.epam.reportportal.util.TestProjectExtractor.extractProjectDetails;
+import static com.epam.reportportal.serviceapi.infrastructure.persistence.commons.querygen.constant.LogCriteriaConstant.CRITERIA_TEST_ITEM_ID;
+import static com.epam.reportportal.serviceapi.infrastructure.persistence.util.MembershipUtils.rpUserToMembership;
+import static com.epam.reportportal.serviceapi.util.TestProjectExtractor.extractProjectDetails;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertThrows;
@@ -30,27 +30,27 @@ import static org.mockito.Mockito.doThrow;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
-import com.epam.reportportal.infrastructure.rules.exception.ErrorType;
-import com.epam.reportportal.infrastructure.rules.exception.ReportPortalException;
-import com.epam.reportportal.infrastructure.persistence.commons.ReportPortalUser;
-import com.epam.reportportal.infrastructure.persistence.commons.querygen.Condition;
-import com.epam.reportportal.infrastructure.persistence.commons.querygen.Filter;
-import com.epam.reportportal.infrastructure.persistence.commons.querygen.FilterCondition;
-import com.epam.reportportal.core.item.TestItemService;
-import com.epam.reportportal.infrastructure.persistence.dao.TestItemRepository;
-import com.epam.reportportal.infrastructure.persistence.dao.UserFilterRepository;
-import com.epam.reportportal.infrastructure.persistence.entity.enums.LaunchModeEnum;
-import com.epam.reportportal.infrastructure.persistence.entity.filter.ObjectType;
-import com.epam.reportportal.infrastructure.persistence.entity.filter.UserFilter;
-import com.epam.reportportal.infrastructure.persistence.entity.item.TestItem;
-import com.epam.reportportal.infrastructure.persistence.entity.item.TestItemResults;
-import com.epam.reportportal.infrastructure.persistence.entity.launch.Launch;
-import com.epam.reportportal.infrastructure.persistence.entity.organization.OrganizationRole;
-import com.epam.reportportal.infrastructure.persistence.entity.project.ProjectRole;
-import com.epam.reportportal.infrastructure.persistence.entity.user.UserRole;
-import com.epam.reportportal.ws.converter.utils.ResourceUpdaterProvider;
-import com.epam.reportportal.ws.converter.utils.item.content.TestItemUpdaterContent;
-import com.epam.reportportal.reporting.TestItemResource;
+import com.epam.reportportal.serviceapi.infrastructure.rules.exception.ErrorType;
+import com.epam.reportportal.serviceapi.infrastructure.rules.exception.ReportPortalException;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.commons.ReportPortalUser;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.commons.querygen.Condition;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.commons.querygen.Filter;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.commons.querygen.FilterCondition;
+import com.epam.reportportal.serviceapi.core.item.TestItemService;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.TestItemRepository;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.UserFilterRepository;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.enums.LaunchModeEnum;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.filter.ObjectType;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.filter.UserFilter;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.item.TestItem;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.item.TestItemResults;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.launch.Launch;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.organization.OrganizationRole;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.project.ProjectRole;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.user.UserRole;
+import com.epam.reportportal.serviceapi.ws.converter.utils.ResourceUpdaterProvider;
+import com.epam.reportportal.serviceapi.ws.converter.utils.item.content.TestItemUpdaterContent;
+import com.epam.reportportal.serviceapi.reporting.TestItemResource;
 import java.time.Instant;
 import java.util.List;
 import java.util.Optional;

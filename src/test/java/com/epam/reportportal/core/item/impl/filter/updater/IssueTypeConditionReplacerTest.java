@@ -14,19 +14,19 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.core.item.impl.filter.updater;
+package com.epam.reportportal.serviceapi.core.item.impl.filter.updater;
 
-import static com.epam.reportportal.infrastructure.persistence.commons.querygen.constant.TestItemCriteriaConstant.CRITERIA_ISSUE_TYPE;
-import static com.epam.reportportal.infrastructure.persistence.commons.querygen.constant.TestItemCriteriaConstant.CRITERIA_ISSUE_TYPE_ID;
+import static com.epam.reportportal.serviceapi.infrastructure.persistence.commons.querygen.constant.TestItemCriteriaConstant.CRITERIA_ISSUE_TYPE;
+import static com.epam.reportportal.serviceapi.infrastructure.persistence.commons.querygen.constant.TestItemCriteriaConstant.CRITERIA_ISSUE_TYPE_ID;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
-import com.epam.reportportal.infrastructure.persistence.commons.querygen.Condition;
-import com.epam.reportportal.infrastructure.persistence.commons.querygen.ConvertibleCondition;
-import com.epam.reportportal.infrastructure.persistence.commons.querygen.Filter;
-import com.epam.reportportal.infrastructure.persistence.commons.querygen.FilterCondition;
-import com.epam.reportportal.infrastructure.persistence.dao.IssueTypeRepository;
-import com.epam.reportportal.infrastructure.persistence.entity.item.TestItem;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.commons.querygen.Condition;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.commons.querygen.ConvertibleCondition;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.commons.querygen.Filter;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.commons.querygen.FilterCondition;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.IssueTypeRepository;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.item.TestItem;
 import java.util.List;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;

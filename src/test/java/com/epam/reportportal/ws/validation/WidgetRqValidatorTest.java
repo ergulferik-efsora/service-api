@@ -3,11 +3,11 @@ package com.epam.reportportal.ws.validation;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-import com.epam.reportportal.infrastructure.model.ValidationConstraints;
-import com.epam.reportportal.infrastructure.persistence.entity.widget.WidgetType;
-import com.epam.reportportal.model.widget.ContentParameters;
-import com.epam.reportportal.model.widget.MaterializedWidgetType;
-import com.epam.reportportal.model.widget.WidgetRQ;
+import com.epam.reportportal.serviceapi.infrastructure.model.ValidationConstraints;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.widget.WidgetType;
+import com.epam.reportportal.serviceapi.model.widget.ContentParameters;
+import com.epam.reportportal.serviceapi.model.widget.MaterializedWidgetType;
+import com.epam.reportportal.serviceapi.model.widget.WidgetRQ;
 import java.util.Collections;
 import java.util.Set;
 import jakarta.validation.ConstraintViolation;

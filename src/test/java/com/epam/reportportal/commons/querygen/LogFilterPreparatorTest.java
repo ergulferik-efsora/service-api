@@ -16,7 +16,7 @@
 
 package com.epam.reportportal.commons.querygen;
 
-import static com.epam.reportportal.infrastructure.persistence.commons.querygen.constant.LogCriteriaConstant.CRITERIA_LOG_LEVEL;
+import static com.epam.reportportal.serviceapi.infrastructure.persistence.commons.querygen.constant.LogCriteriaConstant.CRITERIA_LOG_LEVEL;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertNotSame;
@@ -30,14 +30,15 @@ import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
-import com.epam.reportportal.infrastructure.persistence.commons.querygen.CompositeFilterCondition;
-import com.epam.reportportal.infrastructure.persistence.commons.querygen.Condition;
-import com.epam.reportportal.infrastructure.persistence.commons.querygen.ConvertibleCondition;
-import com.epam.reportportal.infrastructure.persistence.commons.querygen.Filter;
-import com.epam.reportportal.infrastructure.persistence.commons.querygen.FilterCondition;
-import com.epam.reportportal.infrastructure.persistence.commons.querygen.Queryable;
-import com.epam.reportportal.infrastructure.persistence.entity.log.Log;
-import com.epam.reportportal.infrastructure.persistence.service.LogTypeResolver;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.commons.querygen.CompositeFilterCondition;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.commons.querygen.Condition;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.commons.querygen.ConvertibleCondition;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.commons.querygen.Filter;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.commons.querygen.FilterCondition;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.commons.querygen.Queryable;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.log.Log;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.service.LogTypeResolver;
+import com.epam.reportportal.serviceapi.commons.querygen.LogFilterPreparator;
 import java.util.List;
 import org.jooq.Operator;
 import org.junit.jupiter.api.DisplayName;

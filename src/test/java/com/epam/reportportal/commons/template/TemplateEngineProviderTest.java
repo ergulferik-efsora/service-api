@@ -2,7 +2,7 @@ package com.epam.reportportal.commons.template;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 
-import com.epam.reportportal.infrastructure.commons.template.TemplateEngineProvider;
+import com.epam.reportportal.serviceapi.infrastructure.commons.template.TemplateEngineProvider;
 import com.google.common.collect.ImmutableMap;
 import org.hamcrest.CoreMatchers;
 import org.junit.jupiter.api.Test;

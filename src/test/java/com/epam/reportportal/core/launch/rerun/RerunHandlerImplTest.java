@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.core.launch.rerun;
+package com.epam.reportportal.serviceapi.core.launch.rerun;
 
 import static com.epam.reportportal.ReportPortalUserUtil.getRpUser;
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -28,30 +28,30 @@ import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.verifyNoInteractions;
 import static org.mockito.Mockito.when;
 
-import com.epam.reportportal.infrastructure.rules.exception.ErrorType;
-import com.epam.reportportal.infrastructure.rules.exception.ReportPortalException;
-import com.epam.reportportal.infrastructure.persistence.commons.ReportPortalUser;
-import com.epam.reportportal.infrastructure.persistence.commons.querygen.Queryable;
-import com.epam.reportportal.core.item.identity.TestCaseHashGenerator;
-import com.epam.reportportal.core.item.identity.UniqueIdGenerator;
-import com.epam.reportportal.core.item.impl.rerun.RerunSearcher;
-import com.epam.reportportal.core.item.impl.retry.RetryHandler;
-import com.epam.reportportal.core.item.validator.parent.ParentItemValidator;
-import com.epam.reportportal.infrastructure.persistence.dao.LaunchRepository;
-import com.epam.reportportal.infrastructure.persistence.dao.TestItemRepository;
-import com.epam.reportportal.infrastructure.persistence.entity.enums.StatusEnum;
-import com.epam.reportportal.infrastructure.persistence.entity.enums.TestItemTypeEnum;
-import com.epam.reportportal.infrastructure.persistence.entity.item.TestItem;
-import com.epam.reportportal.infrastructure.persistence.entity.item.TestItemResults;
-import com.epam.reportportal.infrastructure.persistence.entity.launch.Launch;
-import com.epam.reportportal.infrastructure.persistence.entity.organization.OrganizationRole;
-import com.epam.reportportal.infrastructure.persistence.entity.project.ProjectRole;
-import com.epam.reportportal.infrastructure.persistence.entity.user.UserRole;
-import com.epam.reportportal.reporting.ItemAttributesRQ;
-import com.epam.reportportal.reporting.ItemCreatedRS;
-import com.epam.reportportal.reporting.Mode;
-import com.epam.reportportal.reporting.StartLaunchRQ;
-import com.epam.reportportal.reporting.StartTestItemRQ;
+import com.epam.reportportal.serviceapi.infrastructure.rules.exception.ErrorType;
+import com.epam.reportportal.serviceapi.infrastructure.rules.exception.ReportPortalException;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.commons.ReportPortalUser;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.commons.querygen.Queryable;
+import com.epam.reportportal.serviceapi.core.item.identity.TestCaseHashGenerator;
+import com.epam.reportportal.serviceapi.core.item.identity.UniqueIdGenerator;
+import com.epam.reportportal.serviceapi.core.item.impl.rerun.RerunSearcher;
+import com.epam.reportportal.serviceapi.core.item.impl.retry.RetryHandler;
+import com.epam.reportportal.serviceapi.core.item.validator.parent.ParentItemValidator;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.LaunchRepository;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.TestItemRepository;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.enums.StatusEnum;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.enums.TestItemTypeEnum;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.item.TestItem;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.item.TestItemResults;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.launch.Launch;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.organization.OrganizationRole;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.project.ProjectRole;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.user.UserRole;
+import com.epam.reportportal.serviceapi.reporting.ItemAttributesRQ;
+import com.epam.reportportal.serviceapi.reporting.ItemCreatedRS;
+import com.epam.reportportal.serviceapi.reporting.Mode;
+import com.epam.reportportal.serviceapi.reporting.StartLaunchRQ;
+import com.epam.reportportal.serviceapi.reporting.StartTestItemRQ;
 import com.google.common.collect.Sets;
 import java.util.ArrayList;
 import java.util.Optional;

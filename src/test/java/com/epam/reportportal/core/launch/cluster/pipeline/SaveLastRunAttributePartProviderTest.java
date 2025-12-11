@@ -14,19 +14,19 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.core.launch.cluster.pipeline;
+package com.epam.reportportal.serviceapi.core.launch.cluster.pipeline;
 
-import static com.epam.reportportal.core.launch.cluster.pipeline.SaveLastRunAttributePartProvider.RP_CLUSTER_LAST_RUN_KEY;
-import static com.epam.reportportal.core.launch.cluster.utils.ConfigProvider.getConfig;
+import static com.epam.reportportal.serviceapi.core.launch.cluster.pipeline.SaveLastRunAttributePartProvider.RP_CLUSTER_LAST_RUN_KEY;
+import static com.epam.reportportal.serviceapi.core.launch.cluster.utils.ConfigProvider.getConfig;
 import static org.mockito.Mockito.anyString;
 import static org.mockito.Mockito.eq;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 
-import com.epam.reportportal.core.launch.cluster.config.GenerateClustersConfig;
-import com.epam.reportportal.infrastructure.persistence.dao.ItemAttributeRepository;
-import com.epam.reportportal.pipeline.PipelinePart;
+import com.epam.reportportal.serviceapi.core.launch.cluster.config.GenerateClustersConfig;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.ItemAttributeRepository;
+import com.epam.reportportal.serviceapi.pipeline.PipelinePart;
 import org.junit.jupiter.api.Test;
 
 /**

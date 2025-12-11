@@ -16,11 +16,11 @@
 
 package com.epam.reportportal;
 
-import com.epam.reportportal.auth.userdetails.DefaultUserDetailsService;
-import com.epam.reportportal.core.analyzer.auto.client.RabbitMqManagementClient;
-import com.epam.reportportal.core.analyzer.auto.client.impl.RabbitMqManagementClientTemplate;
-import com.epam.reportportal.util.ApplicationContextAwareFactoryBeanTest;
-import com.epam.reportportal.ws.resolver.JacksonViewAwareModule;
+import com.epam.reportportal.serviceapi.auth.userdetails.DefaultUserDetailsService;
+import com.epam.reportportal.serviceapi.core.analyzer.auto.client.RabbitMqManagementClient;
+import com.epam.reportportal.serviceapi.core.analyzer.auto.client.impl.RabbitMqManagementClientTemplate;
+import com.epam.reportportal.serviceapi.util.ApplicationContextAwareFactoryBeanTest;
+import com.epam.reportportal.serviceapi.ws.resolver.JacksonViewAwareModule;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.MapperFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -52,9 +52,9 @@ import org.springframework.context.annotation.Profile;
 @EnableAutoConfiguration(exclude = {QuartzAutoConfiguration.class, RabbitAutoConfiguration.class})
 @ComponentScan(value = {"com.epam.reportportal"}, excludeFilters = {
     @ComponentScan.Filter(type = FilterType.REGEX, pattern = "com.epam.reportportal.ws.rabbit.*"),
-    @ComponentScan.Filter(type = FilterType.REGEX, pattern = "com.epam.reportportal.reporting.async.*"),
+    @ComponentScan.Filter(type = FilterType.REGEX, pattern = "com.epam.reportportal.serviceapi.reporting.async.*"),
     @ComponentScan.Filter(type = FilterType.REGEX, pattern = {"com.epam.reportportal.job.*"}),
-    @ComponentScan.Filter(type = FilterType.REGEX, pattern = {"com.epam.reportportal.core.integration.migration.*"}),
+    @ComponentScan.Filter(type = FilterType.REGEX, pattern = {"com.epam.reportportal.serviceapi.core.integration.migration.*"}),
     @ComponentScan.Filter(type = FilterType.ASSIGNABLE_TYPE, classes = ApplicationContextAwareFactoryBeanTest.TestConfig.class)})
 public class TestConfig {
 

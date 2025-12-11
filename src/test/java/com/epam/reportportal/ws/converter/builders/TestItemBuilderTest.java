@@ -21,17 +21,18 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-import com.epam.reportportal.infrastructure.persistence.entity.ItemAttribute;
-import com.epam.reportportal.infrastructure.persistence.entity.enums.StatusEnum;
-import com.epam.reportportal.infrastructure.persistence.entity.enums.TestItemTypeEnum;
-import com.epam.reportportal.infrastructure.persistence.entity.item.Parameter;
-import com.epam.reportportal.infrastructure.persistence.entity.item.TestItem;
-import com.epam.reportportal.infrastructure.persistence.entity.item.TestItemResults;
-import com.epam.reportportal.infrastructure.persistence.entity.launch.Launch;
-import com.epam.reportportal.reporting.ItemAttributeResource;
-import com.epam.reportportal.reporting.ItemAttributesRQ;
-import com.epam.reportportal.reporting.ParameterResource;
-import com.epam.reportportal.reporting.StartTestItemRQ;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.ItemAttribute;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.enums.StatusEnum;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.enums.TestItemTypeEnum;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.item.Parameter;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.item.TestItem;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.item.TestItemResults;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.launch.Launch;
+import com.epam.reportportal.serviceapi.reporting.ItemAttributeResource;
+import com.epam.reportportal.serviceapi.reporting.ItemAttributesRQ;
+import com.epam.reportportal.serviceapi.reporting.ParameterResource;
+import com.epam.reportportal.serviceapi.reporting.StartTestItemRQ;
+import com.epam.reportportal.serviceapi.ws.converter.builders.TestItemBuilder;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Sets;
 import java.time.Instant;
@@ -163,7 +164,7 @@ class TestItemBuilderTest {
     StartTestItemRQ request = new StartTestItemRQ();
     request.setName("item");
     request.setType("step");
-    String codeRef = "com.epam.reportportal.core.item.identity.TestCaseIdHandlerImplTest";
+    String codeRef = "com.epam.reportportal.serviceapi.core.item.identity.TestCaseIdHandlerImplTest";
     request.setCodeRef(codeRef);
 
     TestItem item = new TestItemBuilder().addStartItemRequest(request).get();
@@ -177,7 +178,7 @@ class TestItemBuilderTest {
     StartTestItemRQ request = new StartTestItemRQ();
     request.setName("item");
     request.setType("step");
-    String codeRef = "com.epam.reportportal.core.item.identity.TestCaseIdHandlerImplTest";
+    String codeRef = "com.epam.reportportal.serviceapi.core.item.identity.TestCaseIdHandlerImplTest";
     request.setCodeRef(codeRef);
     ParameterResource param1 = new ParameterResource();
     param1.setKey("key1");

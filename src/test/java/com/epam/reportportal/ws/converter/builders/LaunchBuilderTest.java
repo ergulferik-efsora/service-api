@@ -20,13 +20,14 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-import com.epam.reportportal.infrastructure.persistence.entity.ItemAttribute;
-import com.epam.reportportal.infrastructure.persistence.entity.enums.LaunchModeEnum;
-import com.epam.reportportal.infrastructure.persistence.entity.launch.Launch;
-import com.epam.reportportal.reporting.ItemAttributeResource;
-import com.epam.reportportal.reporting.ItemAttributesRQ;
-import com.epam.reportportal.reporting.Mode;
-import com.epam.reportportal.reporting.StartLaunchRQ;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.ItemAttribute;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.enums.LaunchModeEnum;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.launch.Launch;
+import com.epam.reportportal.serviceapi.reporting.ItemAttributeResource;
+import com.epam.reportportal.serviceapi.reporting.ItemAttributesRQ;
+import com.epam.reportportal.serviceapi.reporting.Mode;
+import com.epam.reportportal.serviceapi.reporting.StartLaunchRQ;
+import com.epam.reportportal.serviceapi.ws.converter.builders.LaunchBuilder;
 import com.google.common.collect.Sets;
 import java.time.Instant;
 import java.time.temporal.ChronoUnit;
@@ -100,7 +101,7 @@ class LaunchBuilderTest {
         Sets.newHashSet(new ItemAttribute("key", "value", false), systemAttribute));
 
     final Launch buildLaunch = new LaunchBuilder(launch).overwriteAttributes(
-        Sets.newHashSet(new com.epam.reportportal.reporting.ItemAttributeResource("newKey",
+        Sets.newHashSet(new ItemAttributeResource("newKey",
             "newVal"
         ))).get();
 

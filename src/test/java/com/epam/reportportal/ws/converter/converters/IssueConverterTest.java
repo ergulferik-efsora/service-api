@@ -18,11 +18,12 @@ package com.epam.reportportal.ws.converter.converters;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import com.epam.reportportal.infrastructure.persistence.entity.enums.TestItemIssueGroup;
-import com.epam.reportportal.infrastructure.persistence.entity.item.issue.IssueEntity;
-import com.epam.reportportal.infrastructure.persistence.entity.item.issue.IssueGroup;
-import com.epam.reportportal.infrastructure.persistence.entity.item.issue.IssueType;
-import com.epam.reportportal.reporting.Issue;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.enums.TestItemIssueGroup;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.item.issue.IssueEntity;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.item.issue.IssueGroup;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.item.issue.IssueType;
+import com.epam.reportportal.serviceapi.reporting.Issue;
+import com.epam.reportportal.serviceapi.ws.converter.converters.IssueConverter;
 import org.junit.jupiter.api.Test;
 
 /**

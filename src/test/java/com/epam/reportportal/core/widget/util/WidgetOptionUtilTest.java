@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.core.widget.util;
+package com.epam.reportportal.serviceapi.core.widget.util;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
-import com.epam.reportportal.infrastructure.persistence.entity.widget.WidgetOptions;
-import com.epam.reportportal.infrastructure.rules.exception.ReportPortalException;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.widget.WidgetOptions;
+import com.epam.reportportal.serviceapi.infrastructure.rules.exception.ReportPortalException;
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.ImmutableMap;
 import com.google.common.collect.Maps;

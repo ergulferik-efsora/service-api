@@ -21,10 +21,11 @@ import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-import com.epam.reportportal.infrastructure.persistence.entity.user.User;
-import com.epam.reportportal.infrastructure.persistence.entity.user.UserRole;
-import com.epam.reportportal.infrastructure.persistence.entity.user.UserType;
-import com.epam.reportportal.model.user.CreateUserRQConfirm;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.user.User;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.user.UserRole;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.user.UserType;
+import com.epam.reportportal.serviceapi.model.user.CreateUserRQConfirm;
+import com.epam.reportportal.serviceapi.ws.converter.builders.UserBuilder;
 import org.junit.jupiter.api.Test;
 
 /**

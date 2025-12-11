@@ -14,16 +14,16 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.core.widget.content.remover;
+package com.epam.reportportal.serviceapi.core.widget.content.remover;
 
-import static com.epam.reportportal.core.widget.content.loader.materialized.handler.MaterializedWidgetStateHandler.VIEW_NAME;
+import static com.epam.reportportal.serviceapi.core.widget.content.loader.materialized.handler.MaterializedWidgetStateHandler.VIEW_NAME;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 
-import com.epam.reportportal.infrastructure.persistence.dao.WidgetContentRepository;
-import com.epam.reportportal.infrastructure.persistence.entity.widget.Widget;
-import com.epam.reportportal.infrastructure.persistence.entity.widget.WidgetOptions;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.WidgetContentRepository;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.widget.Widget;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.widget.WidgetOptions;
 import java.util.Map;
 import org.junit.jupiter.api.Test;
 

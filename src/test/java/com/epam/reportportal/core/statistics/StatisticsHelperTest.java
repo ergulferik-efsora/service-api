@@ -14,15 +14,15 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.core.statistics;
+package com.epam.reportportal.serviceapi.core.statistics;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
-import com.epam.reportportal.infrastructure.persistence.entity.enums.StatusEnum;
-import com.epam.reportportal.infrastructure.persistence.entity.statistics.Statistics;
-import com.epam.reportportal.infrastructure.persistence.entity.statistics.StatisticsField;
-import com.epam.reportportal.infrastructure.rules.exception.ReportPortalException;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.enums.StatusEnum;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.statistics.Statistics;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.statistics.StatisticsField;
+import com.epam.reportportal.serviceapi.infrastructure.rules.exception.ReportPortalException;
 import com.google.common.collect.Sets;
 import java.util.List;
 import java.util.stream.Collectors;

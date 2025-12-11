@@ -14,15 +14,15 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.core.item.impl;
+package com.epam.reportportal.serviceapi.core.item.impl;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.mockito.Mockito.when;
 
-import com.epam.reportportal.infrastructure.persistence.dao.TestItemRepository;
-import com.epam.reportportal.infrastructure.persistence.entity.item.issue.IssueType;
-import com.epam.reportportal.infrastructure.rules.exception.ReportPortalException;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.TestItemRepository;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.item.issue.IssueType;
+import com.epam.reportportal.serviceapi.infrastructure.rules.exception.ReportPortalException;
 import java.util.Collections;
 import java.util.Optional;
 import org.junit.jupiter.api.Test;

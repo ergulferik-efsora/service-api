@@ -1,4 +1,4 @@
-package com.epam.reportportal.core.tms.controller.unit;
+package com.epam.reportportal.serviceapi.core.tms.controller.unit;
 
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.eq;
@@ -13,17 +13,15 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 import static org.springframework.test.web.servlet.setup.MockMvcBuilders.standaloneSetup;
 
-import com.epam.reportportal.core.tms.controller.TmsAttributeController;
-import com.epam.reportportal.core.tms.dto.TmsAttributeRQ;
-import com.epam.reportportal.core.tms.dto.TmsAttributeRS;
-import com.epam.reportportal.core.tms.service.TmsAttributeService;
-import com.epam.reportportal.infrastructure.persistence.commons.querygen.Filter;
-import com.epam.reportportal.model.Page;
-import com.epam.reportportal.ws.resolver.FilterCriteriaResolver;
-import com.epam.reportportal.ws.resolver.OffsetArgumentResolver;
+import com.epam.reportportal.serviceapi.core.tms.controller.TmsAttributeController;
+import com.epam.reportportal.serviceapi.core.tms.dto.TmsAttributeRQ;
+import com.epam.reportportal.serviceapi.core.tms.dto.TmsAttributeRS;
+import com.epam.reportportal.serviceapi.core.tms.service.TmsAttributeService;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.commons.querygen.Filter;
+import com.epam.reportportal.serviceapi.model.Page;
+import com.epam.reportportal.serviceapi.ws.resolver.FilterCriteriaResolver;
+import com.epam.reportportal.serviceapi.ws.resolver.OffsetArgumentResolver;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import java.util.Collections;
-import java.util.List;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;

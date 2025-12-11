@@ -19,8 +19,9 @@ package com.epam.reportportal.ws.converter.builders;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import com.epam.reportportal.infrastructure.persistence.entity.filter.UserFilter;
-import com.epam.reportportal.infrastructure.persistence.entity.preference.UserPreference;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.filter.UserFilter;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.preference.UserPreference;
+import com.epam.reportportal.serviceapi.ws.converter.builders.UserPreferenceBuilder;
 import org.junit.jupiter.api.Test;
 
 /**

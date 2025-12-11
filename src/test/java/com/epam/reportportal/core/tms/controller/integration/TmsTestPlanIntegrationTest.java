@@ -1,4 +1,4 @@
-package com.epam.reportportal.core.tms.controller.integration;
+package com.epam.reportportal.serviceapi.core.tms.controller.integration;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
@@ -13,18 +13,18 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
-import com.epam.reportportal.core.tms.dto.DuplicateTmsTestPlanRS;
-import com.epam.reportportal.core.tms.dto.TmsTestPlanAttributeRQ;
-import com.epam.reportportal.core.tms.dto.TmsTestPlanRQ;
-import com.epam.reportportal.core.tms.dto.batch.BatchAddTestCasesToPlanRQ;
-import com.epam.reportportal.core.tms.dto.batch.BatchRemoveTestCasesFromPlanRQ;
-import com.epam.reportportal.infrastructure.persistence.dao.tms.TmsTestCaseAttributeRepository;
-import com.epam.reportportal.infrastructure.persistence.dao.tms.TmsTestCaseRepository;
-import com.epam.reportportal.infrastructure.persistence.dao.tms.TmsTestPlanRepository;
-import com.epam.reportportal.infrastructure.persistence.dao.tms.TmsTestPlanTestCaseRepository;
-import com.epam.reportportal.infrastructure.persistence.entity.tms.TmsTestCase;
-import com.epam.reportportal.infrastructure.persistence.entity.tms.TmsTestCaseAttribute;
-import com.epam.reportportal.infrastructure.persistence.entity.tms.TmsTestPlan;
+import com.epam.reportportal.serviceapi.core.tms.dto.DuplicateTmsTestPlanRS;
+import com.epam.reportportal.serviceapi.core.tms.dto.TmsTestPlanAttributeRQ;
+import com.epam.reportportal.serviceapi.core.tms.dto.TmsTestPlanRQ;
+import com.epam.reportportal.serviceapi.core.tms.dto.batch.BatchAddTestCasesToPlanRQ;
+import com.epam.reportportal.serviceapi.core.tms.dto.batch.BatchRemoveTestCasesFromPlanRQ;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.tms.TmsTestCaseAttributeRepository;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.tms.TmsTestCaseRepository;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.tms.TmsTestPlanRepository;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.tms.TmsTestPlanTestCaseRepository;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.tms.TmsTestCase;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.tms.TmsTestCaseAttribute;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.tms.TmsTestPlan;
 import com.epam.reportportal.ws.BaseMvcTest;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import jakarta.persistence.EntityManager;

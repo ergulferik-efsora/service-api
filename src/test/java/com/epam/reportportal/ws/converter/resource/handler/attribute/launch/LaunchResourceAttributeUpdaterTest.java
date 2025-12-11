@@ -19,9 +19,10 @@ package com.epam.reportportal.ws.converter.resource.handler.attribute.launch;
 import static java.util.stream.Collectors.groupingBy;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import com.epam.reportportal.infrastructure.persistence.entity.ItemAttribute;
-import com.epam.reportportal.reporting.ItemAttributeResource;
-import com.epam.reportportal.reporting.LaunchResource;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.ItemAttribute;
+import com.epam.reportportal.serviceapi.reporting.ItemAttributeResource;
+import com.epam.reportportal.serviceapi.reporting.LaunchResource;
+import com.epam.reportportal.serviceapi.ws.converter.resource.handler.attribute.launch.LaunchResourceAttributeUpdater;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;

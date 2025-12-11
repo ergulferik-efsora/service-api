@@ -16,17 +16,17 @@
 
 package com.epam.reportportal.ws;
 
-import com.epam.reportportal.extension.bugtracking.BtsExtension;
+import com.epam.reportportal.serviceapi.extension.bugtracking.BtsExtension;
 import com.epam.reportportal.TestConfig;
 import com.epam.reportportal.auth.OAuthHelper;
-import com.epam.reportportal.core.events.MessageBus;
-import com.epam.reportportal.core.integration.ExecuteIntegrationHandler;
-import com.epam.reportportal.core.integration.plugin.binary.PluginFilesProvider;
-import com.epam.reportportal.core.plugin.Pf4jPluginBox;
-import com.epam.reportportal.infrastructure.persistence.entity.user.UserRole;
-import com.epam.reportportal.util.BinaryDataResponseWriter;
-import com.epam.reportportal.util.email.EmailService;
-import com.epam.reportportal.util.email.MailServiceFactory;
+import com.epam.reportportal.serviceapi.core.events.MessageBus;
+import com.epam.reportportal.serviceapi.core.integration.ExecuteIntegrationHandler;
+import com.epam.reportportal.serviceapi.core.integration.plugin.binary.PluginFilesProvider;
+import com.epam.reportportal.serviceapi.core.plugin.Pf4jPluginBox;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.user.UserRole;
+import com.epam.reportportal.serviceapi.util.BinaryDataResponseWriter;
+import com.epam.reportportal.serviceapi.util.email.EmailService;
+import com.epam.reportportal.serviceapi.util.email.MailServiceFactory;
 import lombok.extern.slf4j.Slf4j;
 import org.flywaydb.test.FlywayTestExecutionListener;
 import org.flywaydb.test.annotation.FlywayTest;

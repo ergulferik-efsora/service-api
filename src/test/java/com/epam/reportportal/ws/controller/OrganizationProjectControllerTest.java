@@ -25,18 +25,18 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
-import com.epam.reportportal.api.model.FilterOperation;
-import com.epam.reportportal.api.model.OperationType;
-import com.epam.reportportal.api.model.OrganizationProjectsPage;
-import com.epam.reportportal.api.model.PatchOperation;
-import com.epam.reportportal.api.model.ProjectRole;
-import com.epam.reportportal.api.model.SearchCriteriaRQ;
-import com.epam.reportportal.api.model.SearchCriteriaSearchCriteriaInner;
-import com.epam.reportportal.api.model.UserProjectInfo;
-import com.epam.reportportal.core.project.ProjectService;
-import com.epam.reportportal.infrastructure.persistence.dao.ProjectUserRepository;
-import com.epam.reportportal.model.IdContainer;
-import com.epam.reportportal.util.SlugUtils;
+import com.epam.reportportal.serviceapi.api.model.FilterOperation;
+import com.epam.reportportal.serviceapi.api.model.OperationType;
+import com.epam.reportportal.serviceapi.api.model.OrganizationProjectsPage;
+import com.epam.reportportal.serviceapi.api.model.PatchOperation;
+import com.epam.reportportal.serviceapi.api.model.ProjectRole;
+import com.epam.reportportal.serviceapi.api.model.SearchCriteriaRQ;
+import com.epam.reportportal.serviceapi.api.model.SearchCriteriaSearchCriteriaInner;
+import com.epam.reportportal.serviceapi.api.model.UserProjectInfo;
+import com.epam.reportportal.serviceapi.core.project.ProjectService;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.ProjectUserRepository;
+import com.epam.reportportal.serviceapi.model.IdContainer;
+import com.epam.reportportal.serviceapi.util.SlugUtils;
 import com.epam.reportportal.ws.BaseMvcTest;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.gson.JsonObject;
@@ -460,7 +460,7 @@ class OrganizationProjectControllerTest extends BaseMvcTest {
         .value(objectMapper.writeValueAsString(values));
 
     var projectUserBefore = projectUserRepository.findProjectUserByUserIdAndProjectId(105L, 301L).get();
-    assertEquals(com.epam.reportportal.infrastructure.persistence.entity.project.ProjectRole.EDITOR, projectUserBefore.getProjectRole());
+    assertEquals(com.epam.reportportal.serviceapi.infrastructure.persistence.entity.project.ProjectRole.EDITOR, projectUserBefore.getProjectRole());
 
     mockMvc.perform(patch("/organizations/201/projects/301")
             .contentType(MediaType.APPLICATION_JSON)

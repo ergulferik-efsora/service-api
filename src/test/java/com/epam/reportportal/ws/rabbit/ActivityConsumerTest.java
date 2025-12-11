@@ -21,9 +21,10 @@ import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.verifyNoInteractions;
 
-import com.epam.reportportal.core.events.ActivityEvent;
-import com.epam.reportportal.infrastructure.persistence.dao.ActivityRepository;
-import com.epam.reportportal.infrastructure.persistence.entity.activity.Activity;
+import com.epam.reportportal.serviceapi.core.events.ActivityEvent;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.ActivityRepository;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.activity.Activity;
+import com.epam.reportportal.serviceapi.ws.rabbit.ActivityConsumer;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;

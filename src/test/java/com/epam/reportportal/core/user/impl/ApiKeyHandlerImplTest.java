@@ -1,11 +1,11 @@
-package com.epam.reportportal.core.user.impl;
+package com.epam.reportportal.serviceapi.core.user.impl;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
-import com.epam.reportportal.infrastructure.persistence.dao.ApiKeyRepository;
-import com.epam.reportportal.infrastructure.rules.exception.ReportPortalException;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.ApiKeyRepository;
+import com.epam.reportportal.serviceapi.infrastructure.rules.exception.ReportPortalException;
 import java.nio.ByteBuffer;
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;

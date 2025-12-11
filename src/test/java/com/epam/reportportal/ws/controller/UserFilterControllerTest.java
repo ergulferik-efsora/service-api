@@ -25,14 +25,14 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.put;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
-import com.epam.reportportal.infrastructure.model.ValidationConstraints;
-import com.epam.reportportal.infrastructure.persistence.commons.querygen.FilterCondition;
-import com.epam.reportportal.infrastructure.persistence.dao.UserFilterRepository;
-import com.epam.reportportal.infrastructure.persistence.entity.filter.UserFilter;
-import com.epam.reportportal.model.EntryCreatedRS;
-import com.epam.reportportal.model.filter.Order;
-import com.epam.reportportal.model.filter.UpdateUserFilterRQ;
-import com.epam.reportportal.model.filter.UserFilterCondition;
+import com.epam.reportportal.serviceapi.infrastructure.model.ValidationConstraints;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.commons.querygen.FilterCondition;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.UserFilterRepository;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.filter.UserFilter;
+import com.epam.reportportal.serviceapi.model.EntryCreatedRS;
+import com.epam.reportportal.serviceapi.model.filter.Order;
+import com.epam.reportportal.serviceapi.model.filter.UpdateUserFilterRQ;
+import com.epam.reportportal.serviceapi.model.filter.UserFilterCondition;
 import com.epam.reportportal.ws.BaseMvcTest;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;

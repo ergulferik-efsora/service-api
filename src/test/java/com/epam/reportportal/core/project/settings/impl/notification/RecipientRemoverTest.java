@@ -1,14 +1,14 @@
-package com.epam.reportportal.core.project.settings.impl.notification;
+package com.epam.reportportal.serviceapi.core.project.settings.impl.notification;
 
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
-import com.epam.reportportal.core.project.settings.notification.RecipientRemover;
-import com.epam.reportportal.infrastructure.persistence.dao.SenderCaseRepository;
-import com.epam.reportportal.infrastructure.persistence.entity.project.Project;
-import com.epam.reportportal.infrastructure.persistence.entity.project.email.SenderCase;
-import com.epam.reportportal.infrastructure.persistence.entity.user.User;
+import com.epam.reportportal.serviceapi.core.project.settings.notification.RecipientRemover;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.SenderCaseRepository;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.project.Project;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.project.email.SenderCase;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.user.User;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;

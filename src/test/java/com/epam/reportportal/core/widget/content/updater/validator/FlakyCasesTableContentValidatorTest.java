@@ -1,13 +1,13 @@
-package com.epam.reportportal.core.widget.content.updater.validator;
+package com.epam.reportportal.serviceapi.core.widget.content.updater.validator;
 
-import com.epam.reportportal.infrastructure.persistence.entity.widget.WidgetOptions;
-import com.epam.reportportal.infrastructure.rules.exception.ReportPortalException;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.widget.WidgetOptions;
+import com.epam.reportportal.serviceapi.infrastructure.rules.exception.ReportPortalException;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import java.util.HashMap;
 import java.util.Map;
 
-import static com.epam.reportportal.core.widget.content.constant.ContentLoaderConstants.LAUNCH_NAME_FIELD;
+import static com.epam.reportportal.serviceapi.core.widget.content.constant.ContentLoaderConstants.LAUNCH_NAME_FIELD;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 

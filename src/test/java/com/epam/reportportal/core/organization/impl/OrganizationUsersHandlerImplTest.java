@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.core.organization.impl;
+package com.epam.reportportal.serviceapi.core.organization.impl;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
@@ -25,22 +25,22 @@ import static org.mockito.Mockito.never;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
-import com.epam.reportportal.infrastructure.rules.exception.ErrorType;
-import com.epam.reportportal.infrastructure.rules.exception.ReportPortalException;
-import com.epam.reportportal.infrastructure.persistence.commons.ReportPortalUser;
-import com.epam.reportportal.infrastructure.persistence.commons.ReportPortalUser.OrganizationDetails;
-import com.epam.reportportal.infrastructure.persistence.dao.ProjectUserRepository;
-import com.epam.reportportal.infrastructure.persistence.dao.UserRepository;
-import com.epam.reportportal.infrastructure.persistence.dao.organization.OrganizationRepositoryCustom;
-import com.epam.reportportal.infrastructure.persistence.dao.organization.OrganizationUserRepository;
-import com.epam.reportportal.infrastructure.persistence.dao.organization.OrganizationUsersRepositoryCustom;
-import com.epam.reportportal.infrastructure.persistence.entity.enums.OrganizationType;
-import com.epam.reportportal.infrastructure.persistence.entity.organization.Organization;
-import com.epam.reportportal.infrastructure.persistence.entity.organization.OrganizationRole;
-import com.epam.reportportal.infrastructure.persistence.entity.user.OrganizationUser;
-import com.epam.reportportal.infrastructure.persistence.entity.user.User;
-import com.epam.reportportal.infrastructure.persistence.entity.user.UserRole;
-import com.epam.reportportal.util.SecurityContextUtils;
+import com.epam.reportportal.serviceapi.infrastructure.rules.exception.ErrorType;
+import com.epam.reportportal.serviceapi.infrastructure.rules.exception.ReportPortalException;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.commons.ReportPortalUser;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.commons.ReportPortalUser.OrganizationDetails;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.ProjectUserRepository;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.UserRepository;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.organization.OrganizationRepositoryCustom;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.organization.OrganizationUserRepository;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.organization.OrganizationUsersRepositoryCustom;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.enums.OrganizationType;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.organization.Organization;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.organization.OrganizationRole;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.user.OrganizationUser;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.user.User;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.user.UserRole;
+import com.epam.reportportal.serviceapi.util.SecurityContextUtils;
 import java.time.Instant;
 import java.util.HashMap;
 import java.util.Map;

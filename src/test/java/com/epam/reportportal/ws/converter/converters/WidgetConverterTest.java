@@ -16,26 +16,27 @@
 
 package com.epam.reportportal.ws.converter.converters;
 
-import static com.epam.reportportal.infrastructure.persistence.commons.querygen.constant.GeneralCriteriaConstant.CRITERIA_LAUNCH_ID;
+import static com.epam.reportportal.serviceapi.infrastructure.persistence.commons.querygen.constant.GeneralCriteriaConstant.CRITERIA_LAUNCH_ID;
 import static org.assertj.core.api.Java6Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-import com.epam.reportportal.infrastructure.persistence.commons.querygen.FilterCondition;
-import com.epam.reportportal.infrastructure.persistence.entity.dashboard.Dashboard;
-import com.epam.reportportal.infrastructure.persistence.entity.dashboard.DashboardWidget;
-import com.epam.reportportal.infrastructure.persistence.entity.dashboard.DashboardWidgetId;
-import com.epam.reportportal.infrastructure.persistence.entity.filter.FilterSort;
-import com.epam.reportportal.infrastructure.persistence.entity.filter.ObjectType;
-import com.epam.reportportal.infrastructure.persistence.entity.filter.UserFilter;
-import com.epam.reportportal.infrastructure.persistence.entity.project.Project;
-import com.epam.reportportal.infrastructure.persistence.entity.widget.Widget;
-import com.epam.reportportal.infrastructure.persistence.entity.widget.WidgetOptions;
-import com.epam.reportportal.model.Position;
-import com.epam.reportportal.model.Size;
-import com.epam.reportportal.model.activity.WidgetActivityResource;
-import com.epam.reportportal.model.dashboard.DashboardResource;
-import com.epam.reportportal.model.widget.WidgetResource;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.commons.querygen.FilterCondition;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.dashboard.Dashboard;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.dashboard.DashboardWidget;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.dashboard.DashboardWidgetId;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.filter.FilterSort;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.filter.ObjectType;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.filter.UserFilter;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.project.Project;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.widget.Widget;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.widget.WidgetOptions;
+import com.epam.reportportal.serviceapi.model.Position;
+import com.epam.reportportal.serviceapi.model.Size;
+import com.epam.reportportal.serviceapi.model.activity.WidgetActivityResource;
+import com.epam.reportportal.serviceapi.model.dashboard.DashboardResource;
+import com.epam.reportportal.serviceapi.model.widget.WidgetResource;
+import com.epam.reportportal.serviceapi.ws.converter.converters.WidgetConverter;
 import com.google.common.collect.Sets;
 import java.util.HashMap;
 import java.util.Map;

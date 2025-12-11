@@ -16,7 +16,7 @@
 
 package com.epam.reportportal.ws.controller;
 
-import static com.epam.reportportal.infrastructure.rules.exception.ErrorType.INCORRECT_REQUEST;
+import static com.epam.reportportal.serviceapi.infrastructure.rules.exception.ErrorType.INCORRECT_REQUEST;
 import static com.epam.reportportal.ws.controller.constants.ValidationTestsConstants.FIELD_NAME_IS_BLANK_MESSAGE;
 import static com.epam.reportportal.ws.controller.constants.ValidationTestsConstants.FIELD_NAME_SIZE_MESSAGE_WITH_FORMAT;
 import static com.epam.reportportal.ws.controller.constants.ValidationTestsConstants.ID_PATH;
@@ -33,10 +33,10 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.put;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
-import com.epam.reportportal.infrastructure.rules.exception.ErrorRS;
-import com.epam.reportportal.model.filter.Order;
-import com.epam.reportportal.model.filter.UpdateUserFilterRQ;
-import com.epam.reportportal.model.filter.UserFilterCondition;
+import com.epam.reportportal.serviceapi.infrastructure.rules.exception.ErrorRS;
+import com.epam.reportportal.serviceapi.model.filter.Order;
+import com.epam.reportportal.serviceapi.model.filter.UpdateUserFilterRQ;
+import com.epam.reportportal.serviceapi.model.filter.UserFilterCondition;
 import com.epam.reportportal.ws.BaseMvcTest;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.common.collect.Lists;

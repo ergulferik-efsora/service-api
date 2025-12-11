@@ -19,12 +19,12 @@ package com.epam.reportportal.ws.validation;
 
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
-import com.epam.reportportal.infrastructure.persistence.commons.Predicates;
-import com.epam.reportportal.infrastructure.rules.commons.validation.BusinessRule;
-import com.epam.reportportal.infrastructure.rules.commons.validation.BusinessRuleViolationException;
-import com.epam.reportportal.infrastructure.rules.commons.validation.Suppliers;
-import com.epam.reportportal.infrastructure.rules.exception.ReportPortalException;
-import com.epam.reportportal.infrastructure.rules.exception.ErrorType;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.commons.Predicates;
+import com.epam.reportportal.serviceapi.infrastructure.rules.commons.validation.BusinessRule;
+import com.epam.reportportal.serviceapi.infrastructure.rules.commons.validation.BusinessRuleViolationException;
+import com.epam.reportportal.serviceapi.infrastructure.rules.commons.validation.Suppliers;
+import com.epam.reportportal.serviceapi.infrastructure.rules.exception.ReportPortalException;
+import com.epam.reportportal.serviceapi.infrastructure.rules.exception.ErrorType;
 import org.junit.jupiter.api.Test;
 
 /**

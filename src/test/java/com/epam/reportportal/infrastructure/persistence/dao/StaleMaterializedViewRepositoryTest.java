@@ -1,11 +1,12 @@
-package com.epam.reportportal.infrastructure.persistence.dao;
+package com.epam.reportportal.serviceapi.infrastructure.persistence.dao;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.StaleMaterializedViewRepository;
 import com.epam.reportportal.ws.BaseMvcTest;
-import com.epam.reportportal.infrastructure.persistence.entity.materialized.StaleMaterializedView;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.materialized.StaleMaterializedView;
 import java.time.Instant;
 import java.util.Optional;
 import org.junit.jupiter.api.Test;

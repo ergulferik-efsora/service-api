@@ -30,12 +30,12 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
-import com.epam.reportportal.infrastructure.persistence.dao.WidgetRepository;
-import com.epam.reportportal.infrastructure.persistence.entity.widget.Widget;
-import com.epam.reportportal.model.EntryCreatedRS;
-import com.epam.reportportal.model.widget.ContentParameters;
-import com.epam.reportportal.model.widget.WidgetPreviewRQ;
-import com.epam.reportportal.model.widget.WidgetRQ;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.WidgetRepository;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.widget.Widget;
+import com.epam.reportportal.serviceapi.model.EntryCreatedRS;
+import com.epam.reportportal.serviceapi.model.widget.ContentParameters;
+import com.epam.reportportal.serviceapi.model.widget.WidgetPreviewRQ;
+import com.epam.reportportal.serviceapi.model.widget.WidgetRQ;
 import com.epam.reportportal.ws.BaseMvcTest;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import java.util.Arrays;

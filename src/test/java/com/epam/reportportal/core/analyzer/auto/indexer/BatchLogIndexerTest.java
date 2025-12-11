@@ -1,6 +1,6 @@
-package com.epam.reportportal.core.analyzer.auto.indexer;
+package com.epam.reportportal.serviceapi.core.analyzer.auto.indexer;
 
-import static com.epam.reportportal.infrastructure.persistence.entity.AnalyzeMode.ALL_LAUNCHES;
+import static com.epam.reportportal.serviceapi.infrastructure.persistence.entity.AnalyzeMode.ALL_LAUNCHES;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.anyInt;
 import static org.mockito.ArgumentMatchers.anyList;
@@ -10,15 +10,15 @@ import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
-import com.epam.reportportal.core.analyzer.auto.client.IndexerServiceClient;
-import com.epam.reportportal.core.analyzer.auto.impl.preparer.LaunchPreparerService;
-import com.epam.reportportal.infrastructure.persistence.dao.LaunchRepository;
-import com.epam.reportportal.infrastructure.persistence.dao.TestItemRepository;
-import com.epam.reportportal.infrastructure.persistence.jooq.enums.JLaunchModeEnum;
-import com.epam.reportportal.infrastructure.persistence.jooq.enums.JStatusEnum;
-import com.epam.reportportal.infrastructure.model.analyzer.IndexLaunch;
-import com.epam.reportportal.infrastructure.model.analyzer.IndexTestItem;
-import com.epam.reportportal.infrastructure.model.project.AnalyzerConfig;
+import com.epam.reportportal.serviceapi.core.analyzer.auto.client.IndexerServiceClient;
+import com.epam.reportportal.serviceapi.core.analyzer.auto.impl.preparer.LaunchPreparerService;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.LaunchRepository;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.TestItemRepository;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.jooq.enums.JLaunchModeEnum;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.jooq.enums.JStatusEnum;
+import com.epam.reportportal.serviceapi.infrastructure.model.analyzer.IndexLaunch;
+import com.epam.reportportal.serviceapi.infrastructure.model.analyzer.IndexTestItem;
+import com.epam.reportportal.serviceapi.infrastructure.model.project.AnalyzerConfig;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.util.Collection;

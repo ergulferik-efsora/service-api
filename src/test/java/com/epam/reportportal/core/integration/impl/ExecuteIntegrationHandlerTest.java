@@ -1,4 +1,4 @@
-package com.epam.reportportal.core.integration.impl;
+package com.epam.reportportal.serviceapi.core.integration.impl;
 
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.mockito.Mockito.eq;
@@ -7,12 +7,12 @@ import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.verifyNoInteractions;
 import static org.mockito.Mockito.when;
 
-import com.epam.reportportal.extension.CommonPluginCommand;
-import com.epam.reportportal.extension.ReportPortalExtensionPoint;
-import com.epam.reportportal.infrastructure.rules.exception.ReportPortalException;
-import com.epam.reportportal.core.integration.ExecuteIntegrationHandler;
-import com.epam.reportportal.core.plugin.PluginBox;
-import com.epam.reportportal.infrastructure.persistence.dao.IntegrationRepository;
+import com.epam.reportportal.serviceapi.extension.CommonPluginCommand;
+import com.epam.reportportal.serviceapi.extension.ReportPortalExtensionPoint;
+import com.epam.reportportal.serviceapi.infrastructure.rules.exception.ReportPortalException;
+import com.epam.reportportal.serviceapi.core.integration.ExecuteIntegrationHandler;
+import com.epam.reportportal.serviceapi.core.plugin.PluginBox;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.IntegrationRepository;
 import java.util.Collections;
 import java.util.Map;
 import java.util.Optional;

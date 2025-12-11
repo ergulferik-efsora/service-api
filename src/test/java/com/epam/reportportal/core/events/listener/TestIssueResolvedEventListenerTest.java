@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.core.events.listener;
+package com.epam.reportportal.serviceapi.core.events.listener;
 
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 
-import com.epam.reportportal.core.events.activity.item.IssueResolvedEvent;
-import com.epam.reportportal.core.events.subscriber.impl.delegate.ProjectConfigDelegatingSubscriber;
+import com.epam.reportportal.serviceapi.core.events.activity.item.IssueResolvedEvent;
+import com.epam.reportportal.serviceapi.core.events.subscriber.impl.delegate.ProjectConfigDelegatingSubscriber;
 import java.util.List;
 import org.junit.jupiter.api.Test;
 

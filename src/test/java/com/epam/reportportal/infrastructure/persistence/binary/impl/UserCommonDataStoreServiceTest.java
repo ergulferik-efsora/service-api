@@ -14,17 +14,17 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.infrastructure.persistence.binary.impl;
+package com.epam.reportportal.serviceapi.infrastructure.persistence.binary.impl;
 
-import static com.epam.reportportal.infrastructure.persistence.binary.impl.CommonDataStoreServiceTest.getMultipartFile;
+import static com.epam.reportportal.serviceapi.infrastructure.persistence.binary.impl.CommonDataStoreServiceTest.getMultipartFile;
 import static org.assertj.core.api.Assertions.assertThat;
 
-import com.epam.reportportal.infrastructure.commons.Thumbnailator;
+import com.epam.reportportal.serviceapi.infrastructure.commons.Thumbnailator;
 import com.epam.reportportal.ws.BaseMvcTest;
-import com.epam.reportportal.infrastructure.persistence.binary.UserBinaryDataService;
-import com.epam.reportportal.infrastructure.persistence.dao.UserRepository;
-import com.epam.reportportal.infrastructure.persistence.entity.attachment.BinaryData;
-import com.epam.reportportal.infrastructure.persistence.entity.user.User;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.binary.UserBinaryDataService;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.UserRepository;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.attachment.BinaryData;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.user.User;
 import java.io.IOException;
 import org.apache.commons.io.IOUtils;
 import org.junit.jupiter.api.Test;

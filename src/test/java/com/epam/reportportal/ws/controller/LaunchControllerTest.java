@@ -16,9 +16,9 @@
 
 package com.epam.reportportal.ws.controller;
 
-import static com.epam.reportportal.infrastructure.persistence.commons.querygen.constant.GeneralCriteriaConstant.CRITERIA_PROJECT_ID;
-import static com.epam.reportportal.reporting.Mode.DEBUG;
-import static com.epam.reportportal.reporting.Mode.DEFAULT;
+import static com.epam.reportportal.serviceapi.infrastructure.persistence.commons.querygen.constant.GeneralCriteriaConstant.CRITERIA_PROJECT_ID;
+import static com.epam.reportportal.serviceapi.reporting.Mode.DEBUG;
+import static com.epam.reportportal.serviceapi.reporting.Mode.DEFAULT;
 import static java.util.stream.Collectors.toMap;
 import static org.hamcrest.Matchers.hasSize;
 import static org.hamcrest.Matchers.matchesPattern;
@@ -33,25 +33,25 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
-import com.epam.reportportal.infrastructure.rules.exception.ReportPortalException;
-import com.epam.reportportal.infrastructure.persistence.commons.querygen.Filter;
-import com.epam.reportportal.infrastructure.persistence.commons.querygen.FilterCondition;
-import com.epam.reportportal.infrastructure.persistence.dao.LaunchRepository;
-import com.epam.reportportal.infrastructure.persistence.entity.enums.LaunchModeEnum;
-import com.epam.reportportal.infrastructure.persistence.entity.enums.StatusEnum;
-import com.epam.reportportal.infrastructure.persistence.entity.launch.Launch;
-import com.epam.reportportal.model.BulkRQ;
-import com.epam.reportportal.model.DeleteBulkRQ;
-import com.epam.reportportal.model.launch.AnalyzeLaunchRQ;
-import com.epam.reportportal.model.launch.UpdateLaunchRQ;
+import com.epam.reportportal.serviceapi.infrastructure.rules.exception.ReportPortalException;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.commons.querygen.Filter;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.commons.querygen.FilterCondition;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.LaunchRepository;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.enums.LaunchModeEnum;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.enums.StatusEnum;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.launch.Launch;
+import com.epam.reportportal.serviceapi.model.BulkRQ;
+import com.epam.reportportal.serviceapi.model.DeleteBulkRQ;
+import com.epam.reportportal.serviceapi.model.launch.AnalyzeLaunchRQ;
+import com.epam.reportportal.serviceapi.model.launch.UpdateLaunchRQ;
 import com.epam.reportportal.ws.BaseMvcTest;
-import com.epam.reportportal.reporting.BulkInfoUpdateRQ;
-import com.epam.reportportal.reporting.FinishExecutionRQ;
-import com.epam.reportportal.reporting.ItemAttributeResource;
-import com.epam.reportportal.reporting.ItemAttributesRQ;
-import com.epam.reportportal.reporting.MergeLaunchesRQ;
-import com.epam.reportportal.reporting.StartLaunchRQ;
-import com.epam.reportportal.reporting.UpdateItemAttributeRQ;
+import com.epam.reportportal.serviceapi.reporting.BulkInfoUpdateRQ;
+import com.epam.reportportal.serviceapi.reporting.FinishExecutionRQ;
+import com.epam.reportportal.serviceapi.reporting.ItemAttributeResource;
+import com.epam.reportportal.serviceapi.reporting.ItemAttributesRQ;
+import com.epam.reportportal.serviceapi.reporting.MergeLaunchesRQ;
+import com.epam.reportportal.serviceapi.reporting.StartLaunchRQ;
+import com.epam.reportportal.serviceapi.reporting.UpdateItemAttributeRQ;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Sets;

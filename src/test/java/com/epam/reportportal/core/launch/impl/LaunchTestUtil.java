@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.core.launch.impl;
+package com.epam.reportportal.serviceapi.core.launch.impl;
 
-import com.epam.reportportal.infrastructure.persistence.entity.enums.LaunchModeEnum;
-import com.epam.reportportal.infrastructure.persistence.entity.enums.StatusEnum;
-import com.epam.reportportal.infrastructure.persistence.entity.launch.Launch;
-import com.epam.reportportal.infrastructure.persistence.entity.user.User;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.enums.LaunchModeEnum;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.enums.StatusEnum;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.launch.Launch;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.user.User;
 import java.time.Instant;
 import java.time.temporal.ChronoUnit;
 import java.util.Optional;

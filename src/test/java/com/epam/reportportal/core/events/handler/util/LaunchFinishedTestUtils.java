@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.core.events.handler.util;
+package com.epam.reportportal.serviceapi.core.events.handler.util;
 
-import com.epam.reportportal.infrastructure.persistence.entity.attribute.Attribute;
-import com.epam.reportportal.infrastructure.persistence.entity.enums.LogicalOperator;
-import com.epam.reportportal.infrastructure.persistence.entity.enums.ProjectAttributeEnum;
-import com.epam.reportportal.infrastructure.persistence.entity.enums.SendCase;
-import com.epam.reportportal.infrastructure.persistence.entity.project.ProjectAttribute;
-import com.epam.reportportal.infrastructure.persistence.entity.project.email.SenderCase;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.attribute.Attribute;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.enums.LogicalOperator;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.enums.ProjectAttributeEnum;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.enums.SendCase;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.project.ProjectAttribute;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.project.email.SenderCase;
 import com.google.common.base.Suppliers;
 import com.google.common.collect.Sets;
 

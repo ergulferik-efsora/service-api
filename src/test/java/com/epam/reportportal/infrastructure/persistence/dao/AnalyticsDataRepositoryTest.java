@@ -1,10 +1,11 @@
-package com.epam.reportportal.infrastructure.persistence.dao;
+package com.epam.reportportal.serviceapi.infrastructure.persistence.dao;
 
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.AnalyticsDataRepository;
 import com.epam.reportportal.ws.BaseMvcTest;
-import com.epam.reportportal.infrastructure.persistence.entity.Metadata;
-import com.epam.reportportal.infrastructure.persistence.entity.analytics.AnalyticsData;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.Metadata;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.analytics.AnalyticsData;
 import java.time.Instant;
 import java.util.HashMap;
 import java.util.Map;

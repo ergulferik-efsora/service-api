@@ -1,4 +1,4 @@
-package com.epam.reportportal.core.tms.controller.unit;
+package com.epam.reportportal.serviceapi.core.tms.controller.unit;
 
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.mockito.ArgumentMatchers.any;
@@ -16,16 +16,16 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 import static org.springframework.test.web.servlet.setup.MockMvcBuilders.standaloneSetup;
 
-import com.epam.reportportal.core.tms.controller.TmsAttachmentController;
-import com.epam.reportportal.core.tms.dto.UploadAttachmentRS;
-import com.epam.reportportal.core.tms.service.TmsAttachmentService;
-import com.epam.reportportal.infrastructure.persistence.binary.tms.TmsAttachmentDataStoreService;
-import com.epam.reportportal.infrastructure.persistence.commons.ReportPortalUser;
-import com.epam.reportportal.infrastructure.persistence.entity.organization.MembershipDetails;
-import com.epam.reportportal.infrastructure.persistence.entity.tms.TmsAttachment;
-import com.epam.reportportal.infrastructure.rules.exception.ErrorType;
-import com.epam.reportportal.infrastructure.rules.exception.ReportPortalException;
-import com.epam.reportportal.util.ProjectExtractor;
+import com.epam.reportportal.serviceapi.core.tms.controller.TmsAttachmentController;
+import com.epam.reportportal.serviceapi.core.tms.dto.UploadAttachmentRS;
+import com.epam.reportportal.serviceapi.core.tms.service.TmsAttachmentService;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.binary.tms.TmsAttachmentDataStoreService;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.commons.ReportPortalUser;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.organization.MembershipDetails;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.tms.TmsAttachment;
+import com.epam.reportportal.serviceapi.infrastructure.rules.exception.ErrorType;
+import com.epam.reportportal.serviceapi.infrastructure.rules.exception.ReportPortalException;
+import com.epam.reportportal.serviceapi.util.ProjectExtractor;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import jakarta.servlet.ServletException;
 import java.io.ByteArrayInputStream;

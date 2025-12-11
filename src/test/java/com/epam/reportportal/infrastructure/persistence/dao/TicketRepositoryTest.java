@@ -14,15 +14,16 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.infrastructure.persistence.dao;
+package com.epam.reportportal.serviceapi.infrastructure.persistence.dao;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.TicketRepository;
 import com.epam.reportportal.ws.BaseMvcTest;
-import com.epam.reportportal.infrastructure.persistence.entity.bts.Ticket;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.bts.Ticket;
 import com.epam.reportportal.ws.BaseMvcTest;
 import java.time.Instant;
 import java.time.temporal.ChronoUnit;

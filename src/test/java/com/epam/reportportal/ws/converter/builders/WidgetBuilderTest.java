@@ -19,11 +19,12 @@ package com.epam.reportportal.ws.converter.builders;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import com.epam.reportportal.infrastructure.persistence.entity.filter.UserFilter;
-import com.epam.reportportal.infrastructure.persistence.entity.widget.Widget;
-import com.epam.reportportal.model.widget.ContentParameters;
-import com.epam.reportportal.model.widget.WidgetPreviewRQ;
-import com.epam.reportportal.model.widget.WidgetRQ;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.filter.UserFilter;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.widget.Widget;
+import com.epam.reportportal.serviceapi.model.widget.ContentParameters;
+import com.epam.reportportal.serviceapi.model.widget.WidgetPreviewRQ;
+import com.epam.reportportal.serviceapi.model.widget.WidgetRQ;
+import com.epam.reportportal.serviceapi.ws.converter.builders.WidgetBuilder;
 import java.util.AbstractMap;
 import java.util.Collections;
 import java.util.HashMap;

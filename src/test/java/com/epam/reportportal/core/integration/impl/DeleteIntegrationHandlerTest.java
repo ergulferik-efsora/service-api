@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.core.integration.impl;
+package com.epam.reportportal.serviceapi.core.integration.impl;
 
 import static com.epam.reportportal.OrganizationUtil.TEST_PROJECT_KEY;
 import static com.epam.reportportal.OrganizationUtil.TEST_PROJECT_NAME;
@@ -29,18 +29,18 @@ import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
 import com.epam.reportportal.ReportPortalUserUtil;
-import com.epam.reportportal.infrastructure.persistence.commons.ReportPortalUser;
-import com.epam.reportportal.infrastructure.rules.commons.validation.Suppliers;
-import com.epam.reportportal.core.integration.DeleteIntegrationHandler;
-import com.epam.reportportal.core.integration.impl.util.IntegrationTestUtil;
-import com.epam.reportportal.infrastructure.persistence.dao.IntegrationRepository;
-import com.epam.reportportal.infrastructure.persistence.dao.IntegrationTypeRepository;
-import com.epam.reportportal.infrastructure.persistence.dao.ProjectRepository;
-import com.epam.reportportal.infrastructure.persistence.entity.organization.OrganizationRole;
-import com.epam.reportportal.infrastructure.persistence.entity.project.Project;
-import com.epam.reportportal.infrastructure.persistence.entity.project.ProjectRole;
-import com.epam.reportportal.infrastructure.persistence.entity.user.UserRole;
-import com.epam.reportportal.reporting.OperationCompletionRS;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.commons.ReportPortalUser;
+import com.epam.reportportal.serviceapi.infrastructure.rules.commons.validation.Suppliers;
+import com.epam.reportportal.serviceapi.core.integration.DeleteIntegrationHandler;
+import com.epam.reportportal.serviceapi.core.integration.impl.util.IntegrationTestUtil;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.IntegrationRepository;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.IntegrationTypeRepository;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.ProjectRepository;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.organization.OrganizationRole;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.project.Project;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.project.ProjectRole;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.user.UserRole;
+import com.epam.reportportal.serviceapi.reporting.OperationCompletionRS;
 import com.google.common.collect.Lists;
 import java.util.Optional;
 import org.junit.jupiter.api.Test;

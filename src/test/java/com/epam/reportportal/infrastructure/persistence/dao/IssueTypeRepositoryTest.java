@@ -14,15 +14,16 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.infrastructure.persistence.dao;
+package com.epam.reportportal.serviceapi.infrastructure.persistence.dao;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.IssueTypeRepository;
 import com.epam.reportportal.ws.BaseMvcTest;
-import com.epam.reportportal.infrastructure.persistence.entity.enums.TestItemIssueGroup;
-import com.epam.reportportal.infrastructure.persistence.entity.item.issue.IssueType;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.enums.TestItemIssueGroup;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.item.issue.IssueType;
 import java.util.List;
 import java.util.Optional;
 import org.hamcrest.Matchers;

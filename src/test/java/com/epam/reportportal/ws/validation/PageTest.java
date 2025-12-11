@@ -1,6 +1,6 @@
 package com.epam.reportportal.ws.validation;
 
-import com.epam.reportportal.model.Page;
+import com.epam.reportportal.serviceapi.model.Page;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

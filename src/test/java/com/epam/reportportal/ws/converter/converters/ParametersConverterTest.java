@@ -18,8 +18,9 @@ package com.epam.reportportal.ws.converter.converters;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import com.epam.reportportal.infrastructure.persistence.entity.item.Parameter;
-import com.epam.reportportal.reporting.ParameterResource;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.item.Parameter;
+import com.epam.reportportal.serviceapi.reporting.ParameterResource;
+import com.epam.reportportal.serviceapi.ws.converter.converters.ParametersConverter;
 import org.junit.jupiter.api.Test;
 
 /**

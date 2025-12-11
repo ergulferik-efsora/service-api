@@ -19,6 +19,7 @@ package com.epam.reportportal.util;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;
 
+import com.epam.reportportal.serviceapi.util.ApplicationContextAwareFactoryBean;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.FactoryBean;

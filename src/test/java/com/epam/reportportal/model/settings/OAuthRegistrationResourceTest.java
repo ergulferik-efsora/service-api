@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.model.settings;
+package com.epam.reportportal.serviceapi.model.settings;
 
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-import com.epam.reportportal.infrastructure.model.settings.OAuthRegistrationResource;
+import com.epam.reportportal.serviceapi.infrastructure.model.settings.OAuthRegistrationResource;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Matcher;

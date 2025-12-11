@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.core.logging;
+package com.epam.reportportal.serviceapi.core.logging;
 
 import org.springframework.amqp.core.Message;
 

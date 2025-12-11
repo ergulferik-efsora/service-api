@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.core.integration.plugin.impl;
+package com.epam.reportportal.serviceapi.core.integration.plugin.impl;
 
 import static java.util.Optional.ofNullable;
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -27,19 +27,19 @@ import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
-import com.epam.reportportal.extension.common.IntegrationTypeProperties;
-import com.epam.reportportal.infrastructure.persistence.commons.ReportPortalUser;
-import com.epam.reportportal.infrastructure.rules.commons.validation.Suppliers;
-import com.epam.reportportal.core.events.activity.PluginUpdatedEvent;
-import com.epam.reportportal.core.integration.impl.util.IntegrationTestUtil;
-import com.epam.reportportal.core.integration.plugin.UpdatePluginHandler;
-import com.epam.reportportal.core.plugin.Pf4jPluginBox;
-import com.epam.reportportal.infrastructure.persistence.dao.IntegrationTypeRepository;
-import com.epam.reportportal.infrastructure.persistence.entity.integration.IntegrationType;
-import com.epam.reportportal.infrastructure.rules.exception.ReportPortalException;
-import com.epam.reportportal.infrastructure.persistence.filesystem.DataStore;
-import com.epam.reportportal.model.integration.UpdatePluginStateRQ;
-import com.epam.reportportal.reporting.OperationCompletionRS;
+import com.epam.reportportal.serviceapi.extension.common.IntegrationTypeProperties;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.commons.ReportPortalUser;
+import com.epam.reportportal.serviceapi.infrastructure.rules.commons.validation.Suppliers;
+import com.epam.reportportal.serviceapi.core.events.activity.PluginUpdatedEvent;
+import com.epam.reportportal.serviceapi.core.integration.impl.util.IntegrationTestUtil;
+import com.epam.reportportal.serviceapi.core.integration.plugin.UpdatePluginHandler;
+import com.epam.reportportal.serviceapi.core.plugin.Pf4jPluginBox;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.IntegrationTypeRepository;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.integration.IntegrationType;
+import com.epam.reportportal.serviceapi.infrastructure.rules.exception.ReportPortalException;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.filesystem.DataStore;
+import com.epam.reportportal.serviceapi.model.integration.UpdatePluginStateRQ;
+import com.epam.reportportal.serviceapi.reporting.OperationCompletionRS;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;

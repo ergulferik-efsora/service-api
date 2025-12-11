@@ -4,8 +4,10 @@ import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.mockito.Mockito.when;
 
-import com.epam.reportportal.infrastructure.persistence.dao.ServerSettingsRepository;
-import com.epam.reportportal.infrastructure.persistence.entity.ServerSettings;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.ServerSettingsRepository;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.ServerSettings;
+import com.epam.reportportal.serviceapi.ws.validation.ValidPassword;
+import com.epam.reportportal.serviceapi.ws.validation.ValidPasswordValidator;
 import jakarta.validation.ConstraintValidatorContext;
 import java.util.Optional;
 import org.junit.jupiter.api.Test;

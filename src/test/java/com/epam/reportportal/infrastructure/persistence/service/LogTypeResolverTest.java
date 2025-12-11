@@ -1,4 +1,4 @@
-package com.epam.reportportal.infrastructure.persistence.service;
+package com.epam.reportportal.serviceapi.infrastructure.persistence.service;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
@@ -7,9 +7,10 @@ import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.verifyNoInteractions;
 import static org.mockito.Mockito.when;
 
-import com.epam.reportportal.infrastructure.persistence.dao.LogTypeRepository;
-import com.epam.reportportal.infrastructure.persistence.entity.enums.LogLevel;
-import com.epam.reportportal.infrastructure.persistence.entity.log.ProjectLogType;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.LogTypeRepository;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.enums.LogLevel;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.log.ProjectLogType;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.service.LogTypeResolver;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;

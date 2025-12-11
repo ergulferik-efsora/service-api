@@ -14,17 +14,17 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.core.project.settings.notification;
+package com.epam.reportportal.serviceapi.core.project.settings.notification;
 
-import static com.epam.reportportal.infrastructure.persistence.entity.enums.SendCase.ALWAYS;
+import static com.epam.reportportal.serviceapi.infrastructure.persistence.entity.enums.SendCase.ALWAYS;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
-import com.epam.reportportal.infrastructure.persistence.dao.SenderCaseRepository;
-import com.epam.reportportal.infrastructure.persistence.entity.enums.LogicalOperator;
-import com.epam.reportportal.infrastructure.persistence.entity.project.email.SenderCase;
-import com.epam.reportportal.model.project.email.SenderCaseDTO;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.SenderCaseRepository;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.enums.LogicalOperator;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.project.email.SenderCase;
+import com.epam.reportportal.serviceapi.model.project.email.SenderCaseDTO;
 import java.util.List;
 import org.junit.jupiter.api.Test;
 

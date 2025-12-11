@@ -1,4 +1,4 @@
-package com.epam.reportportal.core.tms.service;
+package com.epam.reportportal.serviceapi.core.tms.service;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
@@ -18,27 +18,27 @@ import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
-import com.epam.reportportal.core.tms.dto.DuplicateTmsTestFolderRS;
-import com.epam.reportportal.core.tms.dto.batch.BatchTestCaseOperationResultRS;
-import com.epam.reportportal.core.tms.statistics.FolderDuplicationStatistics;
-import com.epam.reportportal.core.tms.statistics.TestCaseDuplicationStatistics;
-import com.epam.reportportal.infrastructure.persistence.commons.querygen.Filter;
-import com.epam.reportportal.infrastructure.persistence.dao.tms.enhanced.TmsTestFolderWithTestCaseCountRepository;
-import com.epam.reportportal.infrastructure.persistence.entity.tms.TmsTestFolder;
-import com.epam.reportportal.infrastructure.persistence.entity.tms.TmsTestFolderWithCountOfTestCases;
-import com.epam.reportportal.infrastructure.persistence.dao.tms.TmsTestFolderRepository;
-import com.epam.reportportal.core.tms.dto.NewTestFolderRQ;
-import com.epam.reportportal.core.tms.dto.TmsTestCaseRQ;
-import com.epam.reportportal.core.tms.dto.TmsTestFolderExportFileType;
-import com.epam.reportportal.core.tms.dto.TmsTestFolderRQ;
-import com.epam.reportportal.core.tms.dto.TmsTestFolderRS;
-import com.epam.reportportal.core.tms.mapper.TmsTestFolderMapper;
-import com.epam.reportportal.core.tms.mapper.exporter.TmsTestFolderExporter;
-import com.epam.reportportal.core.tms.mapper.factory.TmsTestFolderExporterFactory;
-import com.epam.reportportal.core.tms.validation.TestFolderIdValidator;
-import com.epam.reportportal.infrastructure.persistence.entity.project.Project;
-import com.epam.reportportal.infrastructure.rules.exception.ReportPortalException;
-import com.epam.reportportal.model.Page;
+import com.epam.reportportal.serviceapi.core.tms.dto.DuplicateTmsTestFolderRS;
+import com.epam.reportportal.serviceapi.core.tms.dto.batch.BatchTestCaseOperationResultRS;
+import com.epam.reportportal.serviceapi.core.tms.statistics.FolderDuplicationStatistics;
+import com.epam.reportportal.serviceapi.core.tms.statistics.TestCaseDuplicationStatistics;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.commons.querygen.Filter;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.tms.enhanced.TmsTestFolderWithTestCaseCountRepository;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.tms.TmsTestFolder;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.tms.TmsTestFolderWithCountOfTestCases;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.tms.TmsTestFolderRepository;
+import com.epam.reportportal.serviceapi.core.tms.dto.NewTestFolderRQ;
+import com.epam.reportportal.serviceapi.core.tms.dto.TmsTestCaseRQ;
+import com.epam.reportportal.serviceapi.core.tms.dto.TmsTestFolderExportFileType;
+import com.epam.reportportal.serviceapi.core.tms.dto.TmsTestFolderRQ;
+import com.epam.reportportal.serviceapi.core.tms.dto.TmsTestFolderRS;
+import com.epam.reportportal.serviceapi.core.tms.mapper.TmsTestFolderMapper;
+import com.epam.reportportal.serviceapi.core.tms.mapper.exporter.TmsTestFolderExporter;
+import com.epam.reportportal.serviceapi.core.tms.mapper.factory.TmsTestFolderExporterFactory;
+import com.epam.reportportal.serviceapi.core.tms.validation.TestFolderIdValidator;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.project.Project;
+import com.epam.reportportal.serviceapi.infrastructure.rules.exception.ReportPortalException;
+import com.epam.reportportal.serviceapi.model.Page;
 import jakarta.servlet.http.HttpServletResponse;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -1689,7 +1689,7 @@ class TmsTestFolderServiceImplTest {
         .successCount(1)
         .failureCount(1)
         .successTestCaseIds(List.of(10L))
-        .errors(List.of(new com.epam.reportportal.core.tms.dto.batch.BatchTestCaseOperationError(
+        .errors(List.of(new com.epam.reportportal.serviceapi.core.tms.dto.batch.BatchTestCaseOperationError(
             2L, "Failed to duplicate test case")))
         .build();
 

@@ -14,28 +14,28 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.core.analyzer.auto.impl;
+package com.epam.reportportal.serviceapi.core.analyzer.auto.impl;
 
-import static com.epam.reportportal.core.analyzer.auto.impl.AnalyzerUtils.fromTestItem;
+import static com.epam.reportportal.serviceapi.core.analyzer.auto.impl.AnalyzerUtils.fromTestItem;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-import com.epam.reportportal.infrastructure.persistence.entity.attribute.Attribute;
-import com.epam.reportportal.infrastructure.persistence.entity.enums.LogLevel;
-import com.epam.reportportal.infrastructure.persistence.entity.enums.ProjectAttributeEnum;
-import com.epam.reportportal.infrastructure.persistence.entity.item.TestItem;
-import com.epam.reportportal.infrastructure.persistence.entity.item.TestItemResults;
-import com.epam.reportportal.infrastructure.persistence.entity.item.issue.IssueEntity;
-import com.epam.reportportal.infrastructure.persistence.entity.item.issue.IssueType;
-import com.epam.reportportal.infrastructure.persistence.entity.log.LogFull;
-import com.epam.reportportal.infrastructure.persistence.entity.project.Project;
-import com.epam.reportportal.infrastructure.persistence.entity.project.ProjectUtils;
-import com.epam.reportportal.model.analyzer.RelevantItemInfo;
-import com.epam.reportportal.infrastructure.model.analyzer.IndexLog;
-import com.epam.reportportal.infrastructure.model.analyzer.IndexTestItem;
-import com.epam.reportportal.infrastructure.model.project.AnalyzerConfig;
-import com.epam.reportportal.model.project.UniqueErrorConfig;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.attribute.Attribute;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.enums.LogLevel;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.enums.ProjectAttributeEnum;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.item.TestItem;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.item.TestItemResults;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.item.issue.IssueEntity;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.item.issue.IssueType;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.log.LogFull;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.project.Project;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.project.ProjectUtils;
+import com.epam.reportportal.serviceapi.model.analyzer.RelevantItemInfo;
+import com.epam.reportportal.serviceapi.infrastructure.model.analyzer.IndexLog;
+import com.epam.reportportal.serviceapi.infrastructure.model.analyzer.IndexTestItem;
+import com.epam.reportportal.serviceapi.infrastructure.model.project.AnalyzerConfig;
+import com.epam.reportportal.serviceapi.model.project.UniqueErrorConfig;
 import java.time.Instant;
 import java.time.LocalDateTime;
 import java.time.ZoneId;

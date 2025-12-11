@@ -1,6 +1,6 @@
-package com.epam.reportportal.core.events.handler;
+package com.epam.reportportal.serviceapi.core.events.handler;
 
-import static com.epam.reportportal.core.widget.content.loader.materialized.handler.MaterializedWidgetStateHandler.REFRESH;
+import static com.epam.reportportal.serviceapi.core.widget.content.loader.materialized.handler.MaterializedWidgetStateHandler.REFRESH;
 import static org.mockito.ArgumentMatchers.anyLong;
 import static org.mockito.Mockito.any;
 import static org.mockito.Mockito.anyBoolean;
@@ -10,17 +10,17 @@ import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
-import com.epam.reportportal.infrastructure.persistence.commons.querygen.Filter;
-import com.epam.reportportal.infrastructure.persistence.commons.querygen.FilterCondition;
-import com.epam.reportportal.core.events.widget.GenerateWidgetViewEvent;
-import com.epam.reportportal.core.widget.content.BuildFilterStrategy;
-import com.epam.reportportal.core.widget.content.loader.materialized.generator.HealthCheckTableGenerator;
-import com.epam.reportportal.core.widget.content.loader.materialized.generator.ViewGenerator;
-import com.epam.reportportal.core.widget.content.materialized.generator.MaterializedViewNameGenerator;
-import com.epam.reportportal.infrastructure.persistence.dao.WidgetRepository;
-import com.epam.reportportal.infrastructure.persistence.entity.widget.Widget;
-import com.epam.reportportal.infrastructure.persistence.entity.widget.WidgetType;
-import com.epam.reportportal.ws.converter.builders.WidgetBuilder;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.commons.querygen.Filter;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.commons.querygen.FilterCondition;
+import com.epam.reportportal.serviceapi.core.events.widget.GenerateWidgetViewEvent;
+import com.epam.reportportal.serviceapi.core.widget.content.BuildFilterStrategy;
+import com.epam.reportportal.serviceapi.core.widget.content.loader.materialized.generator.HealthCheckTableGenerator;
+import com.epam.reportportal.serviceapi.core.widget.content.loader.materialized.generator.ViewGenerator;
+import com.epam.reportportal.serviceapi.core.widget.content.materialized.generator.MaterializedViewNameGenerator;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.WidgetRepository;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.widget.Widget;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.widget.WidgetType;
+import com.epam.reportportal.serviceapi.ws.converter.builders.WidgetBuilder;
 import com.google.common.collect.ImmutableMap;
 import java.util.Collections;
 import java.util.HashMap;

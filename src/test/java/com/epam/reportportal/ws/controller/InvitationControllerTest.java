@@ -26,17 +26,18 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
-import com.epam.reportportal.api.model.Invitation;
-import com.epam.reportportal.api.model.InvitationActivation;
-import com.epam.reportportal.api.model.InvitationActivation.StatusEnum;
-import com.epam.reportportal.api.model.InvitationRequest;
-import com.epam.reportportal.api.model.InvitationRequestOrganizationsInner;
-import com.epam.reportportal.api.model.InvitationStatus;
-import com.epam.reportportal.api.model.OrgRole;
-import com.epam.reportportal.api.model.ProjectRole;
-import com.epam.reportportal.api.model.UserProjectInfo;
-import com.epam.reportportal.infrastructure.persistence.dao.ProjectUserRepository;
-import com.epam.reportportal.infrastructure.persistence.dao.organization.OrganizationUserRepository;
+import com.epam.reportportal.serviceapi.api.model.Invitation;
+import com.epam.reportportal.serviceapi.api.model.InvitationActivation;
+import com.epam.reportportal.serviceapi.api.model.InvitationActivation.StatusEnum;
+import com.epam.reportportal.serviceapi.api.model.InvitationRequest;
+import com.epam.reportportal.serviceapi.api.model.InvitationRequestOrganizationsInner;
+import com.epam.reportportal.serviceapi.api.model.InvitationStatus;
+import com.epam.reportportal.serviceapi.api.model.OrgRole;
+import com.epam.reportportal.serviceapi.api.model.ProjectRole;
+import com.epam.reportportal.serviceapi.api.model.UserProjectInfo;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.ProjectUserRepository;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.organization.OrganizationUserRepository;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.project.ProjectRole;
 import com.epam.reportportal.ws.BaseMvcTest;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import java.util.ArrayList;
@@ -248,7 +249,7 @@ class InvitationControllerTest extends BaseMvcTest {
         .andExpect(status().isOk())
         .andReturn().getResponse().getContentAsString(), Invitation.class);
     var pu = projectUserRepository.findProjectUserByUserIdAndProjectId(response.getUserId(), 1L).get();
-    assertEquals(com.epam.reportportal.infrastructure.persistence.entity.project.ProjectRole.EDITOR, pu.getProjectRole() );
+    assertEquals(com.epam.reportportal.serviceapi.infrastructure.persistence.entity.project.ProjectRole.EDITOR, pu.getProjectRole() );
 
   }
 

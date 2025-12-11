@@ -16,7 +16,7 @@
 
 package com.epam.reportportal.ws.controller;
 
-import static com.epam.reportportal.infrastructure.rules.exception.ErrorType.INCORRECT_REQUEST;
+import static com.epam.reportportal.serviceapi.infrastructure.rules.exception.ErrorType.INCORRECT_REQUEST;
 import static com.epam.reportportal.ws.controller.constants.ValidationTestsConstants.FIELD_NAME_IS_BLANK_MESSAGE;
 import static com.epam.reportportal.ws.controller.constants.ValidationTestsConstants.FIELD_NAME_IS_NULL_MESSAGE;
 import static com.epam.reportportal.ws.controller.constants.ValidationTestsConstants.INCORRECT_REQUEST_MESSAGE;
@@ -28,14 +28,14 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.put;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
-import com.epam.reportportal.infrastructure.rules.exception.ErrorRS;
-import com.epam.reportportal.model.issue.DefineIssueRQ;
-import com.epam.reportportal.model.issue.IssueDefinition;
-import com.epam.reportportal.model.item.LinkExternalIssueRQ;
-import com.epam.reportportal.model.item.UnlinkExternalIssueRQ;
+import com.epam.reportportal.serviceapi.infrastructure.rules.exception.ErrorRS;
+import com.epam.reportportal.serviceapi.model.issue.DefineIssueRQ;
+import com.epam.reportportal.serviceapi.model.issue.IssueDefinition;
+import com.epam.reportportal.serviceapi.model.item.LinkExternalIssueRQ;
+import com.epam.reportportal.serviceapi.model.item.UnlinkExternalIssueRQ;
 import com.epam.reportportal.ws.BaseMvcTest;
-import com.epam.reportportal.reporting.Issue;
-import com.epam.reportportal.reporting.StartTestItemRQ;
+import com.epam.reportportal.serviceapi.reporting.Issue;
+import com.epam.reportportal.serviceapi.reporting.StartTestItemRQ;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import java.time.Instant;
 import java.util.List;

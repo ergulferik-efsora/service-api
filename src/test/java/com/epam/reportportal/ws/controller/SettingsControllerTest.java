@@ -21,9 +21,9 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.put;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
-import com.epam.reportportal.model.settings.AnalyticsResource;
-import com.epam.reportportal.model.settings.UpdateSettingsRq;
-import com.epam.reportportal.model.settings.UpdateSettingsRq.SettingsKey;
+import com.epam.reportportal.serviceapi.model.settings.AnalyticsResource;
+import com.epam.reportportal.serviceapi.model.settings.UpdateSettingsRq;
+import com.epam.reportportal.serviceapi.model.settings.UpdateSettingsRq.SettingsKey;
 import com.epam.reportportal.ws.BaseMvcTest;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.Test;

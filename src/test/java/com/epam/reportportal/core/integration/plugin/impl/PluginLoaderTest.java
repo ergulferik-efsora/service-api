@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.core.integration.plugin.impl;
+package com.epam.reportportal.serviceapi.core.integration.plugin.impl;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
@@ -24,15 +24,15 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
-import com.epam.reportportal.core.integration.plugin.PluginLoader;
-import com.epam.reportportal.core.plugin.PluginInfo;
-import com.epam.reportportal.extension.bugtracking.BtsExtension;
-import com.epam.reportportal.infrastructure.persistence.dao.IntegrationTypeRepository;
-import com.epam.reportportal.infrastructure.persistence.filesystem.DataStore;
-import com.epam.reportportal.infrastructure.persistence.util.FeatureFlagHandler;
-import com.epam.reportportal.infrastructure.rules.exception.ErrorType;
-import com.epam.reportportal.infrastructure.rules.exception.ReportPortalException;
-import com.epam.reportportal.plugin.DetailPluginDescriptor;
+import com.epam.reportportal.serviceapi.core.integration.plugin.PluginLoader;
+import com.epam.reportportal.serviceapi.core.plugin.PluginInfo;
+import com.epam.reportportal.serviceapi.extension.bugtracking.BtsExtension;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.IntegrationTypeRepository;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.filesystem.DataStore;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.util.FeatureFlagHandler;
+import com.epam.reportportal.serviceapi.infrastructure.rules.exception.ErrorType;
+import com.epam.reportportal.serviceapi.infrastructure.rules.exception.ReportPortalException;
+import com.epam.reportportal.serviceapi.plugin.DetailPluginDescriptor;
 import com.google.common.collect.Lists;
 import java.nio.file.Path;
 import java.nio.file.Paths;

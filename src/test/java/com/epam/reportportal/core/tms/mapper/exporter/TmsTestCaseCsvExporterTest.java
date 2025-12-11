@@ -1,10 +1,10 @@
-package com.epam.reportportal.core.tms.mapper.exporter;
+package com.epam.reportportal.serviceapi.core.tms.mapper.exporter;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-import com.epam.reportportal.core.tms.dto.TmsTestCaseExportFormat;
-import com.epam.reportportal.core.tms.dto.TmsTestCaseRS;
-import com.epam.reportportal.core.tms.dto.TmsTestCaseTestFolderRS;
+import com.epam.reportportal.serviceapi.core.tms.dto.TmsTestCaseExportFormat;
+import com.epam.reportportal.serviceapi.core.tms.dto.TmsTestCaseRS;
+import com.epam.reportportal.serviceapi.core.tms.dto.TmsTestCaseTestFolderRS;
 import jakarta.servlet.ServletOutputStream;
 import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;

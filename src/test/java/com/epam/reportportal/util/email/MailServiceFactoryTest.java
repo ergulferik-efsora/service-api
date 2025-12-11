@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.util.email;
+package com.epam.reportportal.serviceapi.util.email;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
@@ -24,15 +24,17 @@ import static org.mockito.Mockito.doThrow;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
-import com.epam.reportportal.infrastructure.commons.template.TemplateEngine;
-import com.epam.reportportal.infrastructure.persistence.dao.IntegrationRepository;
-import com.epam.reportportal.infrastructure.persistence.dao.IntegrationTypeRepository;
-import com.epam.reportportal.infrastructure.persistence.entity.EmailSettingsEnum;
-import com.epam.reportportal.infrastructure.persistence.entity.enums.IntegrationGroupEnum;
-import com.epam.reportportal.infrastructure.persistence.entity.integration.Integration;
-import com.epam.reportportal.infrastructure.persistence.entity.integration.IntegrationParams;
-import com.epam.reportportal.infrastructure.persistence.entity.integration.IntegrationType;
-import com.epam.reportportal.infrastructure.rules.exception.ReportPortalException;
+import com.epam.reportportal.serviceapi.infrastructure.commons.template.TemplateEngine;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.IntegrationRepository;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.IntegrationTypeRepository;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.EmailSettingsEnum;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.enums.IntegrationGroupEnum;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.integration.Integration;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.integration.IntegrationParams;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.integration.IntegrationType;
+import com.epam.reportportal.serviceapi.infrastructure.rules.exception.ReportPortalException;
+import com.epam.reportportal.serviceapi.util.email.EmailService;
+import com.epam.reportportal.serviceapi.util.email.MailServiceFactory;
 import com.google.common.collect.ImmutableMap;
 import com.google.common.collect.Lists;
 import java.util.Map;

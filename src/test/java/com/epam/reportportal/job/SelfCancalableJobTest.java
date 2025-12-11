@@ -18,6 +18,7 @@ package com.epam.reportportal.job;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+import com.epam.reportportal.serviceapi.job.SelfCancelableJob;
 import java.time.Instant;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;

@@ -1,4 +1,4 @@
-package com.epam.reportportal.infrastructure.persistence.config;
+package com.epam.reportportal.serviceapi.infrastructure.persistence.config;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;

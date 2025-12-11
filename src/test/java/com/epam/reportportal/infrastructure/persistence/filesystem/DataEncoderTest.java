@@ -14,13 +14,14 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.infrastructure.persistence.filesystem;
+package com.epam.reportportal.serviceapi.infrastructure.persistence.filesystem;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertNull;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
+import com.epam.reportportal.serviceapi.infrastructure.persistence.filesystem.DataEncoder;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

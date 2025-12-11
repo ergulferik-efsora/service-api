@@ -1,6 +1,6 @@
-package com.epam.reportportal.core.events;
+package com.epam.reportportal.serviceapi.core.events;
 
-import static com.epam.reportportal.core.configs.rabbit.InternalConfiguration.EXCHANGE_ACTIVITY;
+import static com.epam.reportportal.serviceapi.core.configs.rabbit.InternalConfiguration.EXCHANGE_ACTIVITY;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.lenient;
 import static org.mockito.Mockito.mock;
@@ -8,8 +8,8 @@ import static org.mockito.Mockito.never;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
-import com.epam.reportportal.infrastructure.persistence.entity.activity.Activity;
-import com.epam.reportportal.infrastructure.persistence.entity.activity.EventObject;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.activity.Activity;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.activity.EventObject;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;

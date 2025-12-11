@@ -14,17 +14,17 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.core.integration.impl.util;
+package com.epam.reportportal.serviceapi.core.integration.impl.util;
 
-import static com.epam.reportportal.infrastructure.persistence.entity.enums.PluginTypeEnum.BUILT_IN;
-import static com.epam.reportportal.infrastructure.persistence.entity.enums.PluginTypeEnum.EXTENSION;
+import static com.epam.reportportal.serviceapi.infrastructure.persistence.entity.enums.PluginTypeEnum.BUILT_IN;
+import static com.epam.reportportal.serviceapi.infrastructure.persistence.entity.enums.PluginTypeEnum.EXTENSION;
 
-import com.epam.reportportal.infrastructure.persistence.entity.enums.IntegrationGroupEnum;
-import com.epam.reportportal.infrastructure.persistence.entity.integration.Integration;
-import com.epam.reportportal.infrastructure.persistence.entity.integration.IntegrationParams;
-import com.epam.reportportal.infrastructure.persistence.entity.integration.IntegrationType;
-import com.epam.reportportal.infrastructure.persistence.entity.integration.IntegrationTypeDetails;
-import com.epam.reportportal.infrastructure.persistence.entity.project.Project;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.enums.IntegrationGroupEnum;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.integration.Integration;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.integration.IntegrationParams;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.integration.IntegrationType;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.integration.IntegrationTypeDetails;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.project.Project;
 import com.google.common.collect.Maps;
 import java.time.Instant;
 import java.util.Map;

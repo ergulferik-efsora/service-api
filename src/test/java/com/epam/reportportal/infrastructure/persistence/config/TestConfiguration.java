@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.infrastructure.persistence.config;
+package com.epam.reportportal.serviceapi.infrastructure.persistence.config;
 
-import com.epam.reportportal.infrastructure.persistence.filesystem.DataEncoder;
-import com.epam.reportportal.infrastructure.persistence.util.FeatureFlagHandler;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.filesystem.DataEncoder;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.util.FeatureFlagHandler;
 import java.util.Set;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;

@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.infrastructure.persistence.dao;
+package com.epam.reportportal.serviceapi.infrastructure.persistence.dao;
 
-import static com.epam.reportportal.infrastructure.persistence.dao.constant.TestConstants.DEFAULT_PERSONAL_PROJECT_ID;
-import static com.epam.reportportal.infrastructure.persistence.dao.constant.TestConstants.GLOBAL_EMAIL_INTEGRATION_ID;
-import static com.epam.reportportal.infrastructure.persistence.dao.constant.TestConstants.SUPERADMIN_PERSONAL_PROJECT_ID;
+import static com.epam.reportportal.serviceapi.infrastructure.persistence.dao.constant.TestConstants.DEFAULT_PERSONAL_PROJECT_ID;
+import static com.epam.reportportal.serviceapi.infrastructure.persistence.dao.constant.TestConstants.GLOBAL_EMAIL_INTEGRATION_ID;
+import static com.epam.reportportal.serviceapi.infrastructure.persistence.dao.constant.TestConstants.SUPERADMIN_PERSONAL_PROJECT_ID;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.empty;
 import static org.hamcrest.Matchers.equalTo;
@@ -31,11 +31,13 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertNull;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.IntegrationRepository;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.IntegrationTypeRepository;
 import com.epam.reportportal.ws.BaseMvcTest;
-import com.epam.reportportal.infrastructure.persistence.entity.enums.IntegrationGroupEnum;
-import com.epam.reportportal.infrastructure.persistence.entity.integration.Integration;
-import com.epam.reportportal.infrastructure.persistence.entity.integration.IntegrationType;
-import com.epam.reportportal.infrastructure.persistence.entity.project.Project;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.enums.IntegrationGroupEnum;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.integration.Integration;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.integration.IntegrationType;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.project.Project;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;

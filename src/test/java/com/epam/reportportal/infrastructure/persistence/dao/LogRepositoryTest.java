@@ -14,32 +14,34 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.infrastructure.persistence.dao;
+package com.epam.reportportal.serviceapi.infrastructure.persistence.dao;
 
-import static com.epam.reportportal.infrastructure.persistence.commons.querygen.constant.LogCriteriaConstant.CRITERIA_ITEM_LAUNCH_ID;
-import static com.epam.reportportal.infrastructure.persistence.commons.querygen.constant.LogCriteriaConstant.CRITERIA_LOG_BINARY_CONTENT;
-import static com.epam.reportportal.infrastructure.persistence.commons.querygen.constant.LogCriteriaConstant.CRITERIA_LOG_LAUNCH_ID;
-import static com.epam.reportportal.infrastructure.persistence.commons.querygen.constant.LogCriteriaConstant.CRITERIA_LOG_TIME;
-import static com.epam.reportportal.infrastructure.persistence.commons.querygen.constant.LogCriteriaConstant.CRITERIA_TEST_ITEM_ID;
-import static com.epam.reportportal.infrastructure.persistence.commons.querygen.constant.TestItemCriteriaConstant.CRITERIA_RETRY_PARENT_LAUNCH_ID;
-import static com.epam.reportportal.infrastructure.persistence.commons.querygen.constant.TestItemCriteriaConstant.CRITERIA_STATUS;
+import static com.epam.reportportal.serviceapi.infrastructure.persistence.commons.querygen.constant.LogCriteriaConstant.CRITERIA_ITEM_LAUNCH_ID;
+import static com.epam.reportportal.serviceapi.infrastructure.persistence.commons.querygen.constant.LogCriteriaConstant.CRITERIA_LOG_BINARY_CONTENT;
+import static com.epam.reportportal.serviceapi.infrastructure.persistence.commons.querygen.constant.LogCriteriaConstant.CRITERIA_LOG_LAUNCH_ID;
+import static com.epam.reportportal.serviceapi.infrastructure.persistence.commons.querygen.constant.LogCriteriaConstant.CRITERIA_LOG_TIME;
+import static com.epam.reportportal.serviceapi.infrastructure.persistence.commons.querygen.constant.LogCriteriaConstant.CRITERIA_TEST_ITEM_ID;
+import static com.epam.reportportal.serviceapi.infrastructure.persistence.commons.querygen.constant.TestItemCriteriaConstant.CRITERIA_RETRY_PARENT_LAUNCH_ID;
+import static com.epam.reportportal.serviceapi.infrastructure.persistence.commons.querygen.constant.TestItemCriteriaConstant.CRITERIA_STATUS;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertNull;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-import com.epam.reportportal.infrastructure.model.analyzer.IndexLog;
+import com.epam.reportportal.serviceapi.infrastructure.model.analyzer.IndexLog;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.LogRepository;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.TestItemRepository;
 import com.epam.reportportal.ws.BaseMvcTest;
-import com.epam.reportportal.infrastructure.persistence.commons.querygen.CompositeFilterCondition;
-import com.epam.reportportal.infrastructure.persistence.commons.querygen.Condition;
-import com.epam.reportportal.infrastructure.persistence.commons.querygen.Filter;
-import com.epam.reportportal.infrastructure.persistence.commons.querygen.FilterCondition;
-import com.epam.reportportal.infrastructure.persistence.entity.attachment.Attachment;
-import com.epam.reportportal.infrastructure.persistence.entity.enums.LogLevel;
-import com.epam.reportportal.infrastructure.persistence.entity.enums.StatusEnum;
-import com.epam.reportportal.infrastructure.persistence.entity.item.TestItem;
-import com.epam.reportportal.infrastructure.persistence.entity.log.Log;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.commons.querygen.CompositeFilterCondition;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.commons.querygen.Condition;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.commons.querygen.Filter;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.commons.querygen.FilterCondition;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.attachment.Attachment;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.enums.LogLevel;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.enums.StatusEnum;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.item.TestItem;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.log.Log;
 import com.google.common.collect.Lists;
 import java.time.Duration;
 import java.util.Arrays;

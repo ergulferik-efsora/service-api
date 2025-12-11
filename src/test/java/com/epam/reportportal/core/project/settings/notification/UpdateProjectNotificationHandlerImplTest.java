@@ -16,7 +16,7 @@
  *
  */
 
-package com.epam.reportportal.core.project.settings.notification;
+package com.epam.reportportal.serviceapi.core.project.settings.notification;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertInstanceOf;
@@ -27,24 +27,24 @@ import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
-import com.epam.reportportal.infrastructure.rules.exception.ReportPortalException;
-import com.epam.reportportal.infrastructure.persistence.commons.ReportPortalUser;
-import com.epam.reportportal.core.events.ActivityEvent;
-import com.epam.reportportal.core.events.MessageBus;
-import com.epam.reportportal.core.events.activity.NotificationRuleUpdatedEvent;
-import com.epam.reportportal.core.project.validator.notification.ProjectNotificationValidator;
-import com.epam.reportportal.infrastructure.persistence.dao.SenderCaseRepository;
-import com.epam.reportportal.infrastructure.persistence.entity.enums.LogicalOperator;
-import com.epam.reportportal.infrastructure.persistence.entity.enums.SendCase;
-import com.epam.reportportal.infrastructure.persistence.entity.project.Project;
-import com.epam.reportportal.infrastructure.persistence.entity.project.email.LaunchAttributeRule;
-import com.epam.reportportal.infrastructure.persistence.entity.project.email.SenderCase;
-import com.epam.reportportal.model.project.ProjectConfiguration;
-import com.epam.reportportal.model.project.ProjectResource;
-import com.epam.reportportal.model.project.email.ProjectNotificationConfigDTO;
-import com.epam.reportportal.model.project.email.SenderCaseDTO;
-import com.epam.reportportal.ws.converter.converters.ProjectConverter;
-import com.epam.reportportal.reporting.ItemAttributeResource;
+import com.epam.reportportal.serviceapi.infrastructure.rules.exception.ReportPortalException;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.commons.ReportPortalUser;
+import com.epam.reportportal.serviceapi.core.events.ActivityEvent;
+import com.epam.reportportal.serviceapi.core.events.MessageBus;
+import com.epam.reportportal.serviceapi.core.events.activity.NotificationRuleUpdatedEvent;
+import com.epam.reportportal.serviceapi.core.project.validator.notification.ProjectNotificationValidator;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.SenderCaseRepository;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.enums.LogicalOperator;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.enums.SendCase;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.project.Project;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.project.email.LaunchAttributeRule;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.project.email.SenderCase;
+import com.epam.reportportal.serviceapi.model.project.ProjectConfiguration;
+import com.epam.reportportal.serviceapi.model.project.ProjectResource;
+import com.epam.reportportal.serviceapi.model.project.email.ProjectNotificationConfigDTO;
+import com.epam.reportportal.serviceapi.model.project.email.SenderCaseDTO;
+import com.epam.reportportal.serviceapi.ws.converter.converters.ProjectConverter;
+import com.epam.reportportal.serviceapi.reporting.ItemAttributeResource;
 import com.google.common.collect.Sets;
 import java.util.Collections;
 import java.util.List;

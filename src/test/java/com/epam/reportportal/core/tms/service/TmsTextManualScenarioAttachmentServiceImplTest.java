@@ -1,4 +1,4 @@
-package com.epam.reportportal.core.tms.service;
+package com.epam.reportportal.serviceapi.core.tms.service;
 
 import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -11,11 +11,11 @@ import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.verifyNoInteractions;
 import static org.mockito.Mockito.when;
 
-import com.epam.reportportal.infrastructure.persistence.entity.tms.TmsAttachment;
-import com.epam.reportportal.infrastructure.persistence.entity.tms.TmsTextManualScenario;
-import com.epam.reportportal.infrastructure.persistence.dao.tms.TmsTextManualScenarioAttachmentRepository;
-import com.epam.reportportal.core.tms.dto.TmsManualScenarioAttachmentRQ;
-import com.epam.reportportal.core.tms.dto.TmsTextManualScenarioRQ;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.tms.TmsAttachment;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.tms.TmsTextManualScenario;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.tms.TmsTextManualScenarioAttachmentRepository;
+import com.epam.reportportal.serviceapi.core.tms.dto.TmsManualScenarioAttachmentRQ;
+import com.epam.reportportal.serviceapi.core.tms.dto.TmsTextManualScenarioRQ;
 import java.time.Instant;
 import java.time.temporal.ChronoUnit;
 import java.util.Arrays;

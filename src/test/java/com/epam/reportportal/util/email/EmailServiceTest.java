@@ -14,21 +14,22 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.util.email;
+package com.epam.reportportal.serviceapi.util.email;
 
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
-import com.epam.reportportal.infrastructure.commons.template.TemplateEngine;
-import com.epam.reportportal.infrastructure.persistence.entity.ItemAttribute;
-import com.epam.reportportal.infrastructure.persistence.entity.enums.LaunchModeEnum;
-import com.epam.reportportal.infrastructure.persistence.entity.enums.StatusEnum;
-import com.epam.reportportal.infrastructure.persistence.entity.item.issue.IssueType;
-import com.epam.reportportal.infrastructure.persistence.entity.launch.Launch;
-import com.epam.reportportal.infrastructure.persistence.entity.project.ProjectIssueType;
-import com.epam.reportportal.infrastructure.persistence.entity.statistics.Statistics;
-import com.epam.reportportal.infrastructure.persistence.entity.statistics.StatisticsField;
+import com.epam.reportportal.serviceapi.infrastructure.commons.template.TemplateEngine;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.ItemAttribute;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.enums.LaunchModeEnum;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.enums.StatusEnum;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.item.issue.IssueType;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.launch.Launch;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.project.ProjectIssueType;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.statistics.Statistics;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.statistics.StatisticsField;
+import com.epam.reportportal.serviceapi.util.email.EmailService;
 import com.google.common.collect.Sets;
 import java.time.Instant;
 import java.time.temporal.ChronoUnit;

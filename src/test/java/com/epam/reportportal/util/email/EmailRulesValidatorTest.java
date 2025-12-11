@@ -14,16 +14,17 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.util.email;
+package com.epam.reportportal.serviceapi.util.email;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
-import com.epam.reportportal.infrastructure.persistence.entity.project.Project;
-import com.epam.reportportal.infrastructure.persistence.entity.user.ProjectUser;
-import com.epam.reportportal.infrastructure.persistence.entity.user.User;
-import com.epam.reportportal.infrastructure.rules.exception.ReportPortalException;
-import com.epam.reportportal.reporting.ItemAttributeResource;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.project.Project;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.user.ProjectUser;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.user.User;
+import com.epam.reportportal.serviceapi.infrastructure.rules.exception.ReportPortalException;
+import com.epam.reportportal.serviceapi.reporting.ItemAttributeResource;
+import com.epam.reportportal.serviceapi.util.email.EmailRulesValidator;
 import com.google.common.collect.Sets;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.junit.jupiter.api.Test;

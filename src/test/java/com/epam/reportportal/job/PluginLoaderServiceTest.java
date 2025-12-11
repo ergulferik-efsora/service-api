@@ -16,20 +16,20 @@
 
 package com.epam.reportportal.job;
 
-import static com.epam.reportportal.infrastructure.persistence.entity.enums.PluginTypeEnum.EXTENSION;
+import static com.epam.reportportal.serviceapi.infrastructure.persistence.entity.enums.PluginTypeEnum.EXTENSION;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
-import com.epam.reportportal.extension.common.IntegrationTypeProperties;
-import com.epam.reportportal.core.plugin.Pf4jPluginBox;
-import com.epam.reportportal.core.plugin.PluginInfo;
-import com.epam.reportportal.infrastructure.persistence.dao.IntegrationTypeRepository;
-import com.epam.reportportal.infrastructure.persistence.entity.integration.IntegrationType;
-import com.epam.reportportal.infrastructure.persistence.entity.integration.IntegrationTypeDetails;
-import com.epam.reportportal.job.service.PluginLoaderService;
-import com.epam.reportportal.job.service.impl.PluginLoaderServiceImpl;
+import com.epam.reportportal.serviceapi.extension.common.IntegrationTypeProperties;
+import com.epam.reportportal.serviceapi.core.plugin.Pf4jPluginBox;
+import com.epam.reportportal.serviceapi.core.plugin.PluginInfo;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.IntegrationTypeRepository;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.integration.IntegrationType;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.integration.IntegrationTypeDetails;
+import com.epam.reportportal.serviceapi.job.service.PluginLoaderService;
+import com.epam.reportportal.serviceapi.job.service.impl.PluginLoaderServiceImpl;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 import java.nio.file.Paths;

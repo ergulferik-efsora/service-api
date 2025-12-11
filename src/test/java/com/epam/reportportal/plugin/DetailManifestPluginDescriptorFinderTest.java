@@ -22,6 +22,8 @@ import static org.junit.jupiter.api.Assertions.assertInstanceOf;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
+import com.epam.reportportal.serviceapi.plugin.DetailManifestPluginDescriptorFinder;
+import com.epam.reportportal.serviceapi.plugin.DetailPluginDescriptor;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;

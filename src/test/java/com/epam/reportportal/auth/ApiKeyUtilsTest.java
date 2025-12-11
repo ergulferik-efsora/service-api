@@ -19,6 +19,7 @@ package com.epam.reportportal.auth;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
+import com.epam.reportportal.serviceapi.auth.ApiKeyUtils;
 import org.junit.jupiter.api.Test;
 import org.springframework.stereotype.Component;
 

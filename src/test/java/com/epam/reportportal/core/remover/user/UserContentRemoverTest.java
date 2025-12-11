@@ -14,15 +14,15 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.core.remover.user;
+package com.epam.reportportal.serviceapi.core.remover.user;
 
 import static org.mockito.ArgumentMatchers.eq;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
 import static org.mockito.internal.verification.VerificationModeFactory.times;
 
-import com.epam.reportportal.core.remover.ContentRemover;
-import com.epam.reportportal.infrastructure.persistence.entity.user.User;
+import com.epam.reportportal.serviceapi.core.remover.ContentRemover;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.user.User;
 import java.util.List;
 import org.junit.jupiter.api.Test;
 

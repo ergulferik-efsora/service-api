@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.core.widget.content.materialized.generator;
+package com.epam.reportportal.serviceapi.core.widget.content.materialized.generator;
 
-import com.epam.reportportal.infrastructure.persistence.entity.project.Project;
-import com.epam.reportportal.infrastructure.persistence.entity.widget.Widget;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.project.Project;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.widget.Widget;
 import java.util.stream.Stream;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;

@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.util.sample;
+package com.epam.reportportal.serviceapi.util.sample;
 
-import com.epam.reportportal.infrastructure.persistence.entity.launch.Launch;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.launch.Launch;
 import java.util.UUID;
 import java.util.concurrent.ThreadLocalRandom;
 import org.apache.commons.lang3.RandomStringUtils;

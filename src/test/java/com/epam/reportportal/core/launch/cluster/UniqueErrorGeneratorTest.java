@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.core.launch.cluster;
+package com.epam.reportportal.serviceapi.core.launch.cluster;
 
-import static com.epam.reportportal.core.launch.cluster.utils.ConfigProvider.getConfig;
+import static com.epam.reportportal.serviceapi.core.launch.cluster.utils.ConfigProvider.getConfig;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.mockito.ArgumentMatchers.anyLong;
@@ -28,12 +28,12 @@ import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
-import com.epam.reportportal.core.analyzer.auto.impl.AnalyzerStatusCache;
-import com.epam.reportportal.core.launch.cluster.config.ClusterEntityContext;
-import com.epam.reportportal.core.launch.cluster.config.GenerateClustersConfig;
-import com.epam.reportportal.infrastructure.rules.exception.ReportPortalException;
-import com.epam.reportportal.pipeline.PipelineConstructor;
-import com.epam.reportportal.pipeline.TransactionalPipeline;
+import com.epam.reportportal.serviceapi.core.analyzer.auto.impl.AnalyzerStatusCache;
+import com.epam.reportportal.serviceapi.core.launch.cluster.config.ClusterEntityContext;
+import com.epam.reportportal.serviceapi.core.launch.cluster.config.GenerateClustersConfig;
+import com.epam.reportportal.serviceapi.infrastructure.rules.exception.ReportPortalException;
+import com.epam.reportportal.serviceapi.pipeline.PipelineConstructor;
+import com.epam.reportportal.serviceapi.pipeline.TransactionalPipeline;
 import org.junit.jupiter.api.Test;
 
 /**

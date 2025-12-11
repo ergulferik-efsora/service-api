@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.core.events.subscriber.impl.launch.finish;
+package com.epam.reportportal.serviceapi.core.events.subscriber.impl.launch.finish;
 
 /**
  * @author <a href="mailto:ivan_budayeu@epam.com">Ivan Budayeu</a>

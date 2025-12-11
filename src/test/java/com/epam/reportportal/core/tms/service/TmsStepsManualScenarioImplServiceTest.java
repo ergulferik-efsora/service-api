@@ -1,4 +1,4 @@
-package com.epam.reportportal.core.tms.service;
+package com.epam.reportportal.serviceapi.core.tms.service;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertThrows;
@@ -7,14 +7,14 @@ import static org.mockito.Mockito.never;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
-import com.epam.reportportal.infrastructure.persistence.entity.tms.TmsManualScenario;
-import com.epam.reportportal.infrastructure.persistence.entity.tms.TmsStep;
-import com.epam.reportportal.infrastructure.persistence.entity.tms.TmsStepsManualScenario;
-import com.epam.reportportal.infrastructure.persistence.dao.tms.TmsStepsManualScenarioRepository;
-import com.epam.reportportal.core.tms.dto.TmsManualScenarioType;
-import com.epam.reportportal.core.tms.dto.TmsStepsManualScenarioRQ;
-import com.epam.reportportal.core.tms.mapper.TmsStepsManualScenarioMapper;
-import com.epam.reportportal.infrastructure.rules.exception.ReportPortalException;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.tms.TmsManualScenario;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.tms.TmsStep;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.tms.TmsStepsManualScenario;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.tms.TmsStepsManualScenarioRepository;
+import com.epam.reportportal.serviceapi.core.tms.dto.TmsManualScenarioType;
+import com.epam.reportportal.serviceapi.core.tms.dto.TmsStepsManualScenarioRQ;
+import com.epam.reportportal.serviceapi.core.tms.mapper.TmsStepsManualScenarioMapper;
+import com.epam.reportportal.serviceapi.infrastructure.rules.exception.ReportPortalException;
 import java.util.Collections;
 import java.util.List;
 import java.util.Set;

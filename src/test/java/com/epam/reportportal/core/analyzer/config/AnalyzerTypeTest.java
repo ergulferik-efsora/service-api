@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.core.analyzer.config;
+package com.epam.reportportal.serviceapi.core.analyzer.config;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-import com.epam.reportportal.infrastructure.rules.exception.ReportPortalException;
-import com.epam.reportportal.infrastructure.rules.exception.ErrorType;
+import com.epam.reportportal.serviceapi.infrastructure.rules.exception.ReportPortalException;
+import com.epam.reportportal.serviceapi.infrastructure.rules.exception.ErrorType;
 import org.junit.jupiter.api.Test;
 
 /**

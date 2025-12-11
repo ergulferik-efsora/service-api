@@ -14,16 +14,16 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.core.events.activity;
+package com.epam.reportportal.serviceapi.core.events.activity;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
-import com.epam.reportportal.infrastructure.persistence.entity.activity.Activity;
-import com.epam.reportportal.infrastructure.persistence.entity.activity.EventAction;
-import com.epam.reportportal.infrastructure.persistence.entity.activity.EventPriority;
-import com.epam.reportportal.infrastructure.persistence.entity.activity.EventSubject;
-import com.epam.reportportal.model.activity.LogTypeActivityResource;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.activity.Activity;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.activity.EventAction;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.activity.EventPriority;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.activity.EventSubject;
+import com.epam.reportportal.serviceapi.model.activity.LogTypeActivityResource;
 import org.junit.jupiter.api.Test;
 
 /**

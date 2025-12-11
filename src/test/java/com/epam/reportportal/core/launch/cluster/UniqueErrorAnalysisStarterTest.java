@@ -1,4 +1,4 @@
-package com.epam.reportportal.core.launch.cluster;
+package com.epam.reportportal.serviceapi.core.launch.cluster;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
@@ -7,8 +7,8 @@ import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 
-import com.epam.reportportal.core.launch.cluster.config.ClusterEntityContext;
-import com.epam.reportportal.core.launch.cluster.config.GenerateClustersConfig;
+import com.epam.reportportal.serviceapi.core.launch.cluster.config.ClusterEntityContext;
+import com.epam.reportportal.serviceapi.core.launch.cluster.config.GenerateClustersConfig;
 import java.util.HashMap;
 import java.util.List;
 import org.junit.jupiter.api.Test;

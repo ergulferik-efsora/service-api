@@ -21,10 +21,11 @@ import static org.hamcrest.Matchers.empty;
 import static org.hamcrest.Matchers.not;
 import static org.hamcrest.Matchers.nullValue;
 
-import com.epam.reportportal.model.issue.IssueDefinition;
-import com.epam.reportportal.reporting.FinishTestItemRQ;
-import com.epam.reportportal.reporting.Issue;
-import com.epam.reportportal.reporting.StartLaunchRQ;
+import com.epam.reportportal.serviceapi.model.issue.IssueDefinition;
+import com.epam.reportportal.serviceapi.reporting.FinishTestItemRQ;
+import com.epam.reportportal.serviceapi.reporting.Issue;
+import com.epam.reportportal.serviceapi.reporting.StartLaunchRQ;
+import com.epam.reportportal.serviceapi.ws.validation.JaskonRequiredPropertiesValidator;
 import java.time.Instant;
 import java.util.Collections;
 import java.util.UUID;

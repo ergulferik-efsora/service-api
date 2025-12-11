@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.core.analyzer.auto.client.impl;
+package com.epam.reportportal.serviceapi.core.analyzer.auto.client.impl;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThatThrownBy;
 import static org.mockito.Mockito.when;
 
-import com.epam.reportportal.infrastructure.rules.exception.ReportPortalException;
+import com.epam.reportportal.serviceapi.infrastructure.rules.exception.ReportPortalException;
 import com.rabbitmq.http.client.Client;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;

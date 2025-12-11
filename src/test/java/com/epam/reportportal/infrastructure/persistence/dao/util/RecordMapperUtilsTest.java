@@ -14,12 +14,13 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.infrastructure.persistence.dao.util;
+package com.epam.reportportal.serviceapi.infrastructure.persistence.dao.util;
 
-import static com.epam.reportportal.infrastructure.persistence.jooq.tables.JUsers.USERS;
+import static com.epam.reportportal.serviceapi.infrastructure.persistence.jooq.tables.JUsers.USERS;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.util.RecordMapperUtils;
 import org.junit.jupiter.api.Test;
 
 /**

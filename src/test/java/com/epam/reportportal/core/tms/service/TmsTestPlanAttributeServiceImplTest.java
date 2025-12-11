@@ -1,4 +1,4 @@
-package com.epam.reportportal.core.tms.service;
+package com.epam.reportportal.serviceapi.core.tms.service;
 
 import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -11,13 +11,13 @@ import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.verifyNoInteractions;
 import static org.mockito.Mockito.when;
 
-import com.epam.reportportal.infrastructure.persistence.entity.tms.TmsAttribute;
-import com.epam.reportportal.infrastructure.persistence.entity.tms.TmsTestPlan;
-import com.epam.reportportal.infrastructure.persistence.entity.tms.TmsTestPlanAttribute;
-import com.epam.reportportal.infrastructure.persistence.entity.tms.TmsTestPlanAttributeId;
-import com.epam.reportportal.infrastructure.persistence.dao.tms.TmsTestPlanAttributeRepository;
-import com.epam.reportportal.core.tms.dto.TmsTestPlanAttributeRQ;
-import com.epam.reportportal.core.tms.mapper.TmsTestPlanAttributeMapper;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.tms.TmsAttribute;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.tms.TmsTestPlan;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.tms.TmsTestPlanAttribute;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.tms.TmsTestPlanAttributeId;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.tms.TmsTestPlanAttributeRepository;
+import com.epam.reportportal.serviceapi.core.tms.dto.TmsTestPlanAttributeRQ;
+import com.epam.reportportal.serviceapi.core.tms.mapper.TmsTestPlanAttributeMapper;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;

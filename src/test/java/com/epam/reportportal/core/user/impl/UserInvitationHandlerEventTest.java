@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.core.user.impl;
+package com.epam.reportportal.serviceapi.core.user.impl;
 
-import static com.epam.reportportal.core.user.impl.CreateUserHandlerImpl.INTERNAL_BID_TYPE;
+import static com.epam.reportportal.serviceapi.core.user.impl.CreateUserHandlerImpl.INTERNAL_BID_TYPE;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.anyLong;
 import static org.mockito.ArgumentMatchers.anyString;
@@ -24,27 +24,27 @@ import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
-import com.epam.reportportal.api.model.InvitationActivation;
-import com.epam.reportportal.auth.authenticator.UserAuthenticator;
-import com.epam.reportportal.core.events.activity.AssignUserEvent;
-import com.epam.reportportal.core.events.activity.UserCreatedEvent;
-import com.epam.reportportal.core.launch.util.LinkGenerator;
-import com.epam.reportportal.core.organization.OrganizationUserService;
-import com.epam.reportportal.core.organization.PersonalOrganizationService;
-import com.epam.reportportal.core.user.UserInvitationService;
-import com.epam.reportportal.infrastructure.persistence.dao.ProjectRepository;
-import com.epam.reportportal.infrastructure.persistence.dao.ProjectUserRepository;
-import com.epam.reportportal.infrastructure.persistence.dao.UserCreationBidRepository;
-import com.epam.reportportal.infrastructure.persistence.dao.UserRepository;
-import com.epam.reportportal.infrastructure.persistence.dao.organization.OrganizationRepositoryCustom;
-import com.epam.reportportal.infrastructure.persistence.entity.Metadata;
-import com.epam.reportportal.infrastructure.persistence.entity.enums.OrganizationType;
-import com.epam.reportportal.infrastructure.persistence.entity.organization.Organization;
-import com.epam.reportportal.infrastructure.persistence.entity.organization.OrganizationRole;
-import com.epam.reportportal.infrastructure.persistence.entity.project.Project;
-import com.epam.reportportal.infrastructure.persistence.entity.user.OrganizationUser;
-import com.epam.reportportal.infrastructure.persistence.entity.user.User;
-import com.epam.reportportal.infrastructure.persistence.entity.user.UserCreationBid;
+import com.epam.reportportal.serviceapi.api.model.InvitationActivation;
+import com.epam.reportportal.serviceapi.auth.authenticator.UserAuthenticator;
+import com.epam.reportportal.serviceapi.core.events.activity.AssignUserEvent;
+import com.epam.reportportal.serviceapi.core.events.activity.UserCreatedEvent;
+import com.epam.reportportal.serviceapi.core.launch.util.LinkGenerator;
+import com.epam.reportportal.serviceapi.core.organization.OrganizationUserService;
+import com.epam.reportportal.serviceapi.core.organization.PersonalOrganizationService;
+import com.epam.reportportal.serviceapi.core.user.UserInvitationService;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.ProjectRepository;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.ProjectUserRepository;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.UserCreationBidRepository;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.UserRepository;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.organization.OrganizationRepositoryCustom;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.Metadata;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.enums.OrganizationType;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.organization.Organization;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.organization.OrganizationRole;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.project.Project;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.user.OrganizationUser;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.user.User;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.user.UserCreationBid;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;

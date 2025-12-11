@@ -23,10 +23,10 @@ import static org.springframework.http.MediaType.APPLICATION_JSON;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
-import com.epam.reportportal.api.model.FilterOperation;
-import com.epam.reportportal.api.model.OrganizationPage;
-import com.epam.reportportal.api.model.SearchCriteriaRQ;
-import com.epam.reportportal.api.model.SearchCriteriaSearchCriteriaInner;
+import com.epam.reportportal.serviceapi.api.model.FilterOperation;
+import com.epam.reportportal.serviceapi.api.model.OrganizationPage;
+import com.epam.reportportal.serviceapi.api.model.SearchCriteriaRQ;
+import com.epam.reportportal.serviceapi.api.model.SearchCriteriaSearchCriteriaInner;
 import com.epam.reportportal.ws.BaseMvcTest;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.Disabled;

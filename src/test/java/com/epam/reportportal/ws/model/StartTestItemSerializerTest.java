@@ -18,7 +18,7 @@ package com.epam.reportportal.ws.model;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import com.epam.reportportal.reporting.StartTestItemRQ;
+import com.epam.reportportal.serviceapi.reporting.StartTestItemRQ;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;

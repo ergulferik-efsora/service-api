@@ -24,9 +24,9 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
-import com.epam.reportportal.api.model.LogTypeRequest;
-import com.epam.reportportal.api.model.LogTypeStyle;
-import com.epam.reportportal.api.model.LogTypeStyle.TextStyleEnum;
+import com.epam.reportportal.serviceapi.api.model.LogTypeRequest;
+import com.epam.reportportal.serviceapi.api.model.LogTypeStyle;
+import com.epam.reportportal.serviceapi.api.model.LogTypeStyle.TextStyleEnum;
 import com.epam.reportportal.ws.BaseMvcTest;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.Test;

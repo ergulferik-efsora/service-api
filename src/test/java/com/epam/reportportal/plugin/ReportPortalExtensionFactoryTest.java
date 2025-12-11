@@ -16,7 +16,8 @@
 
 package com.epam.reportportal.plugin;
 
-import com.epam.reportportal.extension.common.IntegrationTypeProperties;
+import com.epam.reportportal.serviceapi.extension.common.IntegrationTypeProperties;
+import com.epam.reportportal.serviceapi.plugin.ReportPortalExtensionFactory;
 import java.io.File;
 import org.junit.jupiter.api.Test;
 import org.pf4j.PluginDescriptor;

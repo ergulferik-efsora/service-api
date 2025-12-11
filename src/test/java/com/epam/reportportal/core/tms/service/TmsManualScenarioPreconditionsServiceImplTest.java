@@ -1,4 +1,4 @@
-package com.epam.reportportal.core.tms.service;
+package com.epam.reportportal.serviceapi.core.tms.service;
 
 import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 import static org.mockito.ArgumentMatchers.any;
@@ -7,11 +7,11 @@ import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.verifyNoInteractions;
 import static org.mockito.Mockito.when;
 
-import com.epam.reportportal.infrastructure.persistence.entity.tms.TmsManualScenario;
-import com.epam.reportportal.infrastructure.persistence.entity.tms.TmsManualScenarioPreconditions;
-import com.epam.reportportal.infrastructure.persistence.dao.tms.TmsManualScenarioPreconditionRepository;
-import com.epam.reportportal.core.tms.dto.TmsManualScenarioPreconditionsRQ;
-import com.epam.reportportal.core.tms.mapper.TmsManualScenarioPreconditionsMapper;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.tms.TmsManualScenario;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.tms.TmsManualScenarioPreconditions;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.tms.TmsManualScenarioPreconditionRepository;
+import com.epam.reportportal.serviceapi.core.tms.dto.TmsManualScenarioPreconditionsRQ;
+import com.epam.reportportal.serviceapi.core.tms.mapper.TmsManualScenarioPreconditionsMapper;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;

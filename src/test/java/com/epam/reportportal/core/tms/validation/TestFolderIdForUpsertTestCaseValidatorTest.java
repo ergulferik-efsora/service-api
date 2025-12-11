@@ -1,4 +1,4 @@
-package com.epam.reportportal.core.tms.validation;
+package com.epam.reportportal.serviceapi.core.tms.validation;
 
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
@@ -8,8 +8,8 @@ import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.verifyNoInteractions;
 import static org.mockito.Mockito.when;
 
-import com.epam.reportportal.core.tms.dto.NewTestFolderRQ;
-import com.epam.reportportal.core.tms.dto.TmsTestCaseRQ;
+import com.epam.reportportal.serviceapi.core.tms.dto.NewTestFolderRQ;
+import com.epam.reportportal.serviceapi.core.tms.dto.TmsTestCaseRQ;
 import jakarta.validation.ConstraintValidatorContext;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

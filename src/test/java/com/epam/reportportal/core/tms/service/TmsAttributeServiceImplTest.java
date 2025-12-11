@@ -1,4 +1,4 @@
-package com.epam.reportportal.core.tms.service;
+package com.epam.reportportal.serviceapi.core.tms.service;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
@@ -8,15 +8,15 @@ import static org.mockito.Mockito.never;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
-import com.epam.reportportal.core.tms.dto.TmsAttributeRQ;
-import com.epam.reportportal.core.tms.dto.TmsAttributeRS;
-import com.epam.reportportal.core.tms.mapper.TmsAttributeMapper;
-import com.epam.reportportal.infrastructure.persistence.commons.querygen.Filter;
-import com.epam.reportportal.infrastructure.persistence.dao.tms.TmsAttributeRepository;
-import com.epam.reportportal.infrastructure.persistence.dao.tms.filterable.TmsAttributeFilterableRepository;
-import com.epam.reportportal.infrastructure.persistence.entity.tms.TmsAttribute;
-import com.epam.reportportal.infrastructure.rules.exception.ErrorType;
-import com.epam.reportportal.infrastructure.rules.exception.ReportPortalException;
+import com.epam.reportportal.serviceapi.core.tms.dto.TmsAttributeRQ;
+import com.epam.reportportal.serviceapi.core.tms.dto.TmsAttributeRS;
+import com.epam.reportportal.serviceapi.core.tms.mapper.TmsAttributeMapper;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.commons.querygen.Filter;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.tms.TmsAttributeRepository;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.tms.filterable.TmsAttributeFilterableRepository;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.tms.TmsAttribute;
+import com.epam.reportportal.serviceapi.infrastructure.rules.exception.ErrorType;
+import com.epam.reportportal.serviceapi.infrastructure.rules.exception.ReportPortalException;
 import jakarta.persistence.EntityExistsException;
 import java.util.List;
 import java.util.Optional;

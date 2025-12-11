@@ -1,4 +1,4 @@
-package com.epam.reportportal.core.tms.controller.integration;
+package com.epam.reportportal.serviceapi.core.tms.controller.integration;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
@@ -11,8 +11,8 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
-import com.epam.reportportal.core.tms.dto.TmsDatasetRQ;
-import com.epam.reportportal.infrastructure.persistence.dao.tms.TmsDatasetRepository;
+import com.epam.reportportal.serviceapi.core.tms.dto.TmsDatasetRQ;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.tms.TmsDatasetRepository;
 import com.epam.reportportal.ws.BaseMvcTest;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.SneakyThrows;

@@ -19,10 +19,11 @@ package com.epam.reportportal.ws.converter.converters;
 import static org.assertj.core.api.Java6Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import com.epam.reportportal.infrastructure.persistence.entity.attribute.Attribute;
-import com.epam.reportportal.infrastructure.persistence.entity.project.Project;
-import com.epam.reportportal.infrastructure.persistence.entity.project.ProjectAttribute;
-import com.epam.reportportal.model.activity.ProjectAttributesActivityResource;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.attribute.Attribute;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.project.Project;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.project.ProjectAttribute;
+import com.epam.reportportal.serviceapi.model.activity.ProjectAttributesActivityResource;
+import com.epam.reportportal.serviceapi.ws.converter.converters.ProjectActivityConverter;
 import com.google.common.collect.Sets;
 import org.junit.jupiter.api.Test;
 

@@ -18,10 +18,11 @@ package com.epam.reportportal.ws.converter.converters;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import com.epam.reportportal.infrastructure.persistence.entity.pattern.PatternTemplate;
-import com.epam.reportportal.infrastructure.persistence.entity.pattern.PatternTemplateType;
-import com.epam.reportportal.model.activity.PatternTemplateActivityResource;
-import com.epam.reportportal.model.project.config.pattern.PatternTemplateResource;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.pattern.PatternTemplate;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.pattern.PatternTemplateType;
+import com.epam.reportportal.serviceapi.model.activity.PatternTemplateActivityResource;
+import com.epam.reportportal.serviceapi.model.project.config.pattern.PatternTemplateResource;
+import com.epam.reportportal.serviceapi.ws.converter.converters.PatternTemplateConverter;
 import org.junit.jupiter.api.Test;
 
 /**

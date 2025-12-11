@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.core.item.validator.state;
+package com.epam.reportportal.serviceapi.core.item.validator.state;
 
-import com.epam.reportportal.infrastructure.persistence.entity.item.TestItem;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.item.TestItem;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

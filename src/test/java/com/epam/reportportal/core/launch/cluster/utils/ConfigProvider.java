@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.core.launch.cluster.utils;
+package com.epam.reportportal.serviceapi.core.launch.cluster.utils;
 
-import com.epam.reportportal.core.launch.cluster.config.ClusterEntityContext;
-import com.epam.reportportal.core.launch.cluster.config.GenerateClustersConfig;
-import com.epam.reportportal.infrastructure.model.project.AnalyzerConfig;
+import com.epam.reportportal.serviceapi.core.launch.cluster.config.ClusterEntityContext;
+import com.epam.reportportal.serviceapi.core.launch.cluster.config.GenerateClustersConfig;
+import com.epam.reportportal.serviceapi.infrastructure.model.project.AnalyzerConfig;
 
 /**
  * @author <a href="mailto:ivan_budayeu@epam.com">Ivan Budayeu</a>

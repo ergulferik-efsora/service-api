@@ -14,20 +14,20 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.core.events.activity;
+package com.epam.reportportal.serviceapi.core.events.activity;
 
-import static com.epam.reportportal.core.events.activity.ActivityTestHelper.checkActivity;
+import static com.epam.reportportal.serviceapi.core.events.activity.ActivityTestHelper.checkActivity;
 
-import com.epam.reportportal.core.events.activity.util.ActivityDetailsUtil;
-import com.epam.reportportal.infrastructure.persistence.entity.activity.Activity;
-import com.epam.reportportal.infrastructure.persistence.entity.activity.ActivityDetails;
-import com.epam.reportportal.infrastructure.persistence.entity.activity.EventAction;
-import com.epam.reportportal.infrastructure.persistence.entity.activity.EventObject;
-import com.epam.reportportal.infrastructure.persistence.entity.activity.EventPriority;
-import com.epam.reportportal.infrastructure.persistence.entity.activity.EventSubject;
-import com.epam.reportportal.infrastructure.persistence.entity.activity.HistoryField;
-import com.epam.reportportal.model.activity.TestItemActivityResource;
-import com.epam.reportportal.infrastructure.model.externalsystem.Ticket;
+import com.epam.reportportal.serviceapi.core.events.activity.util.ActivityDetailsUtil;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.activity.Activity;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.activity.ActivityDetails;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.activity.EventAction;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.activity.EventObject;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.activity.EventPriority;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.activity.EventSubject;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.activity.HistoryField;
+import com.epam.reportportal.serviceapi.model.activity.TestItemActivityResource;
+import com.epam.reportportal.serviceapi.infrastructure.model.externalsystem.Ticket;
 import com.google.common.collect.Lists;
 import java.time.Instant;
 import java.util.List;

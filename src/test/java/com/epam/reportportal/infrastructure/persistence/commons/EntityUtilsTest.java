@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.infrastructure.persistence.commons;
+package com.epam.reportportal.serviceapi.infrastructure.persistence.commons;
 
-import static com.epam.reportportal.infrastructure.persistence.commons.EntityUtils.NOT_EMPTY;
-import static com.epam.reportportal.infrastructure.persistence.commons.EntityUtils.REPLACE_SEPARATOR;
-import static com.epam.reportportal.infrastructure.persistence.commons.EntityUtils.TO_DATE;
-import static com.epam.reportportal.infrastructure.persistence.commons.EntityUtils.TO_LOCAL_DATE_TIME;
-import static com.epam.reportportal.infrastructure.persistence.commons.EntityUtils.TRIM_FUNCTION;
-import static com.epam.reportportal.infrastructure.persistence.commons.EntityUtils.normalizeId;
+import static com.epam.reportportal.serviceapi.infrastructure.persistence.commons.EntityUtils.NOT_EMPTY;
+import static com.epam.reportportal.serviceapi.infrastructure.persistence.commons.EntityUtils.REPLACE_SEPARATOR;
+import static com.epam.reportportal.serviceapi.infrastructure.persistence.commons.EntityUtils.TO_DATE;
+import static com.epam.reportportal.serviceapi.infrastructure.persistence.commons.EntityUtils.TO_LOCAL_DATE_TIME;
+import static com.epam.reportportal.serviceapi.infrastructure.persistence.commons.EntityUtils.TRIM_FUNCTION;
+import static com.epam.reportportal.serviceapi.infrastructure.persistence.commons.EntityUtils.normalizeId;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertNull;

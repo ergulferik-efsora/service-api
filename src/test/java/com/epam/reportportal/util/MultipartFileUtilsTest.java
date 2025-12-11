@@ -19,6 +19,7 @@ package com.epam.reportportal.util;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
+import com.epam.reportportal.serviceapi.util.MultipartFileUtils;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;

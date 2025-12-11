@@ -14,16 +14,17 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.infrastructure.persistence.dao;
+package com.epam.reportportal.serviceapi.infrastructure.persistence.dao;
 
-import static com.epam.reportportal.infrastructure.persistence.commons.querygen.constant.GeneralCriteriaConstant.CRITERIA_ID;
+import static com.epam.reportportal.serviceapi.infrastructure.persistence.commons.querygen.constant.GeneralCriteriaConstant.CRITERIA_ID;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-import com.epam.reportportal.infrastructure.model.launch.cluster.ClusterInfoResource;
+import com.epam.reportportal.serviceapi.infrastructure.model.launch.cluster.ClusterInfoResource;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.ClusterRepository;
 import com.epam.reportportal.ws.BaseMvcTest;
-import com.epam.reportportal.infrastructure.persistence.entity.cluster.Cluster;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.cluster.Cluster;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;

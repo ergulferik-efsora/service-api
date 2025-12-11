@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.core.events.handler.item;
+package com.epam.reportportal.serviceapi.core.events.handler.item;
 
 import static org.mockito.Mockito.any;
 import static org.mockito.Mockito.eq;
@@ -22,10 +22,10 @@ import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 
-import com.epam.reportportal.core.analyzer.auto.LogIndexer;
-import com.epam.reportportal.core.events.activity.item.IssueResolvedEvent;
-import com.epam.reportportal.infrastructure.persistence.entity.enums.ProjectAttributeEnum;
-import com.epam.reportportal.infrastructure.model.project.AnalyzerConfig;
+import com.epam.reportportal.serviceapi.core.analyzer.auto.LogIndexer;
+import com.epam.reportportal.serviceapi.core.events.activity.item.IssueResolvedEvent;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.enums.ProjectAttributeEnum;
+import com.epam.reportportal.serviceapi.infrastructure.model.project.AnalyzerConfig;
 import com.google.common.collect.ImmutableMap;
 import java.util.List;
 import java.util.Map;

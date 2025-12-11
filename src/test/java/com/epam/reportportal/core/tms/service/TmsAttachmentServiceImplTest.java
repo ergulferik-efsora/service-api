@@ -1,4 +1,4 @@
-package com.epam.reportportal.core.tms.service;
+package com.epam.reportportal.serviceapi.core.tms.service;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
@@ -16,16 +16,16 @@ import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.verifyNoInteractions;
 import static org.mockito.Mockito.when;
 
-import com.epam.reportportal.infrastructure.persistence.binary.tms.TmsAttachmentDataStoreService;
-import com.epam.reportportal.infrastructure.persistence.entity.tms.TmsAttachment;
-import com.epam.reportportal.infrastructure.persistence.dao.tms.TmsAttachmentRepository;
-import com.epam.reportportal.infrastructure.persistence.dao.tms.TmsManualScenarioPreconditionsAttachmentRepository;
-import com.epam.reportportal.infrastructure.persistence.dao.tms.TmsStepAttachmentRepository;
-import com.epam.reportportal.infrastructure.persistence.dao.tms.TmsTextManualScenarioAttachmentRepository;
-import com.epam.reportportal.core.tms.dto.UploadAttachmentRS;
-import com.epam.reportportal.core.tms.mapper.TmsAttachmentMapper;
-import com.epam.reportportal.infrastructure.rules.exception.ErrorType;
-import com.epam.reportportal.infrastructure.rules.exception.ReportPortalException;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.binary.tms.TmsAttachmentDataStoreService;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.tms.TmsAttachment;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.tms.TmsAttachmentRepository;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.tms.TmsManualScenarioPreconditionsAttachmentRepository;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.tms.TmsStepAttachmentRepository;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.tms.TmsTextManualScenarioAttachmentRepository;
+import com.epam.reportportal.serviceapi.core.tms.dto.UploadAttachmentRS;
+import com.epam.reportportal.serviceapi.core.tms.mapper.TmsAttachmentMapper;
+import com.epam.reportportal.serviceapi.infrastructure.rules.exception.ErrorType;
+import com.epam.reportportal.serviceapi.infrastructure.rules.exception.ReportPortalException;
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;
 import java.time.Duration;

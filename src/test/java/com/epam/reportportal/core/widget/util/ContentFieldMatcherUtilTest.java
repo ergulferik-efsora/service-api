@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.core.widget.util;
+package com.epam.reportportal.serviceapi.core.widget.util;
 
-import static com.epam.reportportal.core.widget.util.ContentFieldPatternConstants.COMBINED_CONTENT_FIELDS_REGEX;
-import static com.epam.reportportal.core.widget.util.ContentFieldPatternConstants.DEFECTS_REGEX;
-import static com.epam.reportportal.core.widget.util.ContentFieldPatternConstants.EXECUTIONS_REGEX;
+import static com.epam.reportportal.serviceapi.core.widget.util.ContentFieldPatternConstants.COMBINED_CONTENT_FIELDS_REGEX;
+import static com.epam.reportportal.serviceapi.core.widget.util.ContentFieldPatternConstants.DEFECTS_REGEX;
+import static com.epam.reportportal.serviceapi.core.widget.util.ContentFieldPatternConstants.EXECUTIONS_REGEX;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 

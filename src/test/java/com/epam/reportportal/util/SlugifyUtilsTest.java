@@ -16,9 +16,10 @@
 
 package com.epam.reportportal.util;
 
-import static com.epam.reportportal.util.RegexpAssertionUtil.checkRegexpPattern;
+import static com.epam.reportportal.serviceapi.util.RegexpAssertionUtil.checkRegexpPattern;
 
-import com.epam.reportportal.api.model.ProjectBase;
+import com.epam.reportportal.serviceapi.api.model.ProjectBase;
+import com.epam.reportportal.serviceapi.util.SlugifyUtils;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 

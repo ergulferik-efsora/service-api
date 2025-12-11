@@ -1,8 +1,9 @@
-package com.epam.reportportal.infrastructure.persistence.dao;
+package com.epam.reportportal.serviceapi.infrastructure.persistence.dao;
 
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.SenderCaseRepository;
 import com.epam.reportportal.ws.BaseMvcTest;
-import com.epam.reportportal.infrastructure.persistence.entity.project.email.LaunchAttributeRule;
-import com.epam.reportportal.infrastructure.persistence.entity.project.email.SenderCase;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.project.email.LaunchAttributeRule;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.project.email.SenderCase;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;

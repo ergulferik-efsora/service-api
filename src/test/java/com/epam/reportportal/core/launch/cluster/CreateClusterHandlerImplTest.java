@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.core.launch.cluster;
+package com.epam.reportportal.serviceapi.core.launch.cluster;
 
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.anyLong;
@@ -25,11 +25,11 @@ import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
-import com.epam.reportportal.core.analyzer.auto.client.model.cluster.ClusterData;
-import com.epam.reportportal.core.analyzer.auto.client.model.cluster.ClusterInfoRs;
-import com.epam.reportportal.infrastructure.persistence.dao.ClusterRepository;
-import com.epam.reportportal.infrastructure.persistence.dao.LogRepository;
-import com.epam.reportportal.infrastructure.persistence.entity.cluster.Cluster;
+import com.epam.reportportal.serviceapi.core.analyzer.auto.client.model.cluster.ClusterData;
+import com.epam.reportportal.serviceapi.core.analyzer.auto.client.model.cluster.ClusterInfoRs;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.ClusterRepository;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.LogRepository;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.cluster.Cluster;
 import java.util.List;
 import java.util.Optional;
 import java.util.Set;

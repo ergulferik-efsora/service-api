@@ -14,15 +14,15 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.infrastructure.persistence.binary.impl;
+package com.epam.reportportal.serviceapi.infrastructure.persistence.binary.impl;
 
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import com.epam.reportportal.ws.BaseMvcTest;
-import com.epam.reportportal.infrastructure.persistence.binary.DataStoreService;
-import com.epam.reportportal.infrastructure.persistence.filesystem.DataEncoder;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.binary.DataStoreService;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.filesystem.DataEncoder;
 import com.epam.reportportal.ws.BaseMvcTest;
 import java.io.File;
 import java.io.FileInputStream;

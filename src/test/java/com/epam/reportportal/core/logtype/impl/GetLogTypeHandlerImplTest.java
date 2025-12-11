@@ -14,20 +14,20 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.core.logtype.impl;
+package com.epam.reportportal.serviceapi.core.logtype.impl;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.mockito.Mockito.when;
 
-import com.epam.reportportal.api.model.GetLogTypes200Response;
-import com.epam.reportportal.api.model.LogTypeResponse;
-import com.epam.reportportal.infrastructure.rules.exception.ErrorType;
-import com.epam.reportportal.infrastructure.rules.exception.ReportPortalException;
-import com.epam.reportportal.infrastructure.persistence.dao.LogTypeRepository;
-import com.epam.reportportal.infrastructure.persistence.dao.ProjectRepository;
-import com.epam.reportportal.infrastructure.persistence.entity.log.ProjectLogType;
-import com.epam.reportportal.infrastructure.persistence.entity.project.Project;
+import com.epam.reportportal.serviceapi.api.model.GetLogTypes200Response;
+import com.epam.reportportal.serviceapi.api.model.LogTypeResponse;
+import com.epam.reportportal.serviceapi.infrastructure.rules.exception.ErrorType;
+import com.epam.reportportal.serviceapi.infrastructure.rules.exception.ReportPortalException;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.LogTypeRepository;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.ProjectRepository;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.log.ProjectLogType;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.project.Project;
 import java.util.List;
 import java.util.Optional;
 import org.junit.jupiter.api.Test;

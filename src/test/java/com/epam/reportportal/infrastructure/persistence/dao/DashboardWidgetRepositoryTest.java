@@ -1,5 +1,6 @@
-package com.epam.reportportal.infrastructure.persistence.dao;
+package com.epam.reportportal.serviceapi.infrastructure.persistence.dao;
 
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.DashboardWidgetRepository;
 import com.epam.reportportal.ws.BaseMvcTest;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;

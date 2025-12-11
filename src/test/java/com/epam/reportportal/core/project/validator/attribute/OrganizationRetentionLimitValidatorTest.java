@@ -1,15 +1,15 @@
-package com.epam.reportportal.core.project.validator.attribute;
+package com.epam.reportportal.serviceapi.core.project.validator.attribute;
 
 import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.mockito.Mockito.verifyNoInteractions;
 import static org.mockito.Mockito.when;
 
-import com.epam.reportportal.infrastructure.rules.exception.ReportPortalException;
-import com.epam.reportportal.core.organization.settings.OrganizationRetentionPolicyHandler;
-import com.epam.reportportal.core.organization.settings.OrganizationSettingsEnum;
-import com.epam.reportportal.infrastructure.persistence.dao.organization.OrganizationSettingsRepository;
-import com.epam.reportportal.infrastructure.persistence.entity.organization.OrganizationSetting;
+import com.epam.reportportal.serviceapi.infrastructure.rules.exception.ReportPortalException;
+import com.epam.reportportal.serviceapi.core.organization.settings.OrganizationRetentionPolicyHandler;
+import com.epam.reportportal.serviceapi.core.organization.settings.OrganizationSettingsEnum;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.organization.OrganizationSettingsRepository;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.organization.OrganizationSetting;
 import java.util.List;
 import java.util.Map;
 import org.junit.jupiter.api.BeforeEach;

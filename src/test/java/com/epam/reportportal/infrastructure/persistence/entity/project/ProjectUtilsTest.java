@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.infrastructure.persistence.entity.project;
+package com.epam.reportportal.serviceapi.infrastructure.persistence.entity.project;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -22,14 +22,19 @@ import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-import com.epam.reportportal.infrastructure.persistence.entity.attribute.Attribute;
-import com.epam.reportportal.infrastructure.persistence.entity.enums.ProjectAttributeEnum;
-import com.epam.reportportal.infrastructure.persistence.entity.enums.TestItemIssueGroup;
-import com.epam.reportportal.infrastructure.persistence.entity.item.issue.IssueGroup;
-import com.epam.reportportal.infrastructure.persistence.entity.item.issue.IssueType;
-import com.epam.reportportal.infrastructure.persistence.entity.project.email.SenderCase;
-import com.epam.reportportal.infrastructure.persistence.entity.user.ProjectUser;
-import com.epam.reportportal.infrastructure.persistence.entity.user.User;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.attribute.Attribute;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.enums.ProjectAttributeEnum;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.enums.TestItemIssueGroup;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.item.issue.IssueGroup;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.item.issue.IssueType;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.project.Project;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.project.ProjectAttribute;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.project.ProjectIssueType;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.project.ProjectRole;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.project.ProjectUtils;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.project.email.SenderCase;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.user.ProjectUser;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.user.User;
 import com.google.common.collect.Sets;
 import java.time.Instant;
 import java.util.Arrays;

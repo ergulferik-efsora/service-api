@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.core.user.impl;
+package com.epam.reportportal.serviceapi.core.user.impl;
 
 import static com.epam.reportportal.ReportPortalUserUtil.getRpUser;
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -28,18 +28,18 @@ import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
-import com.epam.reportportal.infrastructure.persistence.binary.UserBinaryDataService;
-import com.epam.reportportal.core.events.activity.UserDeletedEvent;
-import com.epam.reportportal.core.remover.ContentRemover;
-import com.epam.reportportal.infrastructure.persistence.dao.ProjectRepository;
-import com.epam.reportportal.infrastructure.persistence.dao.UserRepository;
-import com.epam.reportportal.infrastructure.persistence.entity.organization.OrganizationRole;
-import com.epam.reportportal.infrastructure.persistence.entity.project.ProjectRole;
-import com.epam.reportportal.infrastructure.persistence.entity.user.User;
-import com.epam.reportportal.infrastructure.persistence.entity.user.UserRole;
-import com.epam.reportportal.infrastructure.rules.exception.ReportPortalException;
-import com.epam.reportportal.util.email.strategy.EmailNotificationStrategy;
-import com.epam.reportportal.util.email.strategy.EmailTemplate;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.binary.UserBinaryDataService;
+import com.epam.reportportal.serviceapi.core.events.activity.UserDeletedEvent;
+import com.epam.reportportal.serviceapi.core.remover.ContentRemover;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.ProjectRepository;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.UserRepository;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.organization.OrganizationRole;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.project.ProjectRole;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.user.User;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.user.UserRole;
+import com.epam.reportportal.serviceapi.infrastructure.rules.exception.ReportPortalException;
+import com.epam.reportportal.serviceapi.util.email.strategy.EmailNotificationStrategy;
+import com.epam.reportportal.serviceapi.util.email.strategy.EmailTemplate;
 import com.google.common.collect.Lists;
 import java.util.Map;
 import java.util.Optional;

@@ -7,10 +7,11 @@ import static org.junit.jupiter.api.Assertions.assertNull;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
-import com.epam.reportportal.core.file.DeleteFilesHandler;
-import com.epam.reportportal.core.file.GetFileHandler;
-import com.epam.reportportal.infrastructure.persistence.entity.attachment.BinaryData;
-import com.epam.reportportal.util.ProjectExtractor;
+import com.epam.reportportal.serviceapi.core.file.DeleteFilesHandler;
+import com.epam.reportportal.serviceapi.core.file.GetFileHandler;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.attachment.BinaryData;
+import com.epam.reportportal.serviceapi.util.ProjectExtractor;
+import com.epam.reportportal.serviceapi.ws.controller.FileStorageController;
 import jakarta.servlet.http.HttpServletRequest;
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;

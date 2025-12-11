@@ -17,6 +17,7 @@
 package com.epam.reportportal.extension.common;
 
 
+import com.epam.reportportal.serviceapi.extension.common.ExtensionPoint;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

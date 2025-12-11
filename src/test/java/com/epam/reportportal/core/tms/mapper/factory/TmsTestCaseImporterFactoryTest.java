@@ -1,11 +1,11 @@
-package com.epam.reportportal.core.tms.mapper.factory;
+package com.epam.reportportal.serviceapi.core.tms.mapper.factory;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.mockito.Mockito.when;
 
-import com.epam.reportportal.core.tms.dto.TmsTestCaseImportFormat;
-import com.epam.reportportal.core.tms.mapper.importer.TmsTestCaseImporter;
+import com.epam.reportportal.serviceapi.core.tms.dto.TmsTestCaseImportFormat;
+import com.epam.reportportal.serviceapi.core.tms.mapper.importer.TmsTestCaseImporter;
 import java.util.Arrays;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

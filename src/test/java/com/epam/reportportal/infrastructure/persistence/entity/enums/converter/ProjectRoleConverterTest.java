@@ -14,11 +14,12 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.infrastructure.persistence.entity.enums.converter;
+package com.epam.reportportal.serviceapi.infrastructure.persistence.entity.enums.converter;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import com.epam.reportportal.infrastructure.persistence.entity.project.ProjectRole;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.enums.converter.ProjectRoleConverter;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.project.ProjectRole;
 import java.util.Arrays;
 import java.util.stream.Collectors;
 import org.junit.jupiter.api.BeforeEach;

@@ -14,24 +14,24 @@
  *  limitations under the License.
  */
 
-package com.epam.reportportal.core.filter.impl;
+package com.epam.reportportal.serviceapi.core.filter.impl;
 
-import static com.epam.reportportal.infrastructure.persistence.commons.querygen.constant.ActivityCriteriaConstant.CRITERIA_EVENT_NAME;
-import static com.epam.reportportal.infrastructure.persistence.commons.querygen.constant.ActivityCriteriaConstant.CRITERIA_OBJECT_TYPE;
+import static com.epam.reportportal.serviceapi.infrastructure.persistence.commons.querygen.constant.ActivityCriteriaConstant.CRITERIA_EVENT_NAME;
+import static com.epam.reportportal.serviceapi.infrastructure.persistence.commons.querygen.constant.ActivityCriteriaConstant.CRITERIA_OBJECT_TYPE;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertInstanceOf;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-import com.epam.reportportal.api.model.FilterOperation;
-import com.epam.reportportal.api.model.SearchCriteriaRQ;
-import com.epam.reportportal.api.model.SearchCriteriaSearchCriteriaInner;
-import com.epam.reportportal.infrastructure.persistence.commons.querygen.CompositeFilter;
-import com.epam.reportportal.infrastructure.persistence.commons.querygen.Filter;
-import com.epam.reportportal.infrastructure.persistence.commons.querygen.FilterCondition;
-import com.epam.reportportal.infrastructure.persistence.commons.querygen.FilterTarget;
-import com.epam.reportportal.infrastructure.persistence.commons.querygen.Queryable;
-import com.epam.reportportal.core.filter.predefined.PredefinedFilterType;
-import com.epam.reportportal.infrastructure.persistence.entity.activity.Activity;
+import com.epam.reportportal.serviceapi.api.model.FilterOperation;
+import com.epam.reportportal.serviceapi.api.model.SearchCriteriaRQ;
+import com.epam.reportportal.serviceapi.api.model.SearchCriteriaSearchCriteriaInner;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.commons.querygen.CompositeFilter;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.commons.querygen.Filter;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.commons.querygen.FilterCondition;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.commons.querygen.FilterTarget;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.commons.querygen.Queryable;
+import com.epam.reportportal.serviceapi.core.filter.predefined.PredefinedFilterType;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.activity.Activity;
 import java.util.List;
 import org.apache.commons.collections4.CollectionUtils;
 import org.junit.jupiter.api.Assertions;

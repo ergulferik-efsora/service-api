@@ -18,12 +18,13 @@ package com.epam.reportportal.ws.converter;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import com.epam.reportportal.infrastructure.persistence.dao.LogTypeRepository;
-import com.epam.reportportal.infrastructure.persistence.entity.item.TestItem;
-import com.epam.reportportal.infrastructure.persistence.entity.log.LogFull;
-import com.epam.reportportal.infrastructure.persistence.service.LogTypeResolver;
-import com.epam.reportportal.model.log.LogResource;
-import com.epam.reportportal.ws.converter.converters.LogConverter;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.LogTypeRepository;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.item.TestItem;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.log.LogFull;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.service.LogTypeResolver;
+import com.epam.reportportal.serviceapi.model.log.LogResource;
+import com.epam.reportportal.serviceapi.ws.converter.LogResourceAssembler;
+import com.epam.reportportal.serviceapi.ws.converter.converters.LogConverter;
 import java.time.Instant;
 import java.util.Collections;
 import java.util.List;

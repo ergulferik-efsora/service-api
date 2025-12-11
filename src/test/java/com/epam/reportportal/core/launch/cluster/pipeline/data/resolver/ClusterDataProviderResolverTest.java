@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.core.launch.cluster.pipeline.data.resolver;
+package com.epam.reportportal.serviceapi.core.launch.cluster.pipeline.data.resolver;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
@@ -22,9 +22,9 @@ import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
-import com.epam.reportportal.core.launch.cluster.config.GenerateClustersConfig;
-import com.epam.reportportal.core.launch.cluster.pipeline.data.ClusterDataProvider;
-import com.epam.reportportal.core.launch.cluster.pipeline.data.resolver.evaluator.ClusterDataProviderEvaluator;
+import com.epam.reportportal.serviceapi.core.launch.cluster.config.GenerateClustersConfig;
+import com.epam.reportportal.serviceapi.core.launch.cluster.pipeline.data.ClusterDataProvider;
+import com.epam.reportportal.serviceapi.core.launch.cluster.pipeline.data.resolver.evaluator.ClusterDataProviderEvaluator;
 import java.util.List;
 import java.util.Optional;
 import org.junit.jupiter.api.Test;

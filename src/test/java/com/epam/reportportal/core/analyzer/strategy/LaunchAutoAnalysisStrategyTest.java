@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.core.analyzer.strategy;
+package com.epam.reportportal.serviceapi.core.analyzer.strategy;
 
 import static com.epam.reportportal.ReportPortalUserUtil.getRpUser;
 import static org.mockito.Mockito.mock;
@@ -22,20 +22,20 @@ import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
-import com.epam.reportportal.infrastructure.persistence.commons.ReportPortalUser;
-import com.epam.reportportal.core.analyzer.auto.starter.LaunchAutoAnalysisStarter;
-import com.epam.reportportal.core.analyzer.auto.strategy.analyze.AnalyzeItemsMode;
-import com.epam.reportportal.core.analyzer.config.StartLaunchAutoAnalysisConfig;
-import com.epam.reportportal.infrastructure.persistence.dao.LaunchRepository;
-import com.epam.reportportal.infrastructure.persistence.dao.ProjectRepository;
-import com.epam.reportportal.infrastructure.persistence.entity.enums.LaunchModeEnum;
-import com.epam.reportportal.infrastructure.persistence.entity.launch.Launch;
-import com.epam.reportportal.infrastructure.persistence.entity.organization.MembershipDetails;
-import com.epam.reportportal.infrastructure.persistence.entity.organization.OrganizationRole;
-import com.epam.reportportal.infrastructure.persistence.entity.project.Project;
-import com.epam.reportportal.infrastructure.persistence.entity.project.ProjectRole;
-import com.epam.reportportal.infrastructure.persistence.entity.user.UserRole;
-import com.epam.reportportal.model.launch.AnalyzeLaunchRQ;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.commons.ReportPortalUser;
+import com.epam.reportportal.serviceapi.core.analyzer.auto.starter.LaunchAutoAnalysisStarter;
+import com.epam.reportportal.serviceapi.core.analyzer.auto.strategy.analyze.AnalyzeItemsMode;
+import com.epam.reportportal.serviceapi.core.analyzer.config.StartLaunchAutoAnalysisConfig;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.LaunchRepository;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.ProjectRepository;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.enums.LaunchModeEnum;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.launch.Launch;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.organization.MembershipDetails;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.organization.OrganizationRole;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.project.Project;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.project.ProjectRole;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.user.UserRole;
+import com.epam.reportportal.serviceapi.model.launch.AnalyzeLaunchRQ;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Sets;
 import java.util.Optional;

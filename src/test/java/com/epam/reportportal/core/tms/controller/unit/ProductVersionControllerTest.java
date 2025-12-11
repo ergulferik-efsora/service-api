@@ -1,4 +1,4 @@
-package com.epam.reportportal.core.tms.controller.unit;
+package com.epam.reportportal.serviceapi.core.tms.controller.unit;
 
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.anyString;
@@ -14,13 +14,13 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 import static org.springframework.test.web.servlet.setup.MockMvcBuilders.standaloneSetup;
 
-import com.epam.reportportal.core.tms.controller.ProductVersionController;
-import com.epam.reportportal.core.tms.dto.ProductVersionRQ;
-import com.epam.reportportal.core.tms.dto.TmsProductVersionRS;
-import com.epam.reportportal.core.tms.service.ProductVersionService;
-import com.epam.reportportal.infrastructure.persistence.commons.ReportPortalUser;
-import com.epam.reportportal.infrastructure.persistence.entity.organization.MembershipDetails;
-import com.epam.reportportal.util.ProjectExtractor;
+import com.epam.reportportal.serviceapi.core.tms.controller.ProductVersionController;
+import com.epam.reportportal.serviceapi.core.tms.dto.ProductVersionRQ;
+import com.epam.reportportal.serviceapi.core.tms.dto.TmsProductVersionRS;
+import com.epam.reportportal.serviceapi.core.tms.service.ProductVersionService;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.commons.ReportPortalUser;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.organization.MembershipDetails;
+import com.epam.reportportal.serviceapi.util.ProjectExtractor;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import java.util.Collections;
 import org.junit.jupiter.api.BeforeEach;

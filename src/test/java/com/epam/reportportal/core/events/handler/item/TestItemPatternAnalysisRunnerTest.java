@@ -14,18 +14,18 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.core.events.handler.item;
+package com.epam.reportportal.serviceapi.core.events.handler.item;
 
-import static com.epam.reportportal.core.events.handler.item.TestItemPatternAnalysisRunner.IMMEDIATE_PATTERN_ANALYSIS;
+import static com.epam.reportportal.serviceapi.core.events.handler.item.TestItemPatternAnalysisRunner.IMMEDIATE_PATTERN_ANALYSIS;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.verifyNoInteractions;
 
-import com.epam.reportportal.core.analyzer.pattern.handler.proxy.ItemsPatternAnalyzeProducer;
-import com.epam.reportportal.core.events.activity.item.TestItemFinishedEvent;
-import com.epam.reportportal.infrastructure.persistence.entity.ItemAttribute;
-import com.epam.reportportal.infrastructure.persistence.entity.item.TestItem;
+import com.epam.reportportal.serviceapi.core.analyzer.pattern.handler.proxy.ItemsPatternAnalyzeProducer;
+import com.epam.reportportal.serviceapi.core.events.activity.item.TestItemFinishedEvent;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.ItemAttribute;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.item.TestItem;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Sets;
 import java.util.Collections;

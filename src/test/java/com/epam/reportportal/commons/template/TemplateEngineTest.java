@@ -23,7 +23,7 @@ package com.epam.reportportal.commons.template;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 
-import com.epam.reportportal.infrastructure.commons.template.FreemarkerTemplateEngine;
+import com.epam.reportportal.serviceapi.infrastructure.commons.template.FreemarkerTemplateEngine;
 import freemarker.template.Configuration;
 import freemarker.template.TemplateExceptionHandler;
 import freemarker.template.Version;

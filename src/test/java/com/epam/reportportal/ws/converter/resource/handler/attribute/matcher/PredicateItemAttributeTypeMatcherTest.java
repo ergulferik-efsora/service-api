@@ -16,8 +16,9 @@
 
 package com.epam.reportportal.ws.converter.resource.handler.attribute.matcher;
 
-import com.epam.reportportal.infrastructure.persistence.entity.ItemAttribute;
-import com.epam.reportportal.ws.converter.resource.handler.attribute.ItemAttributeType;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.ItemAttribute;
+import com.epam.reportportal.serviceapi.ws.converter.resource.handler.attribute.ItemAttributeType;
+import com.epam.reportportal.serviceapi.ws.converter.resource.handler.attribute.matcher.PredicateItemAttributeTypeMatcher;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

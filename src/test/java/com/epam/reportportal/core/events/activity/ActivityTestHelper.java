@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.core.events.activity;
+package com.epam.reportportal.serviceapi.core.events.activity;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-import com.epam.reportportal.infrastructure.persistence.entity.activity.Activity;
-import com.epam.reportportal.infrastructure.persistence.entity.activity.ActivityDetails;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.activity.Activity;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.activity.ActivityDetails;
 import java.time.Instant;
 
 /**

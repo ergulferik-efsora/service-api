@@ -1,4 +1,4 @@
-package com.epam.reportportal.core.tms.mapper.factory;
+package com.epam.reportportal.serviceapi.core.tms.mapper.factory;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
@@ -6,8 +6,8 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
-import com.epam.reportportal.core.tms.dto.TmsTestFolderExportFileType;
-import com.epam.reportportal.core.tms.mapper.exporter.TmsTestFolderExporter;
+import com.epam.reportportal.serviceapi.core.tms.dto.TmsTestFolderExportFileType;
+import com.epam.reportportal.serviceapi.core.tms.mapper.exporter.TmsTestFolderExporter;
 import java.util.Collections;
 import java.util.List;
 import org.junit.jupiter.api.BeforeEach;

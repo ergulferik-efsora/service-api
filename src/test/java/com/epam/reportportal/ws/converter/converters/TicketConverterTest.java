@@ -18,8 +18,9 @@ package com.epam.reportportal.ws.converter.converters;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import com.epam.reportportal.infrastructure.persistence.entity.bts.Ticket;
-import com.epam.reportportal.reporting.Issue;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.bts.Ticket;
+import com.epam.reportportal.serviceapi.reporting.Issue;
+import com.epam.reportportal.serviceapi.ws.converter.converters.TicketConverter;
 import org.junit.jupiter.api.Test;
 
 /**

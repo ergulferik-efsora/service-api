@@ -23,8 +23,8 @@ package com.epam.reportportal.commons;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import com.epam.reportportal.infrastructure.commons.Thumbnailator;
-import com.epam.reportportal.infrastructure.commons.ThumbnailatorImpl;
+import com.epam.reportportal.serviceapi.infrastructure.commons.Thumbnailator;
+import com.epam.reportportal.serviceapi.infrastructure.commons.ThumbnailatorImpl;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.io.InputStream;

@@ -1,0 +1,317 @@
+#
+# Copyright 2019 EPAM Systems
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+# http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#
+
+spring:
+  main:
+    allow-bean-definition-overriding: true
+    # TODO: fix circular references
+    allow-circular-references: true
+  mvc:
+    pathmatch:
+      # TODO: switch to PATH_PATTERN_PARSER
+      matching-strategy: ANT_PATH_MATCHER
+  batch:
+    jdbc:
+      initialize-schema: always
+  jooq:
+    sql-dialect: POSTGRES
+  profiles:
+    active: ${rp.profiles:default}
+  application:
+    name: api
+    quartz:
+      org:
+        quartz:
+          # jobStore.class: org.quartz.impl.jdbcjobstore.JobStoreTX
+          jobStore:
+            driverDelegateClass: org.quartz.impl.jdbcjobstore.PostgreSQLDelegate
+            dataSource: dataSource
+            tablePrefix: quartz.scheduler_
+            isClustered: true
+            clusterCheckinInterval: 180000
+          threadPool:
+            threadCount: 1
+          scheduler:
+            instanceId: ${spring.application.name}:${vcap.application.instance_id:${spring.application.instance_id:${random.value}}}
+            instanceName: reportportal
+            classLoadHelper:
+              class: com.epam.reportportal.serviceapi.core.configs.ReportPortalClassLoadHelper
+  jpa:
+    properties:
+      hibernate:
+        dialect: com.epam.reportportal.store.commons.JsonbAwarePostgresDialect
+        jdbc:
+          batch_size: 25
+          lob:
+            non_contextual_creation: true
+        order_inserts: true
+        order_updates: true
+    generate-ddl: false
+    hibernate:
+      ddl-auto: none
+  rabbitmq:
+    addresses: ${rp.amqp.addresses}
+  servlet:
+    multipart:
+      enabled: true
+      resolve-lazily: true
+      max-file-size: 128MB
+      max-request-size: 128MB
+      file-size-threshold: 128MB
+
+info:
+  build:
+    name: API Service
+    description: ReportPortal API Service
+    version: ${version:unknown}${buildNumber:}
+    branch: ${branch:unknown}
+    repo: ${repo:unknown}
+
+management:
+  endpoints:
+    web:
+      base-path: /
+      exposure:
+        include: prometheus, metrics, info, health
+  endpoint:
+    health:
+      show-details: always
+  server:
+    base-path: /admin
+  prometheus:
+    metrics:
+      export:
+        enabled: true
+        step: 5s
+  metrics:
+    tags:
+      version: ${version:unknown}
+      application: api
+
+com:
+  ta:
+    reportportal:
+      job:
+        load:
+          plugins:
+            cron: PT10S
+        clean:
+          outdated:
+            plugins:
+              cron: PT10S
+          bids:
+            cron: PT1H
+        interrupt:
+          broken:
+            launches:
+              cron: PT1H
+      rp:
+        flushing:
+          time:
+            cron: ${rp.environment.variable.flushing.time}
+
+datastore:
+  path: ${rp.binarystore.path:/data/storage}
+  thumbnail:
+    attachment:
+      width: ${rp.binarystore.thumbnail.attachment.width:80}
+      height: ${rp.binarystore.thumbnail.attachment.height:60}
+    avatar:
+      width: ${rp.binarystore.thumbnail.avatar.width:40}
+      height: ${rp.binarystore.thumbnail.avatar.height:60}
+  type: filesystem
+  endpoint: http://play.min.io
+  accessKey: ""
+  secretKey: ""
+  bucketPrefix: prj-
+  bucketPostfix: ""
+  defaultBucketName: rp-bucket
+  region: us-west-1
+
+rp:
+  tms:
+    attachment:
+      ttl: PT24H
+      cleanup:
+        enabled: true
+        cleanup:
+          cron: PT1H
+    datastore:
+      type: filesystem
+      path: ${datastore.path:/data/storage}
+  feature:
+    flags: ""
+  attachments:
+    recalculate: false
+  environment:
+    variable:
+      flushing:
+        time: PT24H
+      clean:
+        items:
+          size: 500
+      cluster:
+        item:
+          page-size: 20
+      item-analyze:
+        batch-size: 100
+      log-index:
+        batch-size: 20
+      pattern-analysis:
+        batch-size: 100
+        consumers-count: 2
+        prefetch-count: 0
+        single-item: true
+      history:
+        old: false
+      demo:
+        source: 001_launch.json,002_launch.json,003_launch.json,004_launch.json,005_launch.json
+        attachment:
+          probability: 20
+      executor:
+        pool:
+          save-logs:
+            core: 20
+            max: 100
+            queue: 5000
+          log-index:
+            core: 5
+            max: 10
+            queue: 500
+          log-cluster:
+            core: 5
+            max: 10
+            queue: 500
+          auto-analyze:
+            core: 10
+            max: 30
+            queue: 500
+          demo-data:
+            core: 10
+            max: 20
+            queue: 50
+          widget-view:
+            core: 3
+            max: 5
+            queue: 100
+          event-listener:
+            core: 10
+            max: 20
+            queue: 1000
+          user-email:
+            core: 5
+            max: 20
+            queue: 500
+  amqp:
+    addresses: amqp://${rp.amqp.user}:${rp.amqp.pass}@${rp.amqp.host}:${rp.amqp.port}
+    api-address: http://${rp.amqp.apiuser}:${rp.amqp.apipass}@${rp.amqp.host}:${rp.amqp.apiport}/api
+    base-vhost: /
+    analyzer-vhost: analyzer
+    host: rabbitmq
+    port: 5672
+    user: ""
+    pass: ""
+    apiport: 15672
+    apiuser: ""
+    apipass: ""
+    queues: 10
+    queuesPerPod: 10
+    # TODO currently we wait for log clusterization finish that may last for ~20 mins
+    # milliseconds
+    reply-timeout: 1200000
+  requestLogging: true
+  jwt:
+    signing-key: ""
+  jobs:
+    baseUrl: http://jobs:8686
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    driverClassName: org.postgresql.Driver
+    jdbcUrl: ${rp.db.url}
+    username: ${rp.db.user}
+    password: ${rp.db.pass}
+    maximumPoolSize: 27
+  db:
+    url: jdbc:postgresql://${rp.db.host}:${rp.db.port}/${rp.db.name}
+    name: reportportal
+    host: postgres
+    port: 5432
+    user: ""
+    pass: ""
+  analytics:
+    enableByDefault: true
+  plugins:
+    rootDir: /tmp/plugins
+    path: ${rp.plugins.rootDir}/resolved
+    resources:
+      path: ${rp.plugins.rootDir}/resources
+      public: public
+    temp:
+      path: ${rp.plugins.rootDir}/temp
+    default:
+      load: true
+  binarystore:
+    thumbnail:
+      attachment:
+        width: 100
+        height: 55
+      avatar:
+        width: 40
+        height: 50
+  schema:
+    specification: V7
+    source: https://schema.reportportal.io/
+    location: classpath:schema/
+  oauth2:
+    providers:
+      internal:
+        issuer-uri: http://reportportal.internal
+        secret-key: ${rp.jwt.signing-key}
+        algorithm: HS256
+
+springdoc:
+  default-produces-media-type: application/json
+  writer-with-order-by-keys: true
+  api-docs:
+    path: /api-docs
+    version: openapi_3_0
+  use-fqn: true
+
+server:
+  tomcat:
+    connection-timeout: 30s
+  port: 8585
+  servlet:
+    context-path: /
+
+logging:
+  level:
+    org:
+      hibernate: info
+      hibernate.stat: info
+      springframework:
+        security: info
+        web:
+          bind: fatal
+      elasticsearch:
+        client:
+          RestClient: error
+    com:
+      epam:
+        reportportal:
+          ws:
+            controller: debug
+            rabbit: debug

@@ -14,12 +14,13 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.infrastructure.persistence.entity.enums;
+package com.epam.reportportal.serviceapi.infrastructure.persistence.entity.enums;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.enums.LogLevel;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;

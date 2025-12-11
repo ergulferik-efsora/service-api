@@ -19,7 +19,7 @@ package com.epam.reportportal.ws.annotations;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-import com.epam.reportportal.infrastructure.annotations.In;
+import com.epam.reportportal.serviceapi.infrastructure.annotations.In;
 import jakarta.validation.ConstraintViolation;
 import jakarta.validation.Validation;
 import jakarta.validation.Validator;

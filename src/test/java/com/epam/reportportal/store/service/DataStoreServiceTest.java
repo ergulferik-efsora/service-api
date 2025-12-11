@@ -25,10 +25,10 @@ import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
-import com.epam.reportportal.infrastructure.commons.Thumbnailator;
-import com.epam.reportportal.infrastructure.persistence.binary.impl.AttachmentDataStoreService;
-import com.epam.reportportal.infrastructure.persistence.filesystem.DataEncoder;
-import com.epam.reportportal.infrastructure.persistence.filesystem.DataStore;
+import com.epam.reportportal.serviceapi.infrastructure.commons.Thumbnailator;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.binary.impl.AttachmentDataStoreService;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.filesystem.DataEncoder;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.filesystem.DataStore;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Optional;

@@ -16,7 +16,7 @@
 
 package com.epam.reportportal.auth;
 
-import com.epam.reportportal.infrastructure.persistence.entity.user.UserRole;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.user.UserRole;
 import io.jsonwebtoken.Jwts;
 import java.nio.charset.StandardCharsets;
 import java.time.Instant;

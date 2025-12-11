@@ -1,4 +1,4 @@
-package com.epam.reportportal.core.tms.service;
+package com.epam.reportportal.serviceapi.core.tms.service;
 
 import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -18,36 +18,37 @@ import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.verifyNoInteractions;
 import static org.mockito.Mockito.when;
 
-import com.epam.reportportal.core.tms.dto.TmsTestCaseInTestPlanRS;
-import com.epam.reportportal.core.tms.dto.batch.BatchTestCaseOperationError;
-import com.epam.reportportal.infrastructure.persistence.commons.querygen.Filter;
-import com.epam.reportportal.infrastructure.persistence.entity.tms.TmsTestCase;
-import com.epam.reportportal.infrastructure.persistence.entity.tms.TmsTestCaseExecution;
-import com.epam.reportportal.infrastructure.persistence.entity.tms.TmsTestCaseVersion;
-import com.epam.reportportal.infrastructure.persistence.entity.tms.TmsTestFolder;
-import com.epam.reportportal.infrastructure.persistence.dao.tms.TmsTestCaseRepository;
-import com.epam.reportportal.infrastructure.persistence.dao.tms.TmsTestPlanTestCaseRepository;
-import com.epam.reportportal.infrastructure.persistence.dao.tms.filterable.TmsTestCaseFilterableRepository;
-import com.epam.reportportal.core.tms.dto.NewTestFolderRQ;
-import com.epam.reportportal.core.tms.dto.TmsManualScenarioType;
-import com.epam.reportportal.core.tms.dto.TmsStepsManualScenarioRQ;
-import com.epam.reportportal.core.tms.dto.TmsTestCaseAttributeRQ;
-import com.epam.reportportal.core.tms.dto.TmsTestCaseRQ;
-import com.epam.reportportal.core.tms.dto.TmsTestCaseRS;
-import com.epam.reportportal.core.tms.dto.TmsTestFolderRS;
-import com.epam.reportportal.core.tms.dto.TmsTextManualScenarioRQ;
-import com.epam.reportportal.core.tms.dto.batch.BatchDeleteTestCasesRQ;
-import com.epam.reportportal.core.tms.dto.batch.BatchDuplicateTestCasesRQ;
-import com.epam.reportportal.core.tms.dto.batch.BatchTestCaseOperationResultRS;
-import com.epam.reportportal.core.tms.dto.batch.BatchPatchTestCaseAttributesRQ;
-import com.epam.reportportal.core.tms.dto.batch.BatchPatchTestCasesRQ;
-import com.epam.reportportal.core.tms.mapper.TmsTestCaseMapper;
-import com.epam.reportportal.core.tms.mapper.exporter.TmsTestCaseExporter;
-import com.epam.reportportal.core.tms.mapper.factory.TmsTestCaseExporterFactory;
-import com.epam.reportportal.core.tms.mapper.factory.TmsTestCaseImporterFactory;
-import com.epam.reportportal.core.tms.mapper.importer.TmsTestCaseImporter;
-import com.epam.reportportal.infrastructure.rules.exception.ErrorType;
-import com.epam.reportportal.infrastructure.rules.exception.ReportPortalException;
+import com.epam.reportportal.serviceapi.core.tms.dto.TmsTestCaseInTestPlanRS;
+import com.epam.reportportal.serviceapi.core.tms.dto.batch.BatchTestCaseOperationError;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.commons.querygen.Filter;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.tms.TmsTestCase;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.tms.TmsTestCaseAttribute;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.tms.TmsTestCaseExecution;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.tms.TmsTestCaseVersion;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.tms.TmsTestFolder;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.tms.TmsTestCaseRepository;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.tms.TmsTestPlanTestCaseRepository;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.tms.filterable.TmsTestCaseFilterableRepository;
+import com.epam.reportportal.serviceapi.core.tms.dto.NewTestFolderRQ;
+import com.epam.reportportal.serviceapi.core.tms.dto.TmsManualScenarioType;
+import com.epam.reportportal.serviceapi.core.tms.dto.TmsStepsManualScenarioRQ;
+import com.epam.reportportal.serviceapi.core.tms.dto.TmsTestCaseAttributeRQ;
+import com.epam.reportportal.serviceapi.core.tms.dto.TmsTestCaseRQ;
+import com.epam.reportportal.serviceapi.core.tms.dto.TmsTestCaseRS;
+import com.epam.reportportal.serviceapi.core.tms.dto.TmsTestFolderRS;
+import com.epam.reportportal.serviceapi.core.tms.dto.TmsTextManualScenarioRQ;
+import com.epam.reportportal.serviceapi.core.tms.dto.batch.BatchDeleteTestCasesRQ;
+import com.epam.reportportal.serviceapi.core.tms.dto.batch.BatchDuplicateTestCasesRQ;
+import com.epam.reportportal.serviceapi.core.tms.dto.batch.BatchTestCaseOperationResultRS;
+import com.epam.reportportal.serviceapi.core.tms.dto.batch.BatchPatchTestCaseAttributesRQ;
+import com.epam.reportportal.serviceapi.core.tms.dto.batch.BatchPatchTestCasesRQ;
+import com.epam.reportportal.serviceapi.core.tms.mapper.TmsTestCaseMapper;
+import com.epam.reportportal.serviceapi.core.tms.mapper.exporter.TmsTestCaseExporter;
+import com.epam.reportportal.serviceapi.core.tms.mapper.factory.TmsTestCaseExporterFactory;
+import com.epam.reportportal.serviceapi.core.tms.mapper.factory.TmsTestCaseImporterFactory;
+import com.epam.reportportal.serviceapi.core.tms.mapper.importer.TmsTestCaseImporter;
+import com.epam.reportportal.serviceapi.infrastructure.rules.exception.ErrorType;
+import com.epam.reportportal.serviceapi.infrastructure.rules.exception.ReportPortalException;
 import jakarta.servlet.http.HttpServletResponse;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -2001,7 +2002,7 @@ class TmsTestCaseServiceImplTest {
     originalTestCase.setId(1L);
     originalTestCase.setName("Test Case");
     originalTestCase.setTestFolder(testFolder);
-    originalTestCase.setAttributes(Set.of(new com.epam.reportportal.infrastructure.persistence.entity.tms.TmsTestCaseAttribute()));
+    originalTestCase.setAttributes(Set.of(new TmsTestCaseAttribute()));
 
     var duplicatedTestCase = new TmsTestCase();
     duplicatedTestCase.setId(11L);
@@ -2270,7 +2271,7 @@ class TmsTestCaseServiceImplTest {
     originalTestCase.setName("Test Case with Attributes");
     originalTestCase.setTestFolder(testFolder);
     originalTestCase.setAttributes(Set.of(
-        new com.epam.reportportal.infrastructure.persistence.entity.tms.TmsTestCaseAttribute()
+        new TmsTestCaseAttribute()
     ));
 
     var duplicatedTestCase = new TmsTestCase();
@@ -2689,7 +2690,7 @@ class TmsTestCaseServiceImplTest {
     originalTestCase.setName("Test Case with Attributes");
     originalTestCase.setTestFolder(testFolder);
     originalTestCase.setAttributes(Set.of(
-        new com.epam.reportportal.infrastructure.persistence.entity.tms.TmsTestCaseAttribute()
+        new TmsTestCaseAttribute()
     ));
 
     var duplicatedTestCase = new TmsTestCase();

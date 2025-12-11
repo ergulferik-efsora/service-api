@@ -19,8 +19,9 @@ package com.epam.reportportal.util;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-import com.epam.reportportal.infrastructure.persistence.entity.ItemAttribute;
-import com.epam.reportportal.reporting.ItemAttributeResource;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.ItemAttribute;
+import com.epam.reportportal.serviceapi.reporting.ItemAttributeResource;
+import com.epam.reportportal.serviceapi.util.ItemInfoUtils;
 import com.google.common.collect.Lists;
 import java.util.Collections;
 import java.util.List;

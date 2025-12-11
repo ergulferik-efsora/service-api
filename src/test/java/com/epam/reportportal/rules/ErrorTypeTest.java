@@ -18,7 +18,7 @@ package com.epam.reportportal.rules;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import com.epam.reportportal.infrastructure.rules.exception.ErrorType;
+import com.epam.reportportal.serviceapi.infrastructure.rules.exception.ErrorType;
 import java.util.HashSet;
 import java.util.Set;
 import org.junit.jupiter.api.Test;

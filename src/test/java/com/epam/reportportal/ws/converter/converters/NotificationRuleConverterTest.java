@@ -6,11 +6,12 @@ package com.epam.reportportal.ws.converter.converters;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import com.epam.reportportal.infrastructure.persistence.entity.enums.LogicalOperator;
-import com.epam.reportportal.infrastructure.persistence.entity.enums.SendCase;
-import com.epam.reportportal.infrastructure.persistence.entity.project.Project;
-import com.epam.reportportal.infrastructure.persistence.entity.project.email.SenderCase;
-import com.epam.reportportal.model.activity.NotificationRuleActivityResource;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.enums.LogicalOperator;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.enums.SendCase;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.project.Project;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.project.email.SenderCase;
+import com.epam.reportportal.serviceapi.model.activity.NotificationRuleActivityResource;
+import com.epam.reportportal.serviceapi.ws.converter.converters.NotificationRuleConverter;
 import org.junit.jupiter.api.Test;
 
 class NotificationRuleConverterTest {

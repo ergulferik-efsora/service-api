@@ -25,15 +25,15 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.put;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
-import com.epam.reportportal.infrastructure.persistence.dao.DashboardRepository;
-import com.epam.reportportal.infrastructure.persistence.entity.dashboard.Dashboard;
-import com.epam.reportportal.model.EntryCreatedRS;
-import com.epam.reportportal.model.Position;
-import com.epam.reportportal.model.Size;
-import com.epam.reportportal.model.dashboard.AddWidgetRq;
-import com.epam.reportportal.model.dashboard.CreateDashboardRQ;
-import com.epam.reportportal.model.dashboard.DashboardResource;
-import com.epam.reportportal.model.dashboard.UpdateDashboardRQ;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.DashboardRepository;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.dashboard.Dashboard;
+import com.epam.reportportal.serviceapi.model.EntryCreatedRS;
+import com.epam.reportportal.serviceapi.model.Position;
+import com.epam.reportportal.serviceapi.model.Size;
+import com.epam.reportportal.serviceapi.model.dashboard.AddWidgetRq;
+import com.epam.reportportal.serviceapi.model.dashboard.CreateDashboardRQ;
+import com.epam.reportportal.serviceapi.model.dashboard.DashboardResource;
+import com.epam.reportportal.serviceapi.model.dashboard.UpdateDashboardRQ;
 import com.epam.reportportal.ws.BaseMvcTest;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import java.util.Optional;

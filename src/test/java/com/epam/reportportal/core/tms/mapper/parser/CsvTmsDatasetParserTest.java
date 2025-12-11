@@ -1,4 +1,4 @@
-package com.epam.reportportal.core.tms.mapper.parser;
+package com.epam.reportportal.serviceapi.core.tms.mapper.parser;
 
 import static org.assertj.core.api.AssertionsForInterfaceTypes.assertThat;
 import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;

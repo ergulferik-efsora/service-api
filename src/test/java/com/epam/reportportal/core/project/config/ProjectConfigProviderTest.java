@@ -14,16 +14,16 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.core.project.config;
+package com.epam.reportportal.serviceapi.core.project.config;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
-import com.epam.reportportal.core.project.GetProjectHandler;
-import com.epam.reportportal.infrastructure.persistence.entity.attribute.Attribute;
-import com.epam.reportportal.infrastructure.persistence.entity.project.Project;
-import com.epam.reportportal.infrastructure.persistence.entity.project.ProjectAttribute;
+import com.epam.reportportal.serviceapi.core.project.GetProjectHandler;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.attribute.Attribute;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.project.Project;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.project.ProjectAttribute;
 import java.util.Map;
 import java.util.Set;
 import java.util.stream.Collectors;

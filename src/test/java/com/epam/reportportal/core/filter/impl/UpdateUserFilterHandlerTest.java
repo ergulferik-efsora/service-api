@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.core.filter.impl;
+package com.epam.reportportal.serviceapi.core.filter.impl;
 
 import static com.epam.reportportal.ReportPortalUserUtil.getRpUser;
-import static com.epam.reportportal.infrastructure.persistence.commons.querygen.constant.GeneralCriteriaConstant.CRITERIA_NAME;
-import static com.epam.reportportal.infrastructure.persistence.util.MembershipUtils.rpUserToMembership;
+import static com.epam.reportportal.serviceapi.infrastructure.persistence.commons.querygen.constant.GeneralCriteriaConstant.CRITERIA_NAME;
+import static com.epam.reportportal.serviceapi.infrastructure.persistence.util.MembershipUtils.rpUserToMembership;
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
@@ -28,25 +28,25 @@ import static org.mockito.Mockito.doNothing;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
-import com.epam.reportportal.infrastructure.rules.commons.validation.Suppliers;
-import com.epam.reportportal.infrastructure.rules.exception.ReportPortalException;
-import com.epam.reportportal.infrastructure.persistence.commons.ReportPortalUser;
-import com.epam.reportportal.core.events.ActivityEvent;
-import com.epam.reportportal.core.events.MessageBus;
-import com.epam.reportportal.infrastructure.persistence.dao.GroupMembershipRepository;
-import com.epam.reportportal.infrastructure.persistence.dao.ProjectUserRepository;
-import com.epam.reportportal.infrastructure.persistence.dao.UserFilterRepository;
-import com.epam.reportportal.infrastructure.persistence.entity.filter.UserFilter;
-import com.epam.reportportal.infrastructure.persistence.entity.organization.MembershipDetails;
-import com.epam.reportportal.infrastructure.persistence.entity.organization.OrganizationRole;
-import com.epam.reportportal.infrastructure.persistence.entity.project.Project;
-import com.epam.reportportal.infrastructure.persistence.entity.project.ProjectRole;
-import com.epam.reportportal.infrastructure.persistence.entity.user.UserRole;
-import com.epam.reportportal.model.filter.Order;
-import com.epam.reportportal.model.filter.UpdateUserFilterRQ;
-import com.epam.reportportal.model.filter.UserFilterCondition;
-import com.epam.reportportal.util.ProjectExtractor;
-import com.epam.reportportal.reporting.OperationCompletionRS;
+import com.epam.reportportal.serviceapi.infrastructure.rules.commons.validation.Suppliers;
+import com.epam.reportportal.serviceapi.infrastructure.rules.exception.ReportPortalException;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.commons.ReportPortalUser;
+import com.epam.reportportal.serviceapi.core.events.ActivityEvent;
+import com.epam.reportportal.serviceapi.core.events.MessageBus;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.GroupMembershipRepository;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.ProjectUserRepository;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.UserFilterRepository;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.filter.UserFilter;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.organization.MembershipDetails;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.organization.OrganizationRole;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.project.Project;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.project.ProjectRole;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.user.UserRole;
+import com.epam.reportportal.serviceapi.model.filter.Order;
+import com.epam.reportportal.serviceapi.model.filter.UpdateUserFilterRQ;
+import com.epam.reportportal.serviceapi.model.filter.UserFilterCondition;
+import com.epam.reportportal.serviceapi.util.ProjectExtractor;
+import com.epam.reportportal.serviceapi.reporting.OperationCompletionRS;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Sets;
 import java.util.Optional;

@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.core.logging;
+package com.epam.reportportal.serviceapi.core.logging;
 
-import static com.epam.reportportal.core.logging.HelperUtil.checkLoggingRecords;
+import static com.epam.reportportal.serviceapi.core.logging.HelperUtil.checkLoggingRecords;
 import static org.mockito.Mockito.when;
 
 import ch.qos.logback.classic.Level;

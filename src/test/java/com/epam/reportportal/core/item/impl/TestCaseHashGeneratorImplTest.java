@@ -14,17 +14,17 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.core.item.impl;
+package com.epam.reportportal.serviceapi.core.item.impl;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.mockito.Mockito.when;
 
-import com.epam.reportportal.core.item.identity.IdentityUtil;
-import com.epam.reportportal.core.item.identity.TestCaseHashGeneratorImpl;
-import com.epam.reportportal.infrastructure.persistence.dao.TestItemRepository;
-import com.epam.reportportal.infrastructure.persistence.entity.item.Parameter;
-import com.epam.reportportal.infrastructure.persistence.entity.item.TestItem;
+import com.epam.reportportal.serviceapi.core.item.identity.IdentityUtil;
+import com.epam.reportportal.serviceapi.core.item.identity.TestCaseHashGeneratorImpl;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.TestItemRepository;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.item.Parameter;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.item.TestItem;
 import java.util.HashSet;
 import java.util.LinkedHashMap;
 import java.util.List;

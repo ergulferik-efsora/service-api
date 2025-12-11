@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.core.organization;
+package com.epam.reportportal.serviceapi.core.organization;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.when;
 
-import com.epam.reportportal.api.model.OrganizationInfo;
-import com.epam.reportportal.core.plugin.Pf4jPluginBox;
+import com.epam.reportportal.serviceapi.api.model.OrganizationInfo;
+import com.epam.reportportal.serviceapi.core.plugin.Pf4jPluginBox;
 import java.util.Optional;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;

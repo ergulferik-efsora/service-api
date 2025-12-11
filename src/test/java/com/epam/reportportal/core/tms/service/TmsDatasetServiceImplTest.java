@@ -1,4 +1,4 @@
-package com.epam.reportportal.core.tms.service;
+package com.epam.reportportal.serviceapi.core.tms.service;
 
 import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -7,12 +7,12 @@ import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
-import com.epam.reportportal.infrastructure.persistence.entity.tms.TmsDataset;
-import com.epam.reportportal.infrastructure.persistence.dao.tms.TmsDatasetRepository;
-import com.epam.reportportal.core.tms.dto.TmsDatasetRQ;
-import com.epam.reportportal.core.tms.dto.TmsDatasetRS;
-import com.epam.reportportal.core.tms.mapper.TmsDatasetMapper;
-import com.epam.reportportal.infrastructure.rules.exception.ReportPortalException;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.tms.TmsDataset;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.dao.tms.TmsDatasetRepository;
+import com.epam.reportportal.serviceapi.core.tms.dto.TmsDatasetRQ;
+import com.epam.reportportal.serviceapi.core.tms.dto.TmsDatasetRS;
+import com.epam.reportportal.serviceapi.core.tms.mapper.TmsDatasetMapper;
+import com.epam.reportportal.serviceapi.infrastructure.rules.exception.ReportPortalException;
 import java.util.List;
 import java.util.Optional;
 import org.junit.jupiter.api.Test;

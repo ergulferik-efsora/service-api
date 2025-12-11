@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.core.analyzer.auto.starter.decorator;
+package com.epam.reportportal.serviceapi.core.analyzer.auto.starter.decorator;
 
 import static com.epam.reportportal.ReportPortalUserUtil.getRpUser;
 import static org.mockito.ArgumentMatchers.any;
@@ -23,14 +23,14 @@ import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 
-import com.epam.reportportal.infrastructure.persistence.commons.ReportPortalUser;
-import com.epam.reportportal.core.analyzer.auto.starter.LaunchAutoAnalysisStarter;
-import com.epam.reportportal.core.analyzer.auto.strategy.analyze.AnalyzeItemsMode;
-import com.epam.reportportal.core.analyzer.config.StartLaunchAutoAnalysisConfig;
-import com.epam.reportportal.infrastructure.persistence.entity.organization.OrganizationRole;
-import com.epam.reportportal.infrastructure.persistence.entity.project.ProjectRole;
-import com.epam.reportportal.infrastructure.persistence.entity.user.UserRole;
-import com.epam.reportportal.infrastructure.model.project.AnalyzerConfig;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.commons.ReportPortalUser;
+import com.epam.reportportal.serviceapi.core.analyzer.auto.starter.LaunchAutoAnalysisStarter;
+import com.epam.reportportal.serviceapi.core.analyzer.auto.strategy.analyze.AnalyzeItemsMode;
+import com.epam.reportportal.serviceapi.core.analyzer.config.StartLaunchAutoAnalysisConfig;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.organization.OrganizationRole;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.project.ProjectRole;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.user.UserRole;
+import com.epam.reportportal.serviceapi.infrastructure.model.project.AnalyzerConfig;
 import java.util.Set;
 import org.junit.jupiter.api.Test;
 import org.springframework.core.task.SyncTaskExecutor;

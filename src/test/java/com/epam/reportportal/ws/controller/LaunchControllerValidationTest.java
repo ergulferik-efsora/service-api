@@ -16,7 +16,7 @@
 
 package com.epam.reportportal.ws.controller;
 
-import static com.epam.reportportal.infrastructure.rules.exception.ErrorType.INCORRECT_REQUEST;
+import static com.epam.reportportal.serviceapi.infrastructure.rules.exception.ErrorType.INCORRECT_REQUEST;
 import static com.epam.reportportal.ws.controller.constants.ValidationTestsConstants.FIELD_NAME_IS_BLANK_MESSAGE;
 import static com.epam.reportportal.ws.controller.constants.ValidationTestsConstants.FIELD_NAME_IS_NULL_MESSAGE;
 import static com.epam.reportportal.ws.controller.constants.ValidationTestsConstants.FIELD_NAME_SIZE_MESSAGE_WITH_FORMAT;
@@ -28,12 +28,12 @@ import static org.springframework.http.MediaType.APPLICATION_JSON;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
-import com.epam.reportportal.infrastructure.rules.exception.ErrorRS;
+import com.epam.reportportal.serviceapi.infrastructure.rules.exception.ErrorRS;
 import com.epam.reportportal.ws.BaseMvcTest;
-import com.epam.reportportal.reporting.ItemAttributesRQ;
-import com.epam.reportportal.reporting.MergeLaunchesRQ;
-import com.epam.reportportal.reporting.Mode;
-import com.epam.reportportal.reporting.StartLaunchRQ;
+import com.epam.reportportal.serviceapi.reporting.ItemAttributesRQ;
+import com.epam.reportportal.serviceapi.reporting.MergeLaunchesRQ;
+import com.epam.reportportal.serviceapi.reporting.Mode;
+import com.epam.reportportal.serviceapi.reporting.StartLaunchRQ;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.common.collect.Sets;
 import java.time.Instant;

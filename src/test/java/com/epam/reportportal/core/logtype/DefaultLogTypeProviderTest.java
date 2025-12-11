@@ -1,11 +1,11 @@
-package com.epam.reportportal.core.logtype;
+package com.epam.reportportal.serviceapi.core.logtype;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertAll;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-import com.epam.reportportal.infrastructure.persistence.entity.log.ProjectLogType;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.log.ProjectLogType;
 import java.util.List;
 import org.junit.jupiter.api.Test;
 

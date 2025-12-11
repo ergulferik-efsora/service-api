@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.epam.reportportal.core.events.activity.util;
+package com.epam.reportportal.serviceapi.core.events.activity.util;
 
-import com.epam.reportportal.infrastructure.persistence.entity.activity.HistoryField;
+import com.epam.reportportal.serviceapi.infrastructure.persistence.entity.activity.HistoryField;
 import org.junit.jupiter.api.Test;
 
 import java.util.Optional;
