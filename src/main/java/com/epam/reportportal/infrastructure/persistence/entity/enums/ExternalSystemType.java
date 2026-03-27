@@ -50,6 +50,12 @@ public enum ExternalSystemType {
     public String makeUrl(String base, String id) {
       return "";
     }
+  },
+  LINEAR {
+    @Override
+    public String makeUrl(String base, String id) {
+      return "https://linear.app/issue/" + id;
+    }
   };
 
   public static final String ISSUE_MARKER = "#";

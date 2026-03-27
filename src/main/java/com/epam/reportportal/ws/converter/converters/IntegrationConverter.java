@@ -43,7 +43,7 @@ public final class IntegrationConverter {
   private static final List<String> IGNORE_FIELDS =
       List.of(EmailSettingsEnum.PASSWORD.getAttribute(), SauceLabsProperties.ACCESS_TOKEN.getName(),
           BtsProperties.OAUTH_ACCESS_KEY.getName(), BtsProperties.API_TOKEN.getName(),
-          AuthProperties.MANAGER_PASSWORD.getName()
+          AuthProperties.MANAGER_PASSWORD.getName(), "apiKey"
       );
 
   private static final Predicate<Map.Entry<String, Object>> IGNORE_FIELDS_CONDITION =

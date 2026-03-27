@@ -28,6 +28,7 @@ import com.epam.reportportal.core.events.handler.launch.LaunchAutoAnalysisRunner
 import com.epam.reportportal.core.events.handler.launch.LaunchNotificationRunner;
 import com.epam.reportportal.core.events.handler.launch.LaunchPatternAnalysisRunner;
 import com.epam.reportportal.core.events.handler.launch.LaunchUniqueErrorAnalysisRunner;
+import com.epam.reportportal.core.events.handler.launch.LinearWebhookRunner;
 import com.epam.reportportal.core.events.subscriber.impl.delegate.ProjectConfigDelegatingSubscriber;
 import com.epam.reportportal.core.project.config.ProjectConfigProvider;
 import java.util.List;
@@ -47,13 +48,15 @@ public class EventSubscriberConfig {
       LaunchUniqueErrorAnalysisRunner uniqueErrorAnalysisEventHandler,
       LaunchAnalysisFinishEventPublisher launchAnalysisFinishEventPublisher,
       LaunchPatternAnalysisRunner patternAnalysisEventHandler,
-      LaunchNotificationRunner notificationEventHandler) {
+      LaunchNotificationRunner notificationEventHandler,
+      LinearWebhookRunner linearWebhookRunner) {
     return new ProjectConfigDelegatingSubscriber<>(projectConfigProvider,
         List.of(patternAnalysisEventHandler,
             autoAnalysisEventHandler,
             uniqueErrorAnalysisEventHandler,
             launchAnalysisFinishEventPublisher,
-            notificationEventHandler
+            notificationEventHandler,
+            linearWebhookRunner
         )
     );
   }

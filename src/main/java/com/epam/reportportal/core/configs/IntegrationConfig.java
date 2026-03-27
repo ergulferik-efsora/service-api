@@ -20,6 +20,7 @@ import com.epam.reportportal.core.integration.util.AzureIntegrationService;
 import com.epam.reportportal.core.integration.util.BtsIntegrationService;
 import com.epam.reportportal.core.integration.util.EmailServerIntegrationService;
 import com.epam.reportportal.core.integration.util.IntegrationService;
+import com.epam.reportportal.core.integration.util.LinearIntegrationService;
 import com.epam.reportportal.core.integration.util.SauceLabsIntegrationService;
 import com.google.common.collect.ImmutableMap;
 import java.util.Map;
@@ -50,6 +51,7 @@ public class IntegrationConfig implements ApplicationContextAware {
         .put("Azure DevOps", applicationContext.getBean(AzureIntegrationService.class))
         .put("email", applicationContext.getBean(EmailServerIntegrationService.class))
         .put("saucelabs", applicationContext.getBean(SauceLabsIntegrationService.class))
+        .put("linear", applicationContext.getBean(LinearIntegrationService.class))
         .build();
 
   }
